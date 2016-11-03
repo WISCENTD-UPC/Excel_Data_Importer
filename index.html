@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Excel Data Importer</title>
+		<meta charset="utf-8">
+	  
+		<link rel="stylesheet" href="libraries/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href='css/font.css' rel='stylesheet'  type='text/css'>
+		
+		<!-- Stylesheets related to the menu -->
+		<link type="text/css" rel="stylesheet" href="../../../dhis-web-commons/font-awesome/css/font-awesome.min.css"/>
+		<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/css/menu.css"> 
+		<link type="text/css" rel="stylesheet" media="screen" href="../../../dhis-web-commons/css/light_blue/light_blue.css?_rev=22006" />
+		
+		<style>	
+			/* Important part */
+			.sum-modal-dialog{
+				overflow-y: initial !important
+			}
+			.sum-modal-body{
+				height: 450px;
+				overflow-y: auto;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="loader"> <div id="loaderWheel"> </div> <div id="loaderMsg"> Making things ready...</div> </div>
+		<div id="header">
+			<img id="headerBanner" src="../../staticContent/logo_banner" onclick="window.location.href='../../../dhis-web-dashboard-integration/index.action'"
+				style="cursor:pointer" title="View home page">
+
+			<span id="headerText" onclick="window.location.href='../../../dhis-web-dashboard-integration/index.action'" style="cursor:pointer" title="View home page">
+				DHIS 2
+			</span>
+
+			<div id="dhisDropDownMenu"></div>
+			
+			<!--
+				<span id="showLeftBar">
+					<a href="javascript:dhis2.leftBar.showAnimated()" title="Show menu"><i class="fa fa-arrow-right leftBarIcon"></i></a>
+				</span>
+			-->	
+		</div>
+
+		<!--
+		<div id="header">
+			<div class="logo"> <img style="margin-left:30px;" src="images/logo.png" width="70" /> </div>
+			<div class="logo"> EXCEL DATA IMPORTER BETA</div>
+			
+			<div class="headLink right"> About </div>
+			<div class="headLink right"> Settings </div>
+			<div class="headLink right"> History </div>
+		</div> -->
+		
+		<div id="container">
+			<div class="alert alert-info" id="notificationPanel" style="display:none;position:absolute; left:35%; width:500px;margin-left:-50px;margin-top:10px;text-align:center;z-index:1;">
+			  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			  <p style="font-weight:bold" id="notificationMsg"> Everything is perfect </p>
+			</div>
+			
+			<div class="content-area">
+				<div id="templateSelect" >
+					<div class="input-group" style="width:100%">
+					  <span class="input-group-addon" id="basic-addon1" style="width:130px" >Template</span>
+						<select class="form-control" id="temSelectBox" style="font-size:15px;height:40px;" onchange="changeTemplate()"> 
+						
+						</select>
+					</div>
+					
+					<div class="input-group" style="width:100%;margin-top:10px">
+					  <span class="input-group-addon" id="basic-addon1" style="width:130px">OrgUnit Scheme</span>
+					  <select class="form-control" id="ousSelectBox" style="font-size:15px;height:40px;" onchange="changeOUScheme()"> 
+						<option value="1">UID</option>
+						<option value="2">Code</option>
+					  </select>
+					</div>
+				</div>
+				
+				<div id="sideBarWithLogo">
+					<div class="logo"> <img src="images/logo_b.png" /> </div>
+				</div>
+				
+				<div class="action-buttons">
+					<div id="uploadLogo" title="Upload data sheets"></div>
+					<a id="downloadLogo" title="Download a sample template" download> </a>
+					<input type="file" id="uploadFile"  name="uploadFile" style="display:none" accept=".xlsx" multiple />					
+				</div>
+				
+				<div id="helpText">
+					<p class="mediumFont">Help Tips:</p>
+					<ul class="smallFont">
+						<li>Single or Mulitple xlsx data files can be uploaded using upload button.</li>
+						<li>Template xlsx file can be generated using download button, this is useful to compare the datasheet format with actual template.</li>
+						<li>Make sure that the template and datasheet mapping in sync, if find any descripencies please contact admin.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Alert Modal -->
+		  <div class="modal fade" id="modelAlert" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title" id="modalTitle" >Confirmation</h4>
+				</div>
+				<div class="modal-body">
+				  <p id="modalText" >Are you sure that you want to continue?</p>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" id="importBtn" class="btn btn-success" data-dismiss="modal" onclick="circulateFiles()">Continue</button>
+				  <button type="button" id="importBtn" class="btn btn-danger" data-dismiss="modal" onclick="window.location.reload()">Cancel</button>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+		  
+		 <!-- Import count Modal -->
+		  <div class="modal fade" id="imModelAlert" role="dialog">
+			<div class="modal-dialog  modal-lg sum-modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" onclick="window.location.reload()">&times;</button>
+				  <h4 class="modal-title" >Import Status</h4>
+				</div>
+				<div class="modal-body sum-modal-body">
+				    <table class="table table-hover table-striped"> 
+						<thead>
+							<tr>
+								<th></th>
+								<th>File</th>
+								<th>Event Import</th>
+								<th>Data Value Import</th>
+							</th>
+						</thead>
+						<tbody id="imSumTable">
+						</tbody>
+					</table>
+					
+					<table class="table table-hover table-striped" style="display:none" id="impTable"> 
+						<tbody id="errSumTable">
+						</tbody>
+					</table>
+					
+					<a id="dlink"  style="display:none;"></a>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-info" data-dismiss="modal" onclick="window.location.reload()">Done</button>
+				  
+				  <div class="btn-group">
+					  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download Logs <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+						<li><a href="#" onclick="tableToExcel('impTable', 'summary', 'summary.xls')" >As Excel</a></li>
+						<li><a href="#" onclick="ExportSummaryText()" >As Text</a></li>
+					  </ul>
+					</div>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+  
+		<div id="footer"> Powered By DHIS</div>
+		
+		<script src="libraries/jquery/2.2.3/jquery.js"></script>
+		<script src="libraries/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="js/validations.js"></script>
+		<script src="js/templateJsonReader.js"></script>
+		<script src="js/main.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$("#uploadLogo").click(function () {
+					$("#uploadFile").trigger('click');
+				});
+				
+				//$("#imModelAlert").modal("show");
+			});
+			
+			var xld = document.getElementById('uploadFile');
+			if(xld) xld.addEventListener('change', changeFile, false);
+			
+			var uploadedFiles = [];
+			
+			function changeFile(e)
+			{				
+				if( $("#uploadFile").val() != "" )
+				{
+					$("#notificationPanel").hide();
+					$("#loaderMsg").html("Processing the Excel Files...");
+					uploadedFiles = e.target.files;
+					//$("#modelAlert").modal("show");
+					circulateFiles();
+				}
+			}
+			
+			var currentFileNum = 0;
+			var currentFileName = "";
+			var hasUploadErrors = false;
+			
+			function circulateFiles()
+			{
+				$("#loader").show();			
+
+				if( currentFileNum < uploadedFiles.length )
+				{
+					var currentFile = uploadedFiles[currentFileNum];
+					var extension = currentFile.name.split('.').pop().toLowerCase();
+					currentFileName = currentFile.name;
+					console.log( "**************************** "+currentFile.name+" **************" );
+					 
+					if( extension == "xlsx" )
+					{
+						currentFileNum++;
+						handleFile(currentFile);
+					}
+					else
+					{
+						hasUploadErrors = true;
+						currentFileNum++;
+						circulateFiles();
+					}
+				}
+				else
+				{
+					$("#loader").hide();
+					printSummary();
+					
+					if( hasUploadErrors )
+						printError("Invalid files found...Upload might not have completed as intended...");					
+				}
+			}
+		</script>
+		
+		<script src="template_cambo.js"></script>
+		<script src="template_indo.js"></script>
+		<script src="template_bu02.js"></script>
+		<script src="config.js"></script>
+		
+		<script type="text/javascript" src="libraries/excel_reader/jszip.min.js"></script>
+        <script type="text/javascript" src="libraries/excel_reader/xlsx.min.js"></script>
+        <script type="text/javascript" src="libraries/excel_reader/xlsx-reader.js"></script>
+		<script src="libraries/excel_reader/xlsx.js"></script>
+		<script src="libraries/excel_reader/funcxl.js"></script>
+		<script src="libraries/unzipper/zip.js"></script>
+
+		<!-- DHIS2 Settings initialization for a baseUrl that is used for the menu -->
+		<script>
+		 window.dhis2 = window.dhis2 || {};
+		 dhis2.settings = dhis2.settings || {};
+		 dhis2.settings.baseUrl = 'dhis';
+		</script> 
+		
+		<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.translate.js"></script>
+		<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.menu.js"></script>
+		<script type="text/javascript" src="../../../dhis-web-commons/javascripts/dhis2/dhis2.menu.ui.js"></script>
+		
+		<script type="text/javascript">
+			var tableToExcel = (function () {
+				var uri = 'data:application/vnd.ms-excel;base64,'
+				, template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+				, base64 = function (s) { return window.btoa(unescape(encodeURIComponent(s))) }
+				, format = function (s, c) { return s.replace(/{(\w+)}/g, function (m, p) { return c[p]; }) }
+				return function (table, name, filename) {
+					if (!table.nodeType) table = document.getElementById(table)
+					var ctx = { worksheet: name || 'Worksheet', table: table.innerHTML }
+
+					document.getElementById("dlink").href = uri + base64(format(template, ctx));
+					document.getElementById("dlink").download = filename;
+					document.getElementById("dlink").click();
+
+				}
+			})();
+			
+			function ExportSummaryText()
+			{
+				var data = "";			
+				
+				$('#errSumTable tr').each(function(){
+					var td = 1;
+					var isFirstTdEmpty = false;
+					console.log($(this).find('td'));
+					var tdCount = $(this).find('td').length;
+					
+					$(this).find('td').each(function(){
+						if( td == 1 )
+						{
+							if( tdCount == 1 )
+								data += "\r\n********************************************************************************************\r\n";
+								
+							if( $(this).text().trim() == "" )
+								isFirstTdEmpty = true;
+							else
+								data += $(this).text() + ":";
+							
+							if( tdCount == 1 )
+								data += "\r\n********************************************************************************************\r\n";
+						}
+						else
+						{
+							if( isFirstTdEmpty )
+								data += "\t => " + $(this).text() + "\r\n";
+							else
+								data += $(this).text() + "\r\n";
+						}
+						
+						td++;
+					});
+				});
+
+				var filename = "summary.txt";
+			    var blob = new Blob([data], {type: 'text/csv'});
+				
+				if(window.navigator.msSaveOrOpenBlob) 
+				{
+					window.navigator.msSaveBlob(blob, filename);
+				}
+				else
+				{
+					var elem = window.document.createElement('a');
+					elem.href = window.URL.createObjectURL(blob);
+					elem.download = filename;        
+					document.body.appendChild(elem)
+					elem.click();        
+					document.body.removeChild(elem);
+				}
+			}
+			
+			$(document).ready(function(){
+				$.get("../../systemSettings.json" ,function(json)
+				{
+					$("#headerText").text(json.applicationTitle);
+				});
+			});
+		</script>
+	</body>
+</html>
