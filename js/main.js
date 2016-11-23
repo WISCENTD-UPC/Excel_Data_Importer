@@ -422,7 +422,7 @@ function importEventData()
 		console.log(eventDataJSON);
 		
 		//alert(orgUnitIdScheme);
-		var url = "../../events?orgUnitIdScheme="+orgUnitIdScheme;
+		var url = "../../events?dataElementIdScheme=code&orgUnitIdScheme="+orgUnitIdScheme;
 		//var url = "../../events";
 		
 		$.ajax({
