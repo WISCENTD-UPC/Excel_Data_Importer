@@ -21,12 +21,12 @@ var data_ntd =
 
                     event_des: [
                         {deuid: "GEN_FirstName_T", column: "D"},
-                        {deuid: "GEN_Register Number_T", column: "E"},
+                        {deuid: "GEN_Registry Number_T", column: "E"},
                         {deuid: "GEN_Age_T", column: "F"},
                         {deuid: "GEN_Sexe_T", column: "G"},
                         {deuid: "GEN_Address_T", column: "H"},
                         {deuid: "GEN_Locality_T", column: "I"},
-                        {deuid: "BU_Cl_Classif_T", column: "J"},
+                        {deuid: "Skin_Cl_Classif_T", column: "J"},
                         {deuid: "Skin_Cl_Nodule_T", column: "K"},
                         {deuid: "Skin_Cl_Oedema_T", column: "L"},
                         {deuid: "Skin_Cl_Osteomyelitis_T", column: "M"},
