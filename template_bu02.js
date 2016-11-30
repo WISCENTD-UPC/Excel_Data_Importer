@@ -65,7 +65,7 @@ var data_ntd =
                     event_date_col: "C", //should be a letter
 
                     event_des: [
-                        {deuid: "Gen_ID Number_T", column: "D"},
+                        {deuid: "GEN_ID Number_T", column: "D"},
                         {deuid: "GEN_FirstName_T", column: "E"},
                         {deuid: "GEN_Family name_T", column: "F"},
                         {deuid: "GEN_CountryOfResidence_T", column: "G"},
