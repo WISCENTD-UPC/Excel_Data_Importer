@@ -87,6 +87,37 @@ var data_ntd =
                     ]
                 }
             ]
+        },
+        {
+            name: "HAT sentinel sites",
+            file:"HAT_template.xlsx",
+            sheets: [
+                {
+                    sheet_type: "EVENTS",
+                    sheet_no: 1,
+                    data_starting_row : "5",
+                    key_column : "B",
+                    ou_col : "B",
+                    program : "QFe138xdQcq",
+                    event_date_col: "C", //should be a letter
+
+                    event_des: [
+                        {deuid: "HAT_ID_T", column: "D"},
+                        {deuid: "GEN_Sexe_T", column: "E"},
+                        {deuid: "GEN_Age_T", column: "F"},
+                        {deuid: "GEN_Address_T", column: "G"},
+                        {deuid: "GEN_CountryOfResidence_T", column: "H"},
+                        {deuid: "HAT_test_date_T", column: "I"},
+                        {deuid: "HAT_serological_test_type_T", column: "J"},
+                        {deuid: "HAT_TDR_type_T", column: "K"},
+                        {deuid: "HAT_CATT_dilution_T", column: "L"},
+                        {deuid: "HAT_Serological_test_result", column: "M"},
+                        {deuid: "HAT_Trypanolyse_T", column: "N"},
+                        {deuid: "HAT_trypanolysis_date_performed_T", column: "O"},
+                        {deuid: "HAT_Trypanolyse_result_T", column: "P"}
+                    ]
+                }
+            ]
         }
     ]
 }
