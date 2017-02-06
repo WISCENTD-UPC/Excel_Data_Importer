@@ -174,7 +174,7 @@ function processExcelSheet()
 				var dMonth = getCellData( sheet.sheet_no, sheet.month_cell );
 				var dYear = getCellData( sheet.sheet_no, sheet.year_cell );
 				//orgUnitIdScheme = sheet.orgUnitIdScheme;
-				
+
 				//validating month and year
 				var mResult = validateMonth(dMonth);
 				var yResult = validateYear(dYear);
@@ -206,13 +206,13 @@ function processExcelSheet()
 					isAggDataAvailable = true;
 					
 					var rowStart = parseInt(sheet.data_starting_row);
-					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
+					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no)) - 1;
+					console.log("Row end " + rowEnd);
 					//console.log( "$$$$$$$$$$$$$$$");
 					//console.log( sheetEndRows );
 					//orgUnitIdScheme = sheet.orgUnitIdScheme;
 					dataElementIdScheme = sheet.dataElementIdScheme;
-					idScheme = sheet.idScheme;
-					
+
 					//console.log( "RowStart: " + rowStart +" - RowEnd: " + rowEnd );
 					//console.log(rowEnd);
 					
@@ -220,26 +220,38 @@ function processExcelSheet()
 					{
 						for( var x = 0; x<sheet.agg_des.length; x++ )
 						{
-							if( getCellData( sheet.sheet_no, sheet.key_coulmn + "" + r ) != "" )
+							if( getCellData( sheet.sheet_no, sheet.key_coulmn + "" + r ) != "" && r <= sheet.data_ending_row)
 							{
 								var ds = sheet.agg_des[x];
 								var dataValue = {};
-								var dMonth = getCellData( sheet.sheet_no, sheet.month_col + "" + r );
+								var dMonth = "";
+								if (sheet.month_col != "A") dMonth = getCellData( sheet.sheet_no, sheet.month_col + "" + r );
 								var dYear = getCellData( sheet.sheet_no, sheet.year_col + "" + r );
-															
+
 								//validating month and year
 								var mResult = validateMonth(dMonth);
 								var yResult = validateYear(dYear);
 								if(mResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + mResult.msg + "</td></tr>"; } else dMonth = mResult.month;
 								if(yResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + yResult.msg + "</td></tr>"; } else dYear = yResult.year;
-															
-								dataValue.period = dYear + "" + dMonth;
-								
+
+								if (sheet.month_col == "A") dataValue.period = dYear;
+								else dataValue.period = dYear + "" + dMonth;
+
 								dataValue.dataElement = ds.deuid;
 								dataValue.categoryOptionCombo = ds.cocuid;
-								dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col + "" + r );
-								dataValue.value = getCellData( sheet.sheet_no, ds.col_no + "" + r );
-								dataValue.comment = currentFileName;
+								dataValue.attributeOptionCombo = sheet.attr_oc;
+								dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col + "" + 3 );
+                                var colN = ds.col_no;
+                                var array = [];
+                                array = colN.split(",");
+                                var numericalValue = 0;
+                                for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
+                                    var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
+                                    if (factorColumnValue != "")
+                                        numericalValue += parseInt(factorColumnValue);
+                                }
+                                console.log(numericalValue);
+                                dataValue.value = numericalValue.toString();
 								dataValues.push(dataValue);
 							}
 							//console.log(dataValue);
@@ -362,7 +374,8 @@ function processExcelSheet()
 	
 	if( !hasErrors )
 	{
-		importEventData();
+		if (!isAggDataAvailable) importEventData();
+		else importData();
 	}		
 	else
 	{
@@ -515,7 +528,6 @@ function importData()
 		var dataValueSet = {};
 		dataValueSet.dataElementIdScheme = dataElementIdScheme;
 		dataValueSet.orgUnitIdScheme = orgUnitIdScheme;
-		dataValueSet.idScheme = idScheme;
 		dataValueSet.dataValues = dataValues;
 		var dataJSON = JSON.stringify(dataValueSet);
 		

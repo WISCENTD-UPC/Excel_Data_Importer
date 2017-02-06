@@ -3,7 +3,7 @@ var data_ntd =
     templates: [
         {
             name: "Select an option",
-            file:"BU02_template.xlsx",
+            file:"empty.xlsx",
             sheets: []
         },
         {
@@ -121,6 +121,78 @@ var data_ntd =
                         {deuid: "HAT_Trypanolyse_T", column: "N"},
                         {deuid: "HAT_trypanolysis_date_performed_T", column: "O"},
                         {deuid: "HAT_Trypanolyse_result_T", column: "P"}
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Rabies template",
+            file: "rabies_template.xlsx",
+            sheets: [
+                {
+                    sheet_type: "MULTIPLE_DE_OU_PE",
+                    sheet_no: 1,
+                    orgUnitIdScheme: "CODE",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_col: "B",
+                    month_col: "A",
+                    year_col: "A",
+                    data_starting_row: 11,
+                    data_ending_row: 13,
+                    last_data_column: "M",
+                    key_coulmn: "B",
+                    attr_oc: "QIFdMRrb22m",
+
+                    agg_des: [
+                        //HUMAN CASES, AGE, DIAGNOSIS, GENDER AND TRANSMISSION
+                        //AGE UNKNOWN
+                        {deuid: "Ujm8qoGj0fo", cocuid: "kek1YXjDq70", col_no: "B"},
+                        //DIAGNOSIS UNKNOWN
+                        {deuid: "it8UvG94yDu", cocuid: "a14nFkqYZ9i", col_no: "B"},
+                        //GENDER UNKNOWN
+                        {deuid: "wJvwACm3zzR", cocuid: "jNbFhhnUsQv", col_no: "B"},
+                        //TRANSMISSION UNKNOWN
+                        {deuid: "RmmNGZSrcLa", cocuid: "U8blRfoPG9x", col_no: "B"},
+
+                        //BITE CASES IN HUMANS, GENDER, AGE, CATEGORIES AND ANIMAL
+                        //GENDER UNKNOWN
+                        {deuid: "UgOTAOvaLbD", cocuid: "jNbFhhnUsQv", col_no: "D,E,F,G"},
+                        //AGE UNKNOWN
+                        {deuid: "nnCmUHUtUCS", cocuid: "kek1YXjDq70", col_no: "D,E,F,G"},
+                        //CATEGORY UNKNOWN
+                        {deuid: "JqYTE1umB52", cocuid: "rETDBf8DCmm", col_no: "F,G"},
+                        //CATEGORY III
+                        {deuid: "JqYTE1umB52", cocuid: "SboJeqG5PSr", col_no: "E"},
+                        //CATEGORY II
+                        {deuid: "JqYTE1umB52", cocuid: "C0llASltiUa", col_no: "D"},
+                        //BITES BY OTHER ANIMALS
+                        {deuid: "WgTepCvygAx", cocuid: "fZaOiqxlprE", col_no: "G"},
+                        //BITES BY DOG
+                        {deuid: "WgTepCvygAx", cocuid: "I5JayMgNxQW", col_no: "D,E,F"},
+
+                        //PEOPLE RECEIVING PEP GENDER, AGE AND CATEGORIES
+                        //GENDER UNKNOWN
+                        {deuid: "T6o3ZYK1GT2", cocuid: "jNbFhhnUsQv", col_no: "H"},
+                        //AGE UNKNOWN
+                        {deuid: "MWT1th6SDRs", cocuid: "kek1YXjDq70", col_no: "H"},
+                        //CATEGORY UNKNOWN
+                        {deuid: "lksAZeJRTfu", cocuid: "rETDBf8DCmm", col_no: "H"},
+
+                        //DOG POPULATION
+                        //OWNERSHIP UNKNOWN
+                        {deuid: "FQfEkbg7ock", cocuid: "ckYrXbtH54K", col_no: "L"},
+
+                        //DOG VACCINATION COVERAGE
+                        {deuid: "xIcL7DltKft", cocuid: "ckYrXbtH54K", col_no: "M"},
+
+                        //RABIES CASES IN ANIMALS
+                        //DOG CASES UNKNOWN DIAGNOSIS
+                        {deuid: "OUeYAMsNtG4", cocuid: "p8VX4jTyOIz", col_no: "J"},
+                        //UNKNOWN ANIMAL UNKNOWN DIAGNOSIS
+
+                        {deuid: "OUeYAMsNtG4", cocuid: "gYSXz9bTehK", col_no: "K"}
+
                     ]
                 }
             ]
