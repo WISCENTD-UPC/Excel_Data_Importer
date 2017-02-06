@@ -63,6 +63,7 @@ var data_ntd =
                     ou_col : "B",
                     program : "TFTLPseQEgi",
                     event_date_col: "C", //should be a letter
+                    event_des_length : 33,
 
                     event_des: [
                         {deuid: "GEN_ID Number_T", column: "D"},

@@ -26,6 +26,7 @@ var importSummary = [];
 var isEventDataAvaialble = false;
 
 var isAggDataAvailable = false;
+var excelHeaders = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK", "AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT", "AU", "AV", "AW", "AX", "AY", "AZ", "BA", "BB", "BC", "BD", "BE", "BF", "BG", "BH"]
 
 $(document).ready(function(){
 	try
@@ -337,16 +338,18 @@ function processExcelSheet()
 							eventDataValue.eventDate = getCellData( sheet.sheet_no, sheet.event_date_col + "" + r );
 							//eventDataValue.orgUnitIdScheme = orgUnitIdScheme;
 							eventDataValue.dataValues = [];
+							var columnOfData = 3;
 
-
-							for( var x=0; x<sheet.event_des.length; x++ )
+							for( var x=0; x<sheet.event_des_length; x++ )
 							{
 								var dv = {};
 								var ds = sheet.event_des[x];
-								dv.dataElement = ds.deuid;
+                                var columnOfDataString = excelHeaders[columnOfData]
+								dv.dataElement = getCellData( sheet.sheet_no, columnOfDataString + "" + 1 );
 								//dv.categoryOptionCombo = ds.cocuid;
-								dv.value = getCellData( sheet.sheet_no, ds.column + "" + r );
+								dv.value = getCellData( sheet.sheet_no, columnOfDataString + "" + r );
 								eventDataValue.dataValues.push(dv);
+                                ++columnOfData;
 							}
 							//console.log(eventDataValue);
 							eventDataValues.events.push(eventDataValue);
