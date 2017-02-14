@@ -254,14 +254,17 @@ function processExcelSheet()
                                 var array = [];
                                 array = colN.split(",");
                                 var numericalValue = 0;
-                                for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
-                                    var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
-                                    if (factorColumnValue != "")
-                                        numericalValue += parseInt(factorColumnValue);
-                                }
-                                console.log(numericalValue);
-                                dataValue.value = numericalValue.toString();
-								dataValues.push(dataValue);
+				if (array.length == 1) dataValue.value = getCellData(sheet.sheet_no, array[0] + "" + r);
+				else {
+                                	for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
+                                    		var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
+                                   		 if (factorColumnValue != "")
+                                        	numericalValue += parseInt(factorColumnValue);
+                                	}
+                                	console.log(numericalValue);
+                                	dataValue.value = numericalValue.toString();
+				}
+				dataValues.push(dataValue);
 							}
 							//console.log(dataValue);
 						}
