@@ -208,6 +208,14 @@ function processExcelSheet()
 					
 					var rowStart = parseInt(sheet.data_starting_row);
 					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no)) - 1;
+					var found = false;
+					for (var lastRow = rowEnd; lastRow >= rowStart && !found; lastRow--) {
+						console.log(sheet.key_column + getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow));
+						if (getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow) == "-") {
+							rowEnd = lastRow - 1;
+							found = true;
+						}
+					}
 					console.log("Row end " + rowEnd);
 					//console.log( "$$$$$$$$$$$$$$$");
 					//console.log( sheetEndRows );
@@ -221,7 +229,7 @@ function processExcelSheet()
 					{
 						for( var x = 0; x<sheet.agg_des.length; x++ )
 						{
-							if( getCellData( sheet.sheet_no, sheet.key_coulmn + "" + r ) != "" && r <= sheet.data_ending_row)
+							if( getCellData( sheet.sheet_no, sheet.key_column + "" + r ) != "")
 							{
 								var ds = sheet.agg_des[x];
 								var dataValue = {};
@@ -274,7 +282,7 @@ function processExcelSheet()
 					//Event rows
 					for( var r = rowStart; r<rowEnd; r++ )
 					{
-						if( getCellData( sheet.sheet_no, sheet.key_coulmn + "" + r ) != "" )
+						if( getCellData( sheet.sheet_no, sheet.key_column + "" + r ) != "" )
 						{
 							var eventDataValue = {};
 							eventDataValue.orgUnit = orgUnit;

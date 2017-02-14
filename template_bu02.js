@@ -142,7 +142,7 @@ var data_ntd =
                     data_starting_row: 11,
                     data_ending_row: 13,
                     last_data_column: "M",
-                    key_coulmn: "B",
+                    key_column: "A",
                     attr_oc: "QIFdMRrb22m",
 
                     agg_des: [
