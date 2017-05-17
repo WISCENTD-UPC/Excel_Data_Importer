@@ -351,7 +351,7 @@ function processExcelSheet()
 							eventDataValue.dataValues = [];
 							var columnOfData = 3;
 
-							for( var x=0; x<sheet.event_des_length; x++ )
+							for( var x=0; x<sheet.event_des.length; x++ )
 							{
 								var dv = {};
 								var ds = sheet.event_des[x];
