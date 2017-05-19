@@ -197,6 +197,40 @@ var data_ntd =
                     ]
                 }
             ]
-        }
+        },
+        {
+            name: "South Sudan Monthly template",
+            file:"SOUTH_SUDAN_KA_TREATMENT_MONTHLY_SUMMARY.xlsx",
+            sheets: [
+                {
+                    sheet_type: "MULTIPLE_PERIODS_AND_FACILITIES",
+                    sheet_no: 1,
+                    sheet_list : [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35],
+                    period_data_by : "columns",
+                    year : "A3",
+                    ou : "L1",
+                    dataElementIdScheme: "Code",
+                    period_dim_1 : ["B","C","D","E","F","G","H","I","J","K","L","M"],
+                    period_dim_2 : 3,
+                    data_des: [
+                        {de_code: "VL_EPI_Type", cocuid:"psVSPLclyFj", dim: "5"}, // New
+                        {de_code: "VL_EPI_Type", cocuid:"KPn9RHNrd8R", dim: "6"}, // Relapse
+                        {de_code: "PKDL_GEN_EPID_cases", cocuid:"Xr12mI7VPn3", dim: "7"}, // PKDL
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"kT60pxOR9DT", dim: "12"}, // Drug unspecified, New, Initial Cure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"IDinKF2U3Ck", dim: "13"}, // Drug unspecified, New, Failure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"TaxNA8fHbey", dim: "14"}, // Drug unspecified, New, Death
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"ukcVceryxyL", dim: "17"}, // Drug unspecified, Relapse, Initial Cure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"KpStyHyHmxT", dim: "18"}, // Drug unspecified, Relapse, Failure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"WSeGCvVl5vq", dim: "19"}, // Drug unspecified, Relapse, Death
+                        {de_code: "VL_EPI_Gender-Type", cocuid:"aWWYWv6buzp", dim: "33"}, // Type unspecified, Male
+                        {de_code: "VL_EPI_Gender-Type", cocuid:"wGED4K5Bs37", dim: "34"}, // Type unspecified, Female
+                        {de_code: "VL_EPI_Age-Type", cocuid:"rZwYGlqR8GG", dim: "36"}, // Type unspecified, Under 5y
+                        {de_code: "VL_EPI_Age-Type", cocuid:"P6R9XEaqQbz", dim: "37"}, // Type unspecified, 5 to 14 y
+                        {de_code: "VL_EPI_Age-Type", cocuid:"UQMTeRPY2U0", dim: "38"} // Type unspecified, 15 y and over
+                    
+                    ]
+                }
+            ]
+        },
     ]
 }

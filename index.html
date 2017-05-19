@@ -86,7 +86,7 @@
 				<div class="action-buttons">
 					<div id="uploadLogo" title="Upload data sheets"></div>
 					<a id="downloadLogo" title="Download a sample template" download> </a>
-					<input type="file" id="uploadFile"  name="uploadFile" style="display:none" accept=".xlsx" multiple />					
+					<input type="file" id="uploadFile"  name="uploadFile" style="display:none" accept=".xlsx, .xls" multiple />					
 				</div>
 				
 				<div id="helpText">
@@ -218,7 +218,7 @@
 					currentFileName = currentFile.name;
 					console.log( "**************************** "+currentFile.name+" **************" );
 					 
-					if( extension == "xlsx" )
+					if( extension == "xlsx" || extension == "xls")
 					{
 						currentFileNum++;
 						handleFile(currentFile);

@@ -28,6 +28,22 @@ var isEventDataAvaialble = false;
 var isAggDataAvailable = false;
 var excelHeaders = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK", "AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT", "AU", "AV", "AW", "AX", "AY", "AZ", "BA", "BB", "BC", "BD", "BE", "BF", "BG", "BH"]
 
+var months = [];
+	months["jan"] = "01";
+	months["feb"] = "02";
+	months["mar"] = "03";
+	months["apr"] = "04";
+	months["may"] = "05";
+	months["jun"] = "06";
+	months["jul"] = "07";
+	months["aug"] = "08";
+	months["sep"] = "09";
+	months["oct"] = "10";
+	months["nov"] = "11";
+	months["dec"] = "12";
+
+
+
 $(document).ready(function(){
 	try
 	{
@@ -368,6 +384,52 @@ function processExcelSheet()
 					}
 				}
 
+				if (sheet.sheet_type == "MULTIPLE_PERIODS_AND_FACILITIES")
+				{
+					console.log("MULTIPLE_PERIODS_AND_FACILITIES type");
+					isAggDataAvailable = true;
+					dataElementIdScheme = sheet.dataElementIdScheme;
+
+					// for each sheet in the list
+					for (var s = 0; s < sheet.sheet_list.length; s++){
+					//	console.log(sheet);
+						var sheet_no =  sheet.sheet_list[s];
+					//	console.log("Sheet no " + sheet_no);
+
+
+						var year = getCellData(sheet_no, sheet.year);
+						var orgUnit = getCellData(sheet_no, sheet.ou);
+						var period ;
+						var dataValue;
+						var col;
+						
+						// for each month
+						for (var i = 0; i<sheet.period_dim_1.length; i++){
+							col = sheet.period_dim_1[i];
+							period = year + months[getCellData(sheet_no, col + sheet.period_dim_2).toLowerCase()];
+						//	console.log("period" + period);
+
+							// localize and get each dataElement-category
+							for( var x=0; x<sheet.data_des.length; x++ )
+							{
+								var ds = sheet.data_des[x];
+								dataValue = {};
+								
+								dataValue.period = period;
+								dataValue.dataElement = ds.de_code;
+								dataValue.categoryOptionCombo = ds.cocuid;
+								dataValue.orgUnit = orgUnit;
+								dataValue.value = getCellData(sheet_no, col + ds.dim );
+								
+								//console.log(dataValue);
+								
+								dataValues.push(dataValue);
+							}
+						}
+					}
+					console.log(dataValues);
+				}
+
 			}
 		}
 	}
@@ -411,7 +473,10 @@ function getLastRowNumber(sheetNum)
 		return 2000;	
 }
 
-//Function to get data with the cell address
+/* Returns the data in the cell address of the target sheet
+	sheetNum : the sheet number of the woorkbook (starting at 1)
+	address : the cell number in text. i.e. A12
+*/
 function getCellData( sheetNum, address )
 {
 	var val = "";
@@ -774,20 +839,7 @@ function printSummary()
 
 function formatDate(date)
 {
-	var months = [];
-	months["jan"] = "01";
-	months["feb"] = "02";
-	months["mar"] = "03";
-	months["apr"] = "04";
-	months["may"] = "05";
-	months["jun"] = "06";
-	months["jul"] = "07";
-	months["aug"] = "08";
-	months["sep"] = "09";
-	months["oct"] = "10";
-	months["nov"] = "11";
-	months["dec"] = "12";
-	
+
 	var components = date.split("/");
 	if( components.length != 3 )
 		return null;

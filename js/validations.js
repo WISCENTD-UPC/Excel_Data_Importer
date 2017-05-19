@@ -127,7 +127,8 @@ function validateJSON(templates)
 					result.isValidated = false;
 					result.msg += "</br>" + "'agg_des' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
 				}
-				else if(!(sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == "EVENTS" || sheet.sheet_type == "AGGREGATE_STATIC" || sheet.sheet_type == "MULTIPLE_DE_OU_PE" ))
+				else if(!(sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == "EVENTS" || sheet.sheet_type == "AGGREGATE_STATIC" 
+							|| sheet.sheet_type == "MULTIPLE_DE_OU_PE" || sheet.sheet_type == "MULTIPLE_PERIODS_AND_FACILITIES" ))
 				{
 					result.isValidated = false;
 					result.msg += "</br>" + "'sheet_type' can be either 'AGGREGATE_EVENT' or 'AGGREGATE_STATIC' for sheet object-" + (x+1) + " of template : " + (t+1);
@@ -173,6 +174,10 @@ function validateJSON(templates)
 					result.isValidated = false;
 					result.msg += "</br>" + "'year_cell' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
 				}
+			}
+			else if( sheet.sheet_type == "MULTIPLE_PERIODS_AND_FACILITIES" )
+			{
+
 			}
 		}
 	}
