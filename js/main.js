@@ -16,9 +16,9 @@ var eventDataValues = [];
 var errorString = "";
 var hasErrors = false;
 
-var orgUnitIdScheme = "UID";
-var dataElementIdScheme = "UID";
-var idScheme = "UID";
+var orgUnitIdScheme = ORG_UID_SCHEME;
+var dataElementIdScheme = ORG_UID_SCHEME;
+var idScheme = ORG_UID_SCHEME;
 
 var preImportValidationSummary = [];
 var importSummary = [];
@@ -151,9 +151,9 @@ function changeOUScheme()
 	var ous = $("#ousSelectBox").val();
 	
 	if( ous == 1 )
-		orgUnitIdScheme = "UID";
+		orgUnitIdScheme = ORG_UID_SCHEME;
 	else
-		orgUnitIdScheme = "Code";
+		orgUnitIdScheme = ORG_CODE_SCHEME;
 	
 	//alert(orgUnitIdScheme);
 }
@@ -170,14 +170,24 @@ function processExcelSheet()
 
 	console.log("before for processExcelSheet");
 	//ResultArray is defined and populated in funcxl.js
-	for( var t = 0; t<templateObject.sheets.length; t++ )
+
+	var length, modelSelector;
+	if (templateObject.sheet_mode == SAME_MODEL_SHEETS){
+		length = resultArray.length;
+		modelSelector = 0;
+	} else {
+		length = templateObject.sheets.length;
+		modelSelector = 1;
+	}
+
+	for( var t = 0; t<length; t++ )
 	{
 		console.log("one sheet");
 		$("#loaderMsg").html("Fetching data from the sheets...");
 		
 		if( !hasErrors )
 		{
-			var sheet = templateObject.sheets[t];
+			var sheet = templateObject.sheets[t * modelSelector]; //TODO: Any other ideas ? 
 			
 			if( sheet.sheet_no > resultArray.length )
 			{
@@ -218,7 +228,7 @@ function processExcelSheet()
 					}
 				}
 				
-				if( sheet.sheet_type == "MULTIPLE_DE_OU_PE" )
+				if( sheet.sheet_type == MULTIPLE_DE_OU_PE )
 				{
 					isAggDataAvailable = true;
 					
@@ -341,7 +351,7 @@ function processExcelSheet()
 					}
 				}
 
-				if (sheet.sheet_type == "EVENTS")
+				if (sheet.sheet_type == EVENTS)
 				{
 					console.log("Events type");
 					eventDataValues.events = [];
@@ -384,30 +394,31 @@ function processExcelSheet()
 					}
 				}
 
-				if (sheet.sheet_type == "MULTIPLE_PERIODS_AND_FACILITIES")
+				if (sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES)
 				{
-					console.log("MULTIPLE_PERIODS_AND_FACILITIES type");
+					console.log(MULTIPLE_PERIODS_AND_FACILITIES+" type");
 					isAggDataAvailable = true;
 					dataElementIdScheme = sheet.dataElementIdScheme;
 
 					// for each sheet in the list
-					for (var s = 0; s < sheet.sheet_list.length; s++){
-					//	console.log(sheet);
-						var sheet_no =  sheet.sheet_list[s];
-					//	console.log("Sheet no " + sheet_no);
+					var sheet_no =  t+1;
+					var orgUnit = getCellData(sheet_no, sheet.ou);
 
-
+				
+					if(orgUnit!==""){
+						console.log("Hoja numero " + t);
+						
 						var year = getCellData(sheet_no, sheet.year);
-						var orgUnit = getCellData(sheet_no, sheet.ou);
+						
 						var period ;
 						var dataValue;
-						var col;
 						
 						// for each month
-						for (var i = 0; i<sheet.period_dim_1.length; i++){
-							col = sheet.period_dim_1[i];
-							period = year + months[getCellData(sheet_no, col + sheet.period_dim_2).toLowerCase()];
-						//	console.log("period" + period);
+						var dim1 =  sheet.period_dim_1_first;
+						for (var i = 0; i<sheet.period_dim_1_length; i++){
+							period = year + getPeriodNumber(sheet.period_type, sheet_no, dim1, sheet.period_dim_2);
+						 	console.log("Dim1: "+dim1+"  - dim2 : "+sheet.period_dim_2);
+							console.log("period" + period);
 
 							// localize and get each dataElement-category
 							for( var x=0; x<sheet.data_des.length; x++ )
@@ -419,12 +430,13 @@ function processExcelSheet()
 								dataValue.dataElement = ds.de_code;
 								dataValue.categoryOptionCombo = ds.cocuid;
 								dataValue.orgUnit = orgUnit;
-								dataValue.value = getCellData(sheet_no, col + ds.dim );
+								dataValue.value = getCellDataRC(sheet_no, dim1, ds.dim );
 								
 								//console.log(dataValue);
 								
 								dataValues.push(dataValue);
 							}
+							dim1 =  nextDim(dim1);
 						}
 					}
 					console.log(dataValues);
@@ -460,6 +472,61 @@ function processExcelSheet()
 		
 }
 
+
+/***************************************************************************************************
+ *******************************         AUXILIARY FUNCTIONS        ********************************
+ ***************************************************************************************************/
+
+
+
+function getPeriodNumber(period_type, sheet_no, dim1, dim2){
+	var period = getCellDataRC(sheet_no, dim1, dim2);
+	if(period_type === WEEKLY_PERIOD){
+		return "W" + (period < 10 ? '0' : '');
+
+	} else if(period_type === MONTHLY_PERIOD){
+		return months[period.toLowerCase()];
+
+	}
+}
+/**
+ * returns dim+1 if number or next letter if string (AZ -> BA)
+ * dim : either a string or a number
+ */
+function nextDim (dim){
+	if (isNaN(dim)){
+		return nextLetter(dim);
+	} else {
+		return dim+1;
+	}
+
+}
+
+/**
+ * Return next letter. A->B, AB->AC, Z->AA
+ * @param {string} key a string [a-zA-Z]+
+ */
+
+function nextLetter (key) {
+  if (key === 'Z' || key === 'z') {
+    return String.fromCharCode(key.charCodeAt() - 25) + String.fromCharCode(key.charCodeAt() - 25); // AA or aa
+  } else {
+    var lastChar = key.slice(-1);
+    var sub = key.slice(0, -1);
+    if (lastChar === 'Z' || lastChar === 'z') {
+      // If a string of length > 1 ends in Z/z,
+      // increment the string (excluding the last Z/z) recursively,
+      // and append A/a (depending on casing) to it
+      return nextLetter(sub) + String.fromCharCode(lastChar.charCodeAt() - 25);
+    } else {
+      // (take till last char) append with (increment last char)
+      return sub + String.fromCharCode(lastChar.charCodeAt() + 1);
+    }
+  }
+  return key;
+};
+
+
 //function to get the row number of the last row in a sheet
 function getLastRowNumber(sheetNum)
 {
@@ -471,6 +538,22 @@ function getLastRowNumber(sheetNum)
 		return sheetEndRows[sheetNum-1];
 	else
 		return 2000;	
+}
+
+/**
+ * Calls getCellData. Use it when you dont know which of the dims is the column and the row.
+ * @param {*} sheetNum 
+ * @param {string/Number} dim1 One of the dimension (row or column)
+ * @param {string/Number} dim2 One of the dimension (row or column)
+ */
+function getCellDataRC( sheetNum, dim1, dim2 )
+{
+	if (Number.isNaN(dim1)){
+		return getCellData(sheetNum, dim1 + dim2);
+	} else {
+		return getCellData(sheetNum, dim2 + dim1);
+	}
+
 }
 
 /* Returns the data in the cell address of the target sheet

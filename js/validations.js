@@ -90,13 +90,19 @@ function validateJSON(templates)
 		if(!currentTemplate.hasOwnProperty("name"))
 		{
 			result.isValidated = false;
-			result.msg += "</br>" + "Name is not provided for template : " + (t+1);
+			result.msg += "</br>" + "Name (name) is not provided for template : " + (t+1);
 		}
 		
 		if(!currentTemplate.hasOwnProperty("file"))
 		{
 			result.isValidated = false;
-			result.msg += "</br>" + "File path is not provided for template : " + (t+1);
+			result.msg += "</br>" + "File path (file) is not provided for template : " + (t+1);
+		}
+		
+		if(!currentTemplate.hasOwnProperty("sheet_mode"))
+		{
+			result.isValidated = false;
+			result.msg += "</br>" + "Sheet_mode (sheet_mode) is not provided for template : " + (t+1);
 		}
 			
 		for(var x=0; x<currentTemplate.sheets.length; x++)
@@ -122,13 +128,13 @@ function validateJSON(templates)
 					result.isValidated = false;
 					result.msg += "</br>" + "'event_des' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
 				}
-				else if((sheet.sheet_type == "AGGREGATE_STATIC" || sheet.sheet_type == "MULTIPLE_DE_OU_PE") && !sheet.hasOwnProperty("agg_des"))
+				else if((sheet.sheet_type == "AGGREGATE_STATIC" || sheet.sheet_type == MULTIPLE_DE_OU_PE) && !sheet.hasOwnProperty("agg_des"))
 				{
 					result.isValidated = false;
 					result.msg += "</br>" + "'agg_des' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
 				}
-				else if(!(sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == "EVENTS" || sheet.sheet_type == "AGGREGATE_STATIC" 
-							|| sheet.sheet_type == "MULTIPLE_DE_OU_PE" || sheet.sheet_type == "MULTIPLE_PERIODS_AND_FACILITIES" ))
+				else if(!(sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == EVENTS || sheet.sheet_type == "AGGREGATE_STATIC" 
+							|| sheet.sheet_type == MULTIPLE_DE_OU_PE || sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES ))
 				{
 					result.isValidated = false;
 					result.msg += "</br>" + "'sheet_type' can be either 'AGGREGATE_EVENT' or 'AGGREGATE_STATIC' for sheet object-" + (x+1) + " of template : " + (t+1);
@@ -155,7 +161,7 @@ function validateJSON(templates)
 					result.msg += "</br>" + "'year_cell' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
 				}
 			}
-			else if( sheet.sheet_type == "MULTIPLE_DE_OU_PE" )
+			else if( sheet.sheet_type == MULTIPLE_DE_OU_PE )
 			{
 				if(!sheet.hasOwnProperty("oucode_col"))
 				{
@@ -175,8 +181,47 @@ function validateJSON(templates)
 					result.msg += "</br>" + "'year_cell' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
 				}
 			}
-			else if( sheet.sheet_type == "MULTIPLE_PERIODS_AND_FACILITIES" )
+			else if( sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES )
 			{
+				if(!sheet.hasOwnProperty("period_type"))
+				{
+					result.isValidated = false;
+					result.msg += "</br>" + "'period_type' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
+				}
+				
+				if(!sheet.hasOwnProperty("year"))
+				{
+					result.isValidated = false;
+					result.msg += "</br>" + "'year' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
+				}
+				
+				if(!sheet.hasOwnProperty("ou"))
+				{
+					result.isValidated = false;
+					result.msg += "</br>" + "'ou' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
+				}
+				
+				if(!sheet.hasOwnProperty("period_dim_1_first"))
+				{
+					result.isValidated = false;
+					result.msg += "</br>" + "'period_dim_1_first' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
+				}				
+				if(!sheet.hasOwnProperty("period_dim_1_length"))
+				{
+					result.isValidated = false;
+					result.msg += "</br>" + "'period_dim_1_length' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
+				}				
+				if(!sheet.hasOwnProperty("period_dim_2"))
+				{
+					result.isValidated = false;
+					result.msg += "</br>" + "'period_dim_2' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
+				}				
+				if(!sheet.hasOwnProperty("data_des"))
+				{
+					result.isValidated = false;
+					result.msg += "</br>" + "'data_des' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
+				}
+
 
 			}
 		}
