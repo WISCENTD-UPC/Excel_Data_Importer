@@ -69,7 +69,7 @@ $(document).ready(function(){
 			for( var t = 0; t<templateObject.sheets.length; t++ )
 			{
 				var sheet = templateObject.sheets[t];
-				console.log(sheet.sheet_type);
+				//console.log(sheet.sheet_type);
 				try
 				{
 					sheetEndColumns.push( sheet.last_data_column );				
@@ -396,7 +396,7 @@ function processExcelSheet()
 
 				if (sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES)
 				{
-					console.log(MULTIPLE_PERIODS_AND_FACILITIES+" type");
+					//console.log(MULTIPLE_PERIODS_AND_FACILITIES+" type");
 					isAggDataAvailable = true;
 					dataElementIdScheme = sheet.dataElementIdScheme;
 
@@ -406,7 +406,7 @@ function processExcelSheet()
 
 				
 					if(orgUnit!==""){
-						console.log("Hoja numero " + t);
+						//console.log("Hoja numero " + t);
 						
 						var year = getCellData(sheet_no, sheet.year);
 						
@@ -417,8 +417,8 @@ function processExcelSheet()
 						var dim1 =  sheet.period_dim_1_first;
 						for (var i = 0; i<sheet.period_dim_1_length; i++){
 							period = year + getPeriodNumber(sheet.period_type, sheet_no, dim1, sheet.period_dim_2);
-						 	console.log("Dim1: "+dim1+"  - dim2 : "+sheet.period_dim_2);
-							console.log("period" + period);
+						 	//console.log("Dim1: "+dim1+"  - dim2 : "+sheet.period_dim_2);
+							//console.log("period" + period);
 
 							// localize and get each dataElement-category
 							for( var x=0; x<sheet.data_des.length; x++ )
@@ -439,7 +439,7 @@ function processExcelSheet()
 							dim1 =  nextDim(dim1);
 						}
 					}
-					console.log(dataValues);
+					//console.log(dataValues);
 				}
 
 			}
@@ -482,7 +482,7 @@ function processExcelSheet()
 function getPeriodNumber(period_type, sheet_no, dim1, dim2){
 	var period = getCellDataRC(sheet_no, dim1, dim2);
 	if(period_type === WEEKLY_PERIOD){
-		return "W" + (period < 10 ? '0' : '');
+		return "W" + (period < 10 ? '0' : '') + period;
 
 	} else if(period_type === MONTHLY_PERIOD){
 		return months[period.toLowerCase()];
@@ -548,7 +548,7 @@ function getLastRowNumber(sheetNum)
  */
 function getCellDataRC( sheetNum, dim1, dim2 )
 {
-	if (Number.isNaN(dim1)){
+	if (isNaN(dim1)){
 		return getCellData(sheetNum, dim1 + dim2);
 	} else {
 		return getCellData(sheetNum, dim2 + dim1);

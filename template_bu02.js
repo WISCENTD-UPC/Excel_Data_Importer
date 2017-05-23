@@ -223,12 +223,12 @@ var data_ntd =
                         {de_code: "VL_EPI_Type", cocuid:"KPn9RHNrd8R", dim: "6"}, // Relapse
                         {de_code: "PKDL_GEN_EPID_cases", cocuid:"Xr12mI7VPn3", dim: "7"}, // PKDL
                         {de_code: "VL_LAB_HIVstatus_Type", cocuid:"YXktM46YiXo", dim: "8"}, // Type unspecified, Positive
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"kT60pxOR9DT", dim: "12"}, // Drug unspecified, New, Initial Cure
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"IDinKF2U3Ck", dim: "13"}, // Drug unspecified, New, Failure
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"TaxNA8fHbey", dim: "14"}, // Drug unspecified, New, Death
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"ukcVceryxyL", dim: "17"}, // Drug unspecified, Relapse, Initial Cure
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"KpStyHyHmxT", dim: "18"}, // Drug unspecified, Relapse, Failure
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"WSeGCvVl5vq", dim: "19"}, // Drug unspecified, Relapse, Death
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"kT60pxOR9DT", dim: "12"}, // Drug unspecified, New, Initial Cure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"IDinKF2U3Ck", dim: "13"}, // Drug unspecified, New, Failure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"TaxNA8fHbey", dim: "14"}, // Drug unspecified, New, Death
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"ukcVceryxyL", dim: "17"}, // Drug unspecified, Relapse, Initial Cure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"KpStyHyHmxT", dim: "18"}, // Drug unspecified, Relapse, Failure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"WSeGCvVl5vq", dim: "19"}, // Drug unspecified, Relapse, Death
                         {de_code: "VL_EPI_Gender-Type", cocuid:"aWWYWv6buzp", dim: "33"}, // Type unspecified, Male
                         {de_code: "VL_EPI_Gender-Type", cocuid:"wGED4K5Bs37", dim: "34"}, // Type unspecified, Female
                         {de_code: "VL_EPI_Age-Type", cocuid:"rZwYGlqR8GG", dim: "36"}, // Type unspecified, Under 5y
@@ -258,10 +258,10 @@ var data_ntd =
                         {de_code: "VL_EPI_Type", cocuid:"psVSPLclyFj", dim: "D"}, // New
                         {de_code: "VL_EPI_Type", cocuid:"KPn9RHNrd8R", dim: "F"}, // Relapse
                         {de_code: "PKDL_GEN_EPID_cases", cocuid:"Xr12mI7VPn3", dim: "E"}, // PKDL
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"LAkANoW73LV", dim: "L"}, // Drug unspecified, Type unspecified, Initial Cure
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"IDinKF2U3Ck", dim: "P"}, // Drug unspecified, New, Failure
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"tpW0Oiuo0Sh", dim: "M"}, // Drug unspecified, Type unspecified, Death
-                        {de_code: "VL_INIT_OUTCOME_Drug_Type", cocuid:"KpStyHyHmxT", dim: "O"}, // Drug unspecified, Relapse, Failure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"LAkANoW73LV", dim: "L"}, // Drug unspecified, Type unspecified, Initial Cure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"IDinKF2U3Ck", dim: "N"}, // Drug unspecified, New, Failure
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"tpW0Oiuo0Sh", dim: "M"}, // Drug unspecified, Type unspecified, Death
+                        {de_code: "VL_INIT_ITxO_Drug_Type", cocuid:"KpStyHyHmxT", dim: "O"}, // Drug unspecified, Relapse, Failure
                         {de_code: "VL_EPI_Gender-Type", cocuid:"aWWYWv6buzp", dim: "G"}, // Type unspecified, Male
                         {de_code: "VL_EPI_Gender-Type", cocuid:"wGED4K5Bs37", dim: "H"}, // Type unspecified, Female
                         {de_code: "VL_EPI_Age-Type", cocuid:"rZwYGlqR8GG", dim: "I"}, // Type unspecified, Under 5y
