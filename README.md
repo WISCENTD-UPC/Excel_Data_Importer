@@ -1,15 +1,8 @@
-###NTD APP for Excel files Import
 # Project Name
-
-TODO: Write a project description
-
-## Installation
-
-TODO: Describe the installation process
-
+DHIS2 APP for Data import from Excel files
 ## Usage
 
-TODO: Write usage instructions
+Follow our wiki for a better understanding on how to customize the app to be able to read any kind and schema of Excel file.
 
 ## Contributing
 
@@ -19,14 +12,8 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
 
 ## Credits
 
-TODO: Write credits
-
-## License
-
-TODO: Write license
+World Health Organization: Intensive and Innovative Disease Management Unit
+Neglected Tropical Diseases department
