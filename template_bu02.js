@@ -205,7 +205,7 @@ var data_ntd =
         },
         {
             name: "South Sudan Monthly template",
-            file:"SOUTH_SUDAN_KA_TREATMENT_MONTHLY_SUMMARY.xlsx",
+            file:"VL_MONTHLY.xls",
             sheet_mode : SAME_MODEL_SHEETS,
             sheets: [
                 {
@@ -241,7 +241,7 @@ var data_ntd =
         },
         {
             name: "South Sudan Weekly template",
-            file:"SOUTH_SUDAN_KA_TREATMENT_WEEKLY_SUMMARY.xlsx",
+            file:"VL_WEEKLY.xls",
             sheet_mode : SAME_MODEL_SHEETS,
             sheets: [
                 {
