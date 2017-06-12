@@ -141,13 +141,16 @@ var data_ntd =
                     orgUnitIdScheme: ORG_CODE_SCHEME,
                     dataElementIdScheme: ORG_UID_SCHEME,
                     idScheme: ORG_UID_SCHEME,
-                    oucode_col: "B",
+		    period_type: "YEARLY",
+		    mode: "SINGLE_OU",
+                    oucode_col: "B3",
                     month_col: "A",
                     year_col: "A",
                     data_starting_row: 11,
                     data_ending_row: 13,
                     last_data_column: "M",
                     key_column: "A",
+		    last_row_indicator: "-",
                     attr_oc: "QIFdMRrb22m",
 
                     agg_des: [

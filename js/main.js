@@ -237,7 +237,7 @@ function processExcelSheet()
 					var found = false;
 					for (var lastRow = rowEnd; lastRow >= rowStart && !found; lastRow--) {
 						console.log(sheet.key_column + getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow));
-						if (getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow) == "-") {
+						if (getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow) == sheet.last_row_indicator ) {
 							rowEnd = lastRow - 1;
 							found = true;
 						}
@@ -260,6 +260,17 @@ function processExcelSheet()
 								var ds = sheet.agg_des[x];
 								var dataValue = {};
 								var dMonth = "";
+								if (sheet.period_type == "YEARLY") {
+									var dYear = getCellData(sheet.sheet_no, sheet.year_col + "" + r);
+									dataValue.period = dYear;
+								} else if (sheet.period_type == "MONTHLY") {
+									var dYear = getCellData(sheet.sheet_no, sheet.year_col + "" + r);
+									var dMonth = getCellData(sheet.sheet_no, sheet.month_col + "" + r);
+								} else if (sheet.period_type == "QUARTER") {
+									dataValue.period = getCellData(sheet.sheet_no, sheet.quarter_col + "" + r);
+								}
+
+								
 								if (sheet.month_col != "A") dMonth = getCellData( sheet.sheet_no, sheet.month_col + "" + r );
 								var dYear = getCellData( sheet.sheet_no, sheet.year_col + "" + r );
 
@@ -275,22 +286,23 @@ function processExcelSheet()
 								dataValue.dataElement = ds.deuid;
 								dataValue.categoryOptionCombo = ds.cocuid;
 								dataValue.attributeOptionCombo = sheet.attr_oc;
-								dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col + "" + 3 );
-                                var colN = ds.col_no;
-                                var array = [];
-                                array = colN.split(",");
-                                var numericalValue = 0;
-				if (array.length == 1) dataValue.value = getCellData(sheet.sheet_no, array[0] + "" + r);
-				else {
-                                	for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
-                                    		var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
-                                   		 if (factorColumnValue != "")
-                                        	numericalValue += parseInt(factorColumnValue);
-                                	}
-                                	console.log(numericalValue);
-                                	dataValue.value = numericalValue.toString();
-				}
-				dataValues.push(dataValue);
+								if (sheet.mode == "SINGLE_OU") dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col);
+								else dataValue.orgUnit = getCellData(sheet.sheet_no, sheet.oucode_col + "" + r);
+                          				        var colN = ds.col_no;
+                                				var array = [];
+                            					array = colN.split(",");
+                                				var numericalValue = 0;
+								if (array.length == 1) dataValue.value = getCellData(sheet.sheet_no, array[0] + "" + r);
+								else {
+                                					for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
+                                    						var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
+                                   		 				if (factorColumnValue != "")
+                                        					numericalValue += parseInt(factorColumnValue);
+                                					}
+                                				console.log(numericalValue);
+                                				dataValue.value = numericalValue.toString();
+								}
+								dataValues.push(dataValue);
 							}
 							//console.log(dataValue);
 						}
