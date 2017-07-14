@@ -22,6 +22,7 @@ var idScheme = ORG_UID_SCHEME;
 
 var preImportValidationSummary = [];
 var importSummary = [];
+var numberOfEvents;
 
 var isEventDataAvaialble = false;
 
@@ -237,7 +238,7 @@ function processExcelSheet()
 					var found = false;
 					for (var lastRow = rowEnd; lastRow >= rowStart && !found; lastRow--) {
 						console.log(sheet.key_column + getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow));
-						if (getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow) == sheet.last_row_indicator ) {
+						if (getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow) == "-") {
 							rowEnd = lastRow - 1;
 							found = true;
 						}
@@ -260,17 +261,6 @@ function processExcelSheet()
 								var ds = sheet.agg_des[x];
 								var dataValue = {};
 								var dMonth = "";
-								if (sheet.period_type == "YEARLY") {
-									var dYear = getCellData(sheet.sheet_no, sheet.year_col + "" + r);
-									dataValue.period = dYear;
-								} else if (sheet.period_type == "MONTHLY") {
-									var dYear = getCellData(sheet.sheet_no, sheet.year_col + "" + r);
-									var dMonth = getCellData(sheet.sheet_no, sheet.month_col + "" + r);
-								} else if (sheet.period_type == "QUARTER") {
-									dataValue.period = getCellData(sheet.sheet_no, sheet.quarter_col + "" + r);
-								}
-
-								
 								if (sheet.month_col != "A") dMonth = getCellData( sheet.sheet_no, sheet.month_col + "" + r );
 								var dYear = getCellData( sheet.sheet_no, sheet.year_col + "" + r );
 
@@ -286,23 +276,22 @@ function processExcelSheet()
 								dataValue.dataElement = ds.deuid;
 								dataValue.categoryOptionCombo = ds.cocuid;
 								dataValue.attributeOptionCombo = sheet.attr_oc;
-								if (sheet.mode == "SINGLE_OU") dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col);
-								else dataValue.orgUnit = getCellData(sheet.sheet_no, sheet.oucode_col + "" + r);
-                          				        var colN = ds.col_no;
-                                				var array = [];
-                            					array = colN.split(",");
-                                				var numericalValue = 0;
-								if (array.length == 1) dataValue.value = getCellData(sheet.sheet_no, array[0] + "" + r);
-								else {
-                                					for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
-                                    						var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
-                                   		 				if (factorColumnValue != "")
-                                        					numericalValue += parseInt(factorColumnValue);
-                                					}
-                                				console.log(numericalValue);
-                                				dataValue.value = numericalValue.toString();
-								}
-								dataValues.push(dataValue);
+								dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col + "" + 3 );
+                                var colN = ds.col_no;
+                                var array = [];
+                                array = colN.split(",");
+                                var numericalValue = 0;
+				if (array.length == 1) dataValue.value = getCellData(sheet.sheet_no, array[0] + "" + r);
+				else {
+                                	for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
+                                    		var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
+                                   		 if (factorColumnValue != "")
+                                        	numericalValue += parseInt(factorColumnValue);
+                                	}
+                                	console.log(numericalValue);
+                                	dataValue.value = numericalValue.toString();
+				}
+				dataValues.push(dataValue);
 							}
 							//console.log(dataValue);
 						}
@@ -376,6 +365,7 @@ function processExcelSheet()
 
 
 					//Event rows
+					numberOfEvents = 0;
 					for( var r = rowStart; r<=rowEnd; r++ )
 					{
 						console.log("One row");
@@ -387,20 +377,24 @@ function processExcelSheet()
 							eventDataValue.eventDate = getCellData( sheet.sheet_no, sheet.event_date_col + "" + r );
 							//eventDataValue.orgUnitIdScheme = orgUnitIdScheme;
 							eventDataValue.dataValues = [];
-							var columnOfData = 3;
+							var columnOfData = parseInt(sheet.data_starting_col);
 
-							for( var x=0; x<sheet.event_des.length; x++ )
+							for( var x=0; x<sheet.event_des_length; x++ )
 							{
 								var dv = {};
 								var ds = sheet.event_des[x];
-                                var columnOfDataString = excelHeaders[columnOfData]
+                                              			var columnOfDataString = getColumnName(columnOfData);
+								console.log(columnOfData);
+								console.log(columnOfDataString);
+								console.log("Onecolumn");
 								dv.dataElement = getCellData( sheet.sheet_no, columnOfDataString + "" + 1 );
 								//dv.categoryOptionCombo = ds.cocuid;
 								dv.value = getCellData( sheet.sheet_no, columnOfDataString + "" + r );
 								eventDataValue.dataValues.push(dv);
-                                ++columnOfData;
+                                				++columnOfData;
 							}
 							//console.log(eventDataValue);
+							++numberOfEvents;
 							eventDataValues.events.push(eventDataValue);
 						}
 					}
@@ -550,7 +544,22 @@ function getLastRowNumber(sheetNum)
 		return sheetEndRows[sheetNum-1];
 	else
 		return 2000;	
-}
+};
+
+function getColumnName(num) {
+  for (var ret = '', a = 1, b = 26; (num -= a) >= 0; a = b, b *= 26) {
+    ret = String.fromCharCode(parseInt((num % b) / a) + 65) + ret;
+  }
+  return ret;
+};
+
+chr = function (codePt) {
+        if (codePt > 0xFFFF) { 
+            codePt -= 0x10000;
+            return String.fromCharCode(0xD800 + (codePt >> 10), 0xDC00 + (codePt & 0x3FF));
+        }
+        return String.fromCharCode(codePt);
+    }
 
 /**
  * Calls getCellData. Use it when you dont know which of the dims is the column and the row.
@@ -635,15 +644,7 @@ function importEventData()
 			isum.status = res.status;
 			isum.message = res.message;
 			
-			var imEventCount = "";
-			try
-			{
-				imEventCount = res.response.importSummaries.length;
-			}
-			catch(ex)
-			{
-				imEventCount = "Couldn't fetch";
-			}
+			var imEventCount = numberOfEvents;
 			
 			isum.summary = "<b>Imported Events:</b>" + imEventCount + ", <b>Imported Fields:</b>" + res.response.imported + ", <b>Not Imported Fields:</b>" + res.response.ignored;
 			importSummary.push(isum);
@@ -652,6 +653,7 @@ function importEventData()
 			try
 			{
 				console.log("Event data import response");
+				console.log(request);
 				var response = request.responseJSON.response;
 				console.log(response);
 				
@@ -662,16 +664,12 @@ function importEventData()
 				isum.status = "Error";
 				isum.message = "";
 				
-				for( var c=0; c<response.importSummaries.length; c++ )
-				{
-					isum.message += "<tr><td></td><td>" + response.importSummaries[c].description + "</td></tr>";
-				}
-				
-				isum.summary = request.responseJSON.message;
+				isum.summary = isum.summary = "<b>Imported Events:</b>" + numberOfEvents;
 				importSummary.push(isum);
 			}
 			catch(ex)
 			{
+				console.log(ex);
 				console.log("Something went wrong while fetching event import error summary");
 			}
 			

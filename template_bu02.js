@@ -98,6 +98,48 @@ var data_ntd =
                 }
             ]
         },
+	{
+            name: "Kenya VL case management form",
+            file:"VL_case_form_template.xlsx",
+            sheet_mode : DIFFERENT_MODEL_SHEETS,
+            sheets: [
+                {
+                    sheet_type: EVENTS,
+                    sheet_no: 1,
+                    data_starting_row : "6",
+		    data_starting_col : "7",
+		    data_ending_row : "99",
+                    key_column : "B",
+                    ou_col : "E",
+                    program : "uYKG1KOUIy1",
+                    event_date_col: "F", //should be a letter
+                    event_des_length : 93,
+
+                    event_des: []
+                }
+            ]
+        },
+	{
+            name: "Kenya VL laboratory log",
+            file:"VL_lab_log.xlsx",
+            sheet_mode : DIFFERENT_MODEL_SHEETS,
+            sheets: [
+                {
+                    sheet_type: EVENTS,
+                    sheet_no: 1,
+                    data_starting_row : "6",
+		    data_starting_col : "8",
+		    data_ending_row : "",
+                    key_column : "B",
+                    ou_col : "F",
+                    program : "h1KVXwrpKKf",
+                    event_date_col: "G", //should be a letter
+                    event_des_length : 10,
+
+                    event_des: []
+                }
+            ]
+        },
         {
             name: "HAT sentinel sites",
             file:"HAT_template.xlsx",
@@ -141,16 +183,13 @@ var data_ntd =
                     orgUnitIdScheme: ORG_CODE_SCHEME,
                     dataElementIdScheme: ORG_UID_SCHEME,
                     idScheme: ORG_UID_SCHEME,
-		    period_type: "YEARLY",
-		    mode: "SINGLE_OU",
-                    oucode_col: "B3",
+                    oucode_col: "B",
                     month_col: "A",
                     year_col: "A",
                     data_starting_row: 11,
                     data_ending_row: 13,
                     last_data_column: "M",
                     key_column: "A",
-		    last_row_indicator: "-",
                     attr_oc: "QIFdMRrb22m",
 
                     agg_des: [
@@ -208,7 +247,7 @@ var data_ntd =
         },
         {
             name: "South Sudan Monthly template",
-            file:"VL_MONTHLY.xls",
+            file:"SOUTH_SUDAN_KA_TREATMENT_MONTHLY_SUMMARY.xlsx",
             sheet_mode : SAME_MODEL_SHEETS,
             sheets: [
                 {
@@ -244,7 +283,7 @@ var data_ntd =
         },
         {
             name: "South Sudan Weekly template",
-            file:"VL_WEEKLY.xls",
+            file:"SOUTH_SUDAN_KA_TREATMENT_WEEKLY_SUMMARY.xlsx",
             sheet_mode : SAME_MODEL_SHEETS,
             sheets: [
                 {
