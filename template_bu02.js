@@ -107,9 +107,9 @@ var data_ntd =
                     sheet_type: EVENTS,
                     sheet_no: 1,
                     data_starting_row : "6",
-		    data_starting_col : "7",
-		    data_ending_row : "99",
-                    key_column : "B",
+		            data_starting_col : "7",
+		            data_ending_row : "99",
+                    key_column : "E",       // Health faciltiy
                     ou_col : "E",
                     program : "uYKG1KOUIy1",
                     event_date_col: "F", //should be a letter
@@ -128,12 +128,12 @@ var data_ntd =
                     sheet_type: EVENTS,
                     sheet_no: 1,
                     data_starting_row : "6",
-		    data_starting_col : "8",
-		    data_ending_row : "",
-                    key_column : "B",
+		            data_starting_col : "8",
+		            data_ending_row : "",
+                    key_column : "F",       // Health faciltiy code
                     ou_col : "F",
                     program : "h1KVXwrpKKf",
-                    event_date_col: "G", //should be a letter
+                    event_date_col: "G",    //should be a letter
                     event_des_length : 10,
 
                     event_des: []
