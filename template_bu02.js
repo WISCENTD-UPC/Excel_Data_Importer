@@ -62,6 +62,7 @@ var data_ntd =
                     sheet_type: EVENTS,
                     sheet_no: 1,
                     data_starting_row : "5",
+		            data_starting_col : "4",
                     key_column : "B",
                     ou_col : "B",
                     program : "TFTLPseQEgi",
