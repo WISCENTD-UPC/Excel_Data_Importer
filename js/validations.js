@@ -134,7 +134,8 @@ function validateJSON(templates)
 					result.msg += "</br>" + "'agg_des' is not provided for sheet object-" + (x+1) + " of template : " + (t+1);
 				}
 				else if(!(sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == EVENTS || sheet.sheet_type == "AGGREGATE_STATIC" 
-							|| sheet.sheet_type == MULTIPLE_DE_OU_PE || sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES ))
+							|| sheet.sheet_type == MULTIPLE_DE_OU_PE || sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES
+							|| sheet.sheet_type == INDIA ))
 				{
 					result.isValidated = false;
 					result.msg += "</br>" + "'sheet_type' can be either 'AGGREGATE_EVENT' or 'AGGREGATE_STATIC' for sheet object-" + (x+1) + " of template : " + (t+1);

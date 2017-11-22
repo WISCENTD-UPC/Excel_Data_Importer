@@ -314,6 +314,36 @@ var data_ntd =
                     ]
                 }
             ]
+        },
+        {
+            name: "VL India Monthly template",
+            file:"SOUTH_SUDAN_KA_TREATMENT_WEEKLY_SUMMARY.xlsx",
+            sheet_mode : SAME_MODEL_SHEETS,
+            sheets: [
+                {
+                    sheet_type: INDIA,
+                    period_type : MONTHLY_PERIOD,
+                    year : "B2",
+//                    ou : "M6",
+                    sheet_no: 1,
+                    dataElementIdScheme: ORG_CODE_SCHEME,
+
+                    orgUnit_dim : "C",
+                    period_dim : "B",
+                    de_dim :"",
+                    data_starts : 7,
+
+
+                    period_dim_1 : "E",
+                    period_dim_2 : 3,
+                    period_length : 12,
+                    data_des: [
+                        {de_code: "VL_EPI_Type", cocuid:"psVSPLclyFj", dim: "D"}, // Case
+                        {de_code: "VL_EPI_Type", cocuid:"KPn9RHNrd8R", dim: "F"} // Relapse
+                    
+                    ]
+                }
+            ]
         }
     ]
 }

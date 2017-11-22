@@ -442,10 +442,61 @@ function processExcelSheet()
 								
 								dataValues.push(dataValue);
 							}
-							dim1 =  nextDim(dim1);
+							dim1 =  nextDim(dim1,1);
 						}
 					}
 					//console.log(dataValues);
+				}
+
+				if (sheet.sheet_type == INDIA)
+				{
+					console.log(INDIA+" type");
+					isAggDataAvailable = true;
+					dataElementIdScheme = sheet.dataElementIdScheme;
+
+					// for each sheet in the list
+					var sheet_no =  t+1;
+
+					var year = getCellData(sheet_no, sheet.year);
+
+					if(year.toUpperCase() === MONTHLY_PERIOD.toUpperCase()){
+					} else if (parseInt(year)>1900){
+			
+						
+						var period ;
+						var dataValue;
+						
+						// for each month
+						var dim1 =  sheet.period_dim_1;
+						for (var i = 0; i<sheet.period_length; i++){
+							period = year + getPeriodNumber(sheet.period_type, sheet_no, dim1, sheet.period_dim_2);
+						 	//console.log("Dim1: "+dim1+"  - dim2 : "+sheet.period_dim_2);
+							//console.log("period" + period);
+
+							for (var row = 0; row<resultArray[sheet_no].rows; row++){
+								orgUnit = getCellDataRC(sheet_no, sheet.orgUnit_dim, data_starts+row);
+
+								for (var de_idx = 0; de<sheet.de_dims.length; de_idx++){
+									var de = sheet.data_des[de_idx];
+									dataValue = {};
+									
+									dataValue.period = period;
+									dataValue.dataElement = ds.de_code;
+									dataValue.categoryOptionCombo = ds.cocuid;
+									dataValue.orgUnit = orgUnit;
+									var testDim = nextDim(ds.dim,de_idx);
+									dataValue.value = getCellDataRC(sheet_no, dim1, nextDim(ds.dim,de_idx));
+
+									console.log(dataValue);
+									//dataValues.push(dataValue);
+								}
+							}
+							dim1 =  nextDim(dim1,1);
+						}
+					}
+					else {
+						console.log("TODO: print error");
+					}
 				}
 
 			}
@@ -499,13 +550,20 @@ function getPeriodNumber(period_type, sheet_no, dim1, dim2){
  * returns dim+1 if number or next letter if string (AZ -> BA)
  * dim : either a string or a number
  */
-function nextDim (dim){
-	if (isNaN(dim)){
-		return nextLetter(dim);
-	} else {
-		return dim+1;
+function nextDim (dim, rounds){
+	if (rounds<=0){
+		return dim;
 	}
-
+	else if (rounds==1) {
+		if (isNaN(dim)){
+			return nextLetter(dim);
+		} else {
+			return dim+1;
+		}
+	}
+	else {
+		return nextDim(nextDim(dim,1),rounds-1);
+	}
 }
 
 /**
