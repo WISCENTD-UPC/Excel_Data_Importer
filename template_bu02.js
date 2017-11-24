@@ -328,7 +328,7 @@ var data_ntd =
                     sheet_no: 1,
                     dataElementIdScheme: ORG_CODE_SCHEME,
 
-                    orgUnit_dim : "C",
+                    orgUnit_dim : "B",
                     period_dim : "B",
                     de_dim :"",
                     data_starts : 7,

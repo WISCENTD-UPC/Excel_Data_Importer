@@ -468,12 +468,15 @@ function processExcelSheet()
 						
 						// for each month
 						var dim1 =  sheet.period_dim_1;
+
+						var maxRow = lastRowForColumn(resultArray[sheet_no-1], sheet.orgUnit_dim);
+
 						for (var i = 0; i<sheet.period_length; i++){
 							period = year + getPeriodNumber(sheet.period_type, sheet_no, dim1, sheet.period_dim_2);
 						 	//console.log("Dim1: "+dim1+"  - dim2 : "+sheet.period_dim_2);
 							//console.log("period" + period);
 
-							for (var row = 0; row<resultArray[sheet_no].rows; row++){
+							for (var row = 0; row<maxRow; row++){
 								orgUnit = getCellDataRC(sheet_no, sheet.orgUnit_dim, data_starts+row);
 
 								for (var de_idx = 0; de<sheet.de_dims.length; de_idx++){
@@ -534,6 +537,30 @@ function processExcelSheet()
  *******************************         AUXILIARY FUNCTIONS        ********************************
  ***************************************************************************************************/
 
+
+ 
+/**
+ * Gets the object with only the keys starting with some string.
+ * It removes this part of the string in the new object
+*/
+function getObjectWithKeys(theDataObject, startingString, parseFunctionKeys, parseFunctionValues) {
+	
+	var z = Object.keys(theDataObject).filter(function(k) {
+		return k.indexOf(startingString) == 0;
+	}).reduce(function(newData, k) {
+		newData[parseFunctionKeys(k.slice(startingString.length))] = parseFunctionValues(theDataObject[k]);
+		return newData;
+	}, {});
+
+	return z;
+}
+
+
+function lastRowForColumn(data, column){
+	var z = getObjectWithKeys(data, column, parseInt, parseInt);
+	var valuesArray = Object.keys(z);
+	return Math.max.apply(null,valuesArray);
+ }
 
 
 function getPeriodNumber(period_type, sheet_no, dim1, dim2){
