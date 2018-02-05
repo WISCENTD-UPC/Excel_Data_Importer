@@ -555,12 +555,10 @@ function processExcelSheet()
 function getObjectWithKeys(object, theString, parseFunctionKeys, parseFunctionValues) {
 	var theMatchingString = String(theString);
 	var z = Object.keys(object).filter(function(k) {
-		// If starting with the search string and next is a number (when searching letter) OR
-		// if it's a number AND there's nothing after the string AND the previous character is not a number 
-		return (k.indexOf(theMatchingString) == 0 && !isNaN(k.charAt(theMatchingString.length))) ||
-				(!isNaN(theMatchingString) && 
+		return (k.indexOf(theMatchingString) == 0 && parseInt(k.charAt(theMatchingString.length))) ||
+				(parseInt(theMatchingString) && 
 				k.indexOf(theMatchingString) == Math.abs(k.length - theMatchingString.length) && 
-				isNaN(k.charAt(Math.abs(k.length - theMatchingString.length-1))));
+				!parseInt(k.charAt(Math.abs(k.length - theMatchingString.length-1))));
 	}).reduce(function(newData, k) {
 		newData[parseFunctionKeys(k.replace(new RegExp(theMatchingString, "g"), ''))] = parseFunctionValues(object[k]);
 		return newData;
@@ -736,14 +734,8 @@ function getCellData( sheetNum, address )
 	{
 		var data = resultArray[sheetNum-1][address];
 		
-		if( data != undefined ){
-			if (typeof data === 'string') {
-				val = $.trim(data);
-			} else {
-				val = data;
-			}
-		}
-			
+		if( data != undefined )
+			val = data;
 	}
 	catch(ex)
 	{
