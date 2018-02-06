@@ -412,80 +412,31 @@ var data_ntd =
                     ]
                 }
             ]
-        },        {
-            name: "Unlimited Stock Balance Monthly Template",
-            file:"ambisome_balance_monthly_template.xlsx",
+        },        
+        {
+            name: "Unlimited Flexible Monthly Template",
+            file:"unlimited_flexible_monthly_templates.zip",
             sheet_mode : DIFFERENT_MODEL_SHEETS,
             sheets: [
                 {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
+                    sheet_type: UNLIMITED_FLEXIBLE,
                     period_type : MONTHLY_PERIOD,
-                    year : "F2",
+                    year_column : "F",
+                    year_row : 2,
                     sheet_no: 1,
                     dataElementIdScheme: ORG_CODE_SCHEME,
                     orgUnit_dim : "B",
                     data_starting_row : 4,
+                    data_starting_row_advanced : 7,
                     period_dim_1 : "F",
                     period_dim_2 : 3,
-                    data_des: [
-                        {de_code: "Drug_Ambisome_end", cocuid:"Xr12mI7VPn3"}, // Ambisome at the end of the month
-                    ]
-                },
-                {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type : MONTHLY_PERIOD,
-                    year : "F2",
-                    sheet_no: 2,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
-                    orgUnit_dim : "B",
-                    data_starting_row : 4,
-                    period_dim_1 : "F",
-                    period_dim_2 : 3,
-                    data_des: [
-                        {de_code: "Drug_Paromomycin_end", cocuid:"Xr12mI7VPn3"}, // Ambisome at the end of the month
-                    ]
-                },
-                {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type : MONTHLY_PERIOD,
-                    year : "F2",
-                    sheet_no: 3,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
-                    orgUnit_dim : "B",
-                    data_starting_row : 4,
-                    period_dim_1 : "F",
-                    period_dim_2 : 3,
-                    data_des: [
-                        {de_code: "Drug_SSG_end", cocuid:"Xr12mI7VPn3"}, // Ambisome at the end of the month
-                    ]
-                },
-                {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type : MONTHLY_PERIOD,
-                    year : "F2",
-                    sheet_no: 4,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
-                    orgUnit_dim : "B",
-                    data_starting_row : 4,
-                    period_dim_1 : "F",
-                    period_dim_2 : 3,
-                    data_des: [
-                        {de_code: "Drug_rk39_end", cocuid:"Xr12mI7VPn3"}, // Ambisome at the end of the month
-                    ]
-                },
-                {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type : MONTHLY_PERIOD,
-                    year : "F2",
-                    sheet_no: 5,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
-                    orgUnit_dim : "B",
-                    data_starting_row : 4,
-                    period_dim_1 : "F",
-                    period_dim_2 : 3,
-                    data_des: [
-                        {de_code: "Drug_dat_end", cocuid:"Xr12mI7VPn3"}, // Ambisome at the end of the month
-                    ]
+                    de_simple_col : "A",
+                    de_simple_row : 1,
+                    de_advanced_row : 5,
+                    cocuid_simple_col : "C",
+                    cocuid_simple_row : 1,
+                    cocuid_advanced_row : 4
+ 
                 }
             ]
         }

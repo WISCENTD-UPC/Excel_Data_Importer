@@ -135,7 +135,7 @@ function validateJSON(templates)
 				}
 				else if(!(sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == EVENTS || sheet.sheet_type == "AGGREGATE_STATIC" 
 							|| sheet.sheet_type == MULTIPLE_DE_OU_PE || sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES
-							|| sheet.sheet_type == UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS ))
+							|| sheet.sheet_type == UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS || sheet.sheet_type == UNLIMITED_FLEXIBLE ))
 				{
 					result.isValidated = false;
 					result.msg += "</br>" + "'sheet_type' can be either 'AGGREGATE_EVENT' or 'AGGREGATE_STATIC' for sheet object-" + (x+1) + " of template : " + (t+1);

@@ -23,6 +23,7 @@ var idScheme = ORG_UID_SCHEME;
 var preImportValidationSummary = [];
 var importSummary = [];
 var numberOfEvents;
+var dEOfThisSheet, cocuidOfThisSheet;
 
 var isEventDataAvaialble = false;
 
@@ -511,8 +512,113 @@ function processExcelSheet()
 
 				}
 
+				if (sheet.sheet_type == UNLIMITED_FLEXIBLE)
+				{
+					console.log(UNLIMITED_FLEXIBLE+" type");
+					isAggDataAvailable = true;
+					dataElementIdScheme = sheet.dataElementIdScheme;
+
+					// for each sheet in the list
+					var sheet_no =  t+1;
+
+					var year = getCellData(sheet_no, sheet.year_column + sheet.year_row);
+
+					if (year.length == 0 || parseInt(year)>1900){
+			
+						
+						var period ;
+						var dataValue;
+						var getPeriod, getDE;
+						// for each month
+						var de_row;
+
+						var data_starting_row;
+						
+
+						if (getCellData(sheet_no, "A1").localeCompare("MULTIPLE_DE") == 0) {
+							data_starting_row = sheet.data_starting_row_advanced;
+							getDE = getCellDataRC;
+							getCOCUID = getCellDataRC;
+							de_row = sheet.de_advanced_row;
+							cocuid_row = sheet.cocuid_advanced_row;
+
+						} else {
+							data_starting_row = sheet.data_starting_row;
+							de_row = sheet.de_simple_row;
+							cocuid_row = sheet.cocuid_simple_row;
+							dEOfThisSheet = getCellDataRC(sheet_no, sheet.de_simple_col, de_row);
+							cocuidOfThisSheet = getCellDataRC(sheet_no, sheet.cocuid_simple_col, cocuid_row);
+							getDE = getDESimple;
+							getCOCUID = getCOCUIDSimple;
+						}
+
+						if (sheet.period_type == YEARLY_PERIOD){
+							getPeriod = getYearlyPeriod;
+						} else if (sheet.period_type == MONTHLY_PERIOD){
+							getPeriod = getMonthlyPeriod;
+						} else {
+							console.log("WARNING. PERIOD IS NOT MONTHLY NEITHER YEARLY. YEARLY APPLIED");
+							getPeriod = getYearlyPeriod;							
+						}
+
+						var lastRow = lastRowForColumn(resultArray[sheet_no-1], sheet.orgUnit_dim);
+
+						var de, cocuid;
+						var firstColumn = sheet.period_dim_1;
+						var lastColumn = lastColumnForRow(resultArray[sheet_no-1], sheet.period_dim_2);
+						var thisCol = firstColumn;
+
+						while (thisCol.localeCompare(lastColumn) != 0){
+							period = getPeriod(year, sheet_no, thisCol, sheet.period_dim_2);
+							de = getDE(sheet_no, thisCol, de_row);
+							cocuid = getCOCUID(sheet_no, thisCol, cocuid_row);
+							for (var row = data_starting_row; row <= lastRow; row++){
+								orgUnit = getCellDataRC(sheet_no, sheet.orgUnit_dim, row);
+					
+								dataValue = {};									
+								dataValue.period = period;
+								dataValue.dataElement = de;
+								dataValue.categoryOptionCombo = cocuid;
+								dataValue.orgUnit = orgUnit;
+								
+								dataValue.value = getCellDataRC(sheet_no, thisCol, row);
+								console.log(dataValue);
+								dataValues.push(dataValue);
+							}
+							thisCol =  nextDim(thisCol, 1);
+						}
+
+
+					}
+					else {
+						console.log("TODO: print error");
+					}
+					console.log ("dataValues");
+					console.log(dataValues);
+
+				}
+
 			}
 		}
+	}
+
+	function getDESimple(sheet_no, col, row){
+		return dEOfThisSheet;
+	}
+
+	function getCOCUIDSimple(sheet_no, col, row){
+		return cocuidOfThisSheet;
+	}
+
+	function getMonthlyPeriod(year, sheet_no, col, row){
+
+		return  (getCellDataRC(sheet_no, col, row-1) || year) + getCellDataRC(sheet_no, col, row);
+
+
+	}
+
+	function getYearlyPeriod(year, sheet_no, col, row){
+		return getCellDataRC(sheet_no, col, row) || year;
 	}
 	
 	

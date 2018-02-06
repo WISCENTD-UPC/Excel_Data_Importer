@@ -1,0 +1,29 @@
+/*****************************************************************************/
+/************* UNLIMITED FLEXIBLE MONTHLY TEMPLATE ADVANCED ******************/
+/*****************************************************************************/
+
+This template allows you to import multiples sheets of monthly data in DHIS2.
+
+The following fields are mandatory in each sheet:
+A1: The text "MULTIPLE_DE"
+
+F2: The year of the data (you can merge some cells but the rerefence cell must be F2)
+From F3: Any of following values
+jan feb mar apr	may jun jul aug sep oct nov dec
+
+You may leave blank the following columns of a month instead of repeating it. The 
+App will take in account the first one. (But the first one must be there, on the first column).
+(For exemple if you put two data elements per month, you can put "jan" on F3, leave blank G3 and put "feb" on H3)
+
+
+You may add more years and months on 2nd and 3rd row, the year taken in account for 
+a month is the last year indicated (you don't need to repeat the year in each column, 
+only once when it changes).
+
+Row 6: (Free text)
+Row 5: The CODE of the DataElement (From F in each column)
+Row 4: The UID of the Category Combination (From F in each column)
+
+From B7: The code or ID of the OrgUnit. You can choose when importing in the App.
+
+All other fields are free.

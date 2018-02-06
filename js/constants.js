@@ -7,6 +7,7 @@ var MULTIPLE_PERIODS_AND_FACILITIES = 2;
 // unlimited periods on rows, and unlimited dataElements for eachperiod (also in rows)
 // The dataElements must be the same for every period
 var UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS = 3;
+var UNLIMITED_FLEXIBLE = 4;
 
 var MONTHLY_PERIOD = 0;
 var WEEKLY_PERIOD = 1;
