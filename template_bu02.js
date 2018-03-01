@@ -99,6 +99,91 @@ var data_ntd =
                 }
             ]
         },
+        {
+            name: "VL register template + From Village",
+            file:"VL_register_template.xlsx",
+            sheet_mode : DIFFERENT_MODEL_SHEETS,
+            sheets: [
+                {
+                    sheet_type: EVENTS,
+                    sheet_no: 1,
+                    data_starting_row : "5",
+		            data_starting_col : "4",
+                    key_column : "B",
+                    ou_col : "B",
+                    program : "TFTLPseQEgi",
+                    event_date_col: "C", //should be a letter
+                    event_des_length : 33,
+
+                    event_des: [
+                        {deuid: "GEN_ID Number_T", column: "D"},
+                        {deuid: "GEN_FirstName_T", column: "E"},
+                        {deuid: "GEN_Family name_T", column: "F"},
+                        {deuid: "GEN_CountryOfInfection_T", column: "G"},
+                        {deuid: "GEN_imported_T", column: "H"},
+                        {deuid: "GEN_PlaceOfInfection_T", column: "I"},
+                        {deuid: "GEN_Sexe_T", column: "J"},
+                        {deuid: "GEN_DayOfBirth_T", column: "K"},
+                        {deuid: "GEN_YearOfBirth_T", column: "L"},
+                        {deuid: "GEN_Age_T", column: "M"},
+                        {deuid: "VL_Type_T", column: "N"},
+                        {deuid: "GEN_HIV_status_T", column: "O"},
+                        {deuid: "GEN_Cl_patientDelay_day_T", column: "P"},
+                        {deuid: "VL_Lab_RDT_T", column: "Q"},
+                        {deuid: "VL_Lab_DAT_T", column: "R"},
+                        {deuid: "VL_Lab_Micro_result_T", column: "S"},
+                        {deuid: "VL_Conf_type_T", column: "T"},
+                        {deuid: "VL_Tx_start_T", column: "U"},
+                        {deuid: "VL_Tx_regimen_T", column: "V"},
+                        {deuid: "VL_Tx_adverseEvent_T", column: "W"},
+                        {deuid: "VL_TREAT_completion_T", column: "X"},
+                        {deuid: "VL_TxO_Date_T", column: "Y"},
+                        {deuid: "VL_TxO_T", column: "Z"},
+                        {deuid: "VL_FU_Date_T", column: "AA"},
+                        {deuid: "VL_FU_outcome_T", column: "AB"}
+                    ]
+                },
+                {
+                    sheet_type: EVENTS,
+                    sheet_no: 2,
+                    data_starting_row : "5",
+		            data_starting_col : "4",
+                    key_column : "F",
+                    ou_col : "F",
+                    program : "dBAcTWcDpbO",
+                    event_date_col: "C", //should be a letter
+                    event_des_length : 33,
+
+                    event_des: [
+                        {deuid: "GEN_ID Number_T", column: "D"},
+                        {deuid: "GEN_FirstName_T", column: "E"},
+                        {deuid: "GEN_Family name_T", column: "B"},
+                        {deuid: "GEN_CountryOfInfection_T", column: "G"},
+                        {deuid: "GEN_imported_T", column: "H"},
+                        {deuid: "GEN_PlaceOfInfection_T", column: "I"},
+                        {deuid: "GEN_Sexe_T", column: "J"},
+                        {deuid: "GEN_DayOfBirth_T", column: "K"},
+                        {deuid: "GEN_YearOfBirth_T", column: "L"},
+                        {deuid: "GEN_Age_T", column: "M"},
+                        {deuid: "VL_Type_T", column: "N"},
+                        {deuid: "GEN_HIV_status_T", column: "O"},
+                        {deuid: "GEN_Cl_patientDelay_day_T", column: "P"},
+                        {deuid: "VL_Lab_RDT_T", column: "Q"},
+                        {deuid: "VL_Lab_DAT_T", column: "R"},
+                        {deuid: "VL_Lab_Micro_result_T", column: "S"},
+                        {deuid: "VL_Conf_type_T", column: "T"},
+                        {deuid: "VL_Tx_start_T", column: "U"},
+                        {deuid: "VL_Tx_regimen_T", column: "V"},
+                        {deuid: "VL_Tx_adverseEvent_T", column: "W"},
+                        {deuid: "VL_TREAT_completion_T", column: "X"},
+                        {deuid: "VL_TxO_Date_T", column: "Y"},
+                        {deuid: "VL_TxO_T", column: "Z"},
+                        {deuid: "VL_FU_Date_T", column: "AA"},
+                        {deuid: "VL_FU_outcome_T", column: "AB"}
+                    ]
+                }
+            ]
+        },
 	{
             name: "Kenya VL case management form",
             file:"VL_case_form_template.xlsx",

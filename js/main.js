@@ -12,7 +12,7 @@ var startUpMsg = "Everything is perfect";
 var dataCells = []; //formatted excel data cells
 
 var dataValues = [];
-var eventDataValues = [];
+var eventDataValues;
 var errorString = "";
 var hasErrors = false;
 
@@ -165,6 +165,7 @@ function processExcelSheet()
 {			
 	dataValues = [];
 	eventDataValues = {};
+	eventDataValues.events = [];
 	errorString = "";
 	hasErrors = false;
 	isEventDataAvaialble = false;
@@ -302,7 +303,6 @@ function processExcelSheet()
 				//Making the payload for event data
 				if (sheet.sheet_type == "AGGREGATE_EVENT")
 				{
-					eventDataValues.events = [];
 					//orgUnitIdScheme = sheet.orgUnitIdScheme;
 					var rowStart = parseInt(sheet.data_starting_row);
 					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
@@ -356,7 +356,6 @@ function processExcelSheet()
 				if (sheet.sheet_type == EVENTS)
 				{
 					console.log("Events type");
-					eventDataValues.events = [];
 					var rowStart = parseInt(sheet.data_starting_row);
 					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
 					isEventDataAvaialble = true;
@@ -369,7 +368,6 @@ function processExcelSheet()
 					numberOfEvents = 0;
 					for( var r = rowStart; r<=rowEnd; r++ )
 					{
-						console.log("One row");
 						if( getCellData( sheet.sheet_no, sheet.key_column + "" + r ) != "" )
 						{
 							var eventDataValue = {};
@@ -384,15 +382,13 @@ function processExcelSheet()
 							{
 								var dv = {};
 								var ds = sheet.event_des[x];
-                                              			var columnOfDataString = getColumnName(columnOfData);
-								console.log(columnOfData);
-								console.log(columnOfDataString);
-								console.log("Onecolumn");
+                                var columnOfDataString = getColumnName(columnOfData);
+
 								dv.dataElement = getCellData( sheet.sheet_no, columnOfDataString + "" + 1 );
 								//dv.categoryOptionCombo = ds.cocuid;
 								dv.value = getCellData( sheet.sheet_no, columnOfDataString + "" + r );
 								eventDataValue.dataValues.push(dv);
-                                				++columnOfData;
+                                ++columnOfData;
 							}
 							//console.log(eventDataValue);
 							++numberOfEvents;
@@ -872,9 +868,7 @@ function importEventData()
 		//eventDataValues.orgUnitIdScheme = orgUnitIdScheme;
 		var eventDataJSON = JSON.stringify(eventDataValues);
 		console.log(eventDataValues);
-		console.log("eventDataValues json");
-		console.log(eventDataJSON);
-		
+	
 		//alert(orgUnitIdScheme);
 		var url = "../../events?dataElementIdScheme=code&orgUnitIdScheme="+orgUnitIdScheme;
 		//var url = "../../events";
