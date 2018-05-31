@@ -561,28 +561,35 @@ function processExcelSheet()
 
 						var de, cocuid;
 						var firstColumn = sheet.period_dim_1;
-						var lastColumn = lastColumnForRow(resultArray[sheet_no-1], sheet.period_dim_2);
+						// set lastColumn to next one so it is also included in the loop
+						var lastColumn = nextDim(getLastColumn(resultArray[sheet_no-1]),1);
 						var thisCol = firstColumn;
-
-						while (thisCol.localeCompare(lastColumn) != 0){
-							period = getPeriod(year, sheet_no, thisCol, sheet.period_dim_2);
+						
+						do {
+							period = getPeriod(period, year, sheet_no, thisCol, sheet.period_dim_2);
 							de = getDE(sheet_no, thisCol, de_row);
 							cocuid = getCOCUID(sheet_no, thisCol, cocuid_row);
 							for (var row = data_starting_row; row <= lastRow; row++){
-								orgUnit = getCellDataRC(sheet_no, sheet.orgUnit_dim, row);
-					
+
 								dataValue = {};									
-								dataValue.period = period;
-								dataValue.dataElement = de;
-								dataValue.categoryOptionCombo = cocuid;
-								dataValue.orgUnit = orgUnit;
-								
 								dataValue.value = getCellDataRC(sheet_no, thisCol, row);
-								console.log(dataValue);
-								dataValues.push(dataValue);
+
+								if (dataValue.value.length > 0) {
+									// only imports if there's a value
+									orgUnit = getCellDataRC(sheet_no, sheet.orgUnit_dim, row);
+
+									dataValue.period = period;
+									dataValue.dataElement = de;
+									dataValue.categoryOptionCombo = cocuid;
+									dataValue.orgUnit = orgUnit;
+									
+									console.log(dataValue);
+									dataValues.push(dataValue);
+								}
+
 							}
 							thisCol =  nextDim(thisCol, 1);
-						}
+						} while (thisCol.localeCompare(lastColumn) != 0);
 
 
 					}
@@ -606,14 +613,16 @@ function processExcelSheet()
 		return cocuidOfThisSheet;
 	}
 
-	function getMonthlyPeriod(year, sheet_no, col, row){
-
-		return  (getCellDataRC(sheet_no, col, row-1) || year) + getCellDataRC(sheet_no, col, row);
-
-
+	function getMonthlyPeriod(lastPeriod, year, sheet_no, col, row){
+		if (getPeriodNumber(MONTHLY_PERIOD,sheet_no, col, row).length == 0){
+			// for advanced templates it uses this line n-1 times per period where n is number of columns.
+			return lastPeriod;
+		} else {
+			return  year + getPeriodNumber(MONTHLY_PERIOD,sheet_no, col, row); 
+		}
 	}
 
-	function getYearlyPeriod(year, sheet_no, col, row){
+	function getYearlyPeriod(lastPeriod, year, sheet_no, col, row){
 		return getCellDataRC(sheet_no, col, row) || year;
 	}
 	
@@ -705,6 +714,12 @@ function lastRowForColumn(data, column){
 	return Math.max.apply(null,valuesArray);
 }
 
+function getLastColumn(sheet){
+	// When getting "A1:CK37" and returns "CK"
+	return sheet['!ref'].split(':')[1].replace(/[0-9]/g, '');
+}
+
+// DEPRECATED
 function lastColumnForRow(data, column){
 	var z = getObjectWithKeys(data, column, doNothing, parseInt);
 	var valuesArray = Object.keys(z);
@@ -715,15 +730,21 @@ function lastColumnForRow(data, column){
 
 function getPeriodNumber(period_type, sheet_no, dim1, dim2){
 	var period = getCellDataRC(sheet_no, dim1, dim2);
-	if(period_type === WEEKLY_PERIOD){
-		return "W" + (period < 10 ? '0' : '') + period;
-
-	} else if(period_type === MONTHLY_PERIOD){
-		return months[period.toLowerCase()];
-
-	} else if(period_type === YEARLY_PERIOD){
+	if (period.length == 0) {
+		console.log("WARN. Got empty period");
 		return period;
+	} else {
+		
+		if(period_type === WEEKLY_PERIOD){
+			return "W" + (period < 10 ? '0' : '') + period;
 
+		} else if(period_type === MONTHLY_PERIOD){
+			return months[period.toLowerCase()];
+
+		} else if(period_type === YEARLY_PERIOD){
+			return period;
+
+		}
 	}
 }
 /**

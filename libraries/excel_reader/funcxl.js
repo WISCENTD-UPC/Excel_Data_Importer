@@ -109,7 +109,7 @@ function to_formulae(workbook) {
 		
 		var formulae = X.utils.get_formulae(workbook.Sheets[sheetName], currentSheetNumber, thisSheetLastColumn);
 		currentSheetNumber++;
-		
+		formulae['!ref'] = workbook.Sheets[sheetName]['!ref'];
 		if(formulae.length > 0){
 			result.push(formulae);
 		}
