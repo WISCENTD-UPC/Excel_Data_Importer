@@ -16,34 +16,16 @@ var eventDataValues = [];
 var errorString = "";
 var hasErrors = false;
 
-var orgUnitIdScheme = ORG_UID_SCHEME;
-var dataElementIdScheme = ORG_UID_SCHEME;
-var idScheme = ORG_UID_SCHEME;
+var orgUnitIdScheme = "UID";
+var dataElementIdScheme = "UID";
+var idScheme = "UID";
 
 var preImportValidationSummary = [];
 var importSummary = [];
-var numberOfEvents;
 
 var isEventDataAvaialble = false;
 
 var isAggDataAvailable = false;
-var excelHeaders = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK", "AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT", "AU", "AV", "AW", "AX", "AY", "AZ", "BA", "BB", "BC", "BD", "BE", "BF", "BG", "BH"]
-
-var months = [];
-	months["jan"] = "01";
-	months["feb"] = "02";
-	months["mar"] = "03";
-	months["apr"] = "04";
-	months["may"] = "05";
-	months["jun"] = "06";
-	months["jul"] = "07";
-	months["aug"] = "08";
-	months["sep"] = "09";
-	months["oct"] = "10";
-	months["nov"] = "11";
-	months["dec"] = "12";
-
-
 
 $(document).ready(function(){
 	try
@@ -70,7 +52,7 @@ $(document).ready(function(){
 			for( var t = 0; t<templateObject.sheets.length; t++ )
 			{
 				var sheet = templateObject.sheets[t];
-				//console.log(sheet.sheet_type);
+				
 				try
 				{
 					sheetEndColumns.push( sheet.last_data_column );				
@@ -114,7 +96,6 @@ function changeTemplate()
 	try
 	{
 		var selectedTemIndex = parseInt($("#temSelectBox").val());
-		console.log("Xiv");
 		templateObject = data.templates[selectedTemIndex];	
 		var href = "";
 		
@@ -152,9 +133,9 @@ function changeOUScheme()
 	var ous = $("#ousSelectBox").val();
 	
 	if( ous == 1 )
-		orgUnitIdScheme = ORG_UID_SCHEME;
+		orgUnitIdScheme = "UID";
 	else
-		orgUnitIdScheme = ORG_CODE_SCHEME;
+		orgUnitIdScheme = "Code";
 	
 	//alert(orgUnitIdScheme);
 }
@@ -168,41 +149,43 @@ function processExcelSheet()
 	hasErrors = false;
 	isEventDataAvaialble = false;
 	isAggDataAvailable = false;	
-
-	console.log("before for processExcelSheet");
+	
 	//ResultArray is defined and populated in funcxl.js
-
-	var length, modelSelector;
-	if (templateObject.sheet_mode == SAME_MODEL_SHEETS){
-		length = resultArray.length;
-		modelSelector = 0;
-	} else {
-		length = templateObject.sheets.length;
-		modelSelector = 1;
-	}
-
-	for( var t = 0; t<length; t++ )
+	for( var t = 0; t<templateObject.sheets.length; t++ )
 	{
-		console.log("one sheet");
 		$("#loaderMsg").html("Fetching data from the sheets...");
 		
 		if( !hasErrors )
 		{
-			var sheet = templateObject.sheets[t * modelSelector]; //TODO: Any other ideas ? 
+			var sheet = templateObject.sheets[t];
 			
 			if( sheet.sheet_no > resultArray.length )
 			{
 				hasErrors = true;
-				errorString += "<tr><td></td><td> Sheet " + sheet.sheet_no + " was not found. Please download template excel to verify or contact admin.</td></tr>";
+				errorString += "<tr><td></td><td> Sheet " + sheet.sheet_no + "," +resultArray.length +" was not found. Please download template excel to verify or contact admin.</td></tr>";
 			}
 	
-			if (sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == "AGGREGATE_STATIC")
+			if (sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == "AGGREGATE_STATIC" || sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" || sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY")
 			{
 				var orgUnit = getCellData( sheet.sheet_no, sheet.oucode_cell );
+				//var dMonth = getCellData( sheet.sheet_no, sheet.month_cell );
+				var dYear = getCellData( sheet.sheet_no, sheet.year_cell );
+				//orgUnitIdScheme = sheet.orgUnitIdScheme;
+				
+				//validating month and year
+				//var mResult = validateMonth(dMonth);
+				var yResult = validateYear(dYear);
+				//if(mResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + mResult.msg + "</td></tr>"; } else dMonth = mResult.month;
+				if(yResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + yResult.msg + "</td></tr>"; } else dYear = yResult.year;
+			}			
+		
+			if (sheet.sheet_type == "MULTIPLE_DE_OU" || sheet.sheet_type == "MULTIPLE_DE_OU DESA")
+			{
+				//var orgUnit = getCellData( sheet.sheet_no, sheet.oucode_cell );
 				var dMonth = getCellData( sheet.sheet_no, sheet.month_cell );
 				var dYear = getCellData( sheet.sheet_no, sheet.year_cell );
 				//orgUnitIdScheme = sheet.orgUnitIdScheme;
-
+				
 				//validating month and year
 				var mResult = validateMonth(dMonth);
 				var yResult = validateYear(dYear);
@@ -212,7 +195,6 @@ function processExcelSheet()
 			
 			if( !hasErrors )
 			{
-				console.log("No errors in the sheet");
 				if (sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == "AGGREGATE_STATIC")
 				{
 					isAggDataAvailable = true;
@@ -220,35 +202,65 @@ function processExcelSheet()
 					{
 						var ds = sheet.agg_des[x];
 						var dataValue = {};
-						dataValue.period = dYear + "" + dMonth;
+						dataValue.period = dYear;
+						dataValue.dataElement = ds.deuid;
+						dataValue.categoryOptionCombo = ds.cocuid;
+						dataValue.orgUnit = orgUnit;
+						var tempValue = getCellData( sheet.sheet_no, ds.cell_no );
+						if(tempValue != ""){
+							dataValue.value = tempValue;
+							dataValues.push(dataValue);
+					    }
+					}
+				}
+				
+				if ( sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY")
+				{
+					isAggDataAvailable = true;
+					for( var x=0; x<sheet.agg_des.length; x++ )
+					{
+						var ds = sheet.agg_des[x];
+						var dataValue = {};
+						dataValue.period = dYear;
+						dataValue.dataElement = ds.deuid;
+						dataValue.categoryOptionCombo = ds.cocuid;
+						dataValue.orgUnit = orgUnit;
+						dataValue.value = getCellData( sheet.sheet_no, ds.cell_no );
+						if(dataValue.value == "TRUE"){
+							dataValue.value = "true";
+							dataValues.push(dataValue);
+					    }
+					}
+				}
+					if ( sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN")
+				{
+					isAggDataAvailable = true;
+					for( var x=0; x<sheet.agg_des.length; x++ )
+					{
+						var ds = sheet.agg_des[x];
+						var dataValue = {};
+						dataValue.period = dYear;
 						dataValue.dataElement = ds.deuid;
 						dataValue.categoryOptionCombo = ds.cocuid;
 						dataValue.orgUnit = orgUnit;
 						dataValue.value = getCellData( sheet.sheet_no, ds.cell_no );
 						dataValues.push(dataValue);
+						
 					}
 				}
 				
-				if( sheet.sheet_type == MULTIPLE_DE_OU_PE )
+				if( sheet.sheet_type == "MULTIPLE_DE_OU_PE" )
 				{
 					isAggDataAvailable = true;
 					
 					var rowStart = parseInt(sheet.data_starting_row);
-					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no)) - 1;
-					var found = false;
-					for (var lastRow = rowEnd; lastRow >= rowStart && !found; lastRow--) {
-						console.log(sheet.key_column + getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow));
-						if (getCellData(sheet.sheet_no, sheet.key_column + "" + lastRow) == "-") {
-							rowEnd = lastRow - 1;
-							found = true;
-						}
-					}
-					console.log("Row end " + rowEnd);
+					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
 					//console.log( "$$$$$$$$$$$$$$$");
 					//console.log( sheetEndRows );
 					//orgUnitIdScheme = sheet.orgUnitIdScheme;
 					dataElementIdScheme = sheet.dataElementIdScheme;
-
+					idScheme = sheet.idScheme;
+					
 					//console.log( "RowStart: " + rowStart +" - RowEnd: " + rowEnd );
 					//console.log(rowEnd);
 					
@@ -256,47 +268,79 @@ function processExcelSheet()
 					{
 						for( var x = 0; x<sheet.agg_des.length; x++ )
 						{
-							if( getCellData( sheet.sheet_no, sheet.key_column + "" + r ) != "")
+							if( getCellData( sheet.sheet_no, sheet.key_coulmn + "" + r ) != "" )
 							{
 								var ds = sheet.agg_des[x];
 								var dataValue = {};
-								var dMonth = "";
-								if (sheet.month_col != "A") dMonth = getCellData( sheet.sheet_no, sheet.month_col + "" + r );
+								var dMonth = getCellData( sheet.sheet_no, sheet.month_col + "" + r );
 								var dYear = getCellData( sheet.sheet_no, sheet.year_col + "" + r );
-
+															
 								//validating month and year
 								var mResult = validateMonth(dMonth);
 								var yResult = validateYear(dYear);
 								if(mResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + mResult.msg + "</td></tr>"; } else dMonth = mResult.month;
 								if(yResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + yResult.msg + "</td></tr>"; } else dYear = yResult.year;
-
-								if (sheet.month_col == "A") dataValue.period = dYear;
-								else dataValue.period = dYear + "" + dMonth;
-
+															
+								dataValue.period = dYear + "" + dMonth;
+								
 								dataValue.dataElement = ds.deuid;
 								dataValue.categoryOptionCombo = ds.cocuid;
-								dataValue.attributeOptionCombo = sheet.attr_oc;
-								dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col + "" + 3 );
-                                var colN = ds.col_no;
-                                var array = [];
-                                array = colN.split(",");
-                                var numericalValue = 0;
-				if (array.length == 1) dataValue.value = getCellData(sheet.sheet_no, array[0] + "" + r);
-				else {
-                                	for (var factorColumn = 0; factorColumn < array.length; factorColumn++) {
-                                    		var factorColumnValue = getCellData(sheet.sheet_no, array[factorColumn] + "" + r);
-                                   		 if (factorColumnValue != "")
-                                        	numericalValue += parseInt(factorColumnValue);
-                                	}
-                                	console.log(numericalValue);
-                                	dataValue.value = numericalValue.toString();
-				}
-				dataValues.push(dataValue);
+								dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col + "" + r );
+								dataValue.value = getCellData( sheet.sheet_no, ds.col_no + "" + r );
+								dataValue.comment = currentFileName;
+								dataValues.push(dataValue);
 							}
 							//console.log(dataValue);
 						}
 					}
 				}
+				
+				if( sheet.sheet_type == "MULTIPLE_DE_OU" )
+				{
+					isAggDataAvailable = true;
+					console.log("what is going one?");
+					
+					var rowStart = parseInt(sheet.data_starting_row);
+					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
+					//console.log( "$$$$$$$$$$$$$$$");
+					//console.log( sheetEndRows );
+					//orgUnitIdScheme = sheet.orgUnitIdScheme;
+					dataElementIdScheme = sheet.dataElementIdScheme;
+					idScheme = sheet.idScheme;
+					
+					//console.log( "RowStart: " + rowStart +" - RowEnd: " + rowEnd );
+					//console.log(rowEnd);
+					
+					for( var r = rowStart; r <= rowEnd; r++ )
+					{
+						for( var x = 0; x<sheet.agg_des.length; x++ )
+						{
+							if( getCellData( sheet.sheet_no, sheet.key_coulmn + "" + r ) != "" )
+							{
+								var ds = sheet.agg_des[x];
+								var dataValue = {};
+								//var dMonth = getCellData( sheet.sheet_no, sheet.month_col + "" + r );
+								//var dYear = getCellData( sheet.sheet_no, sheet.year_col + "" + r );
+															
+								//validating month and year
+								//var mResult = validateMonth(dMonth);
+								//var yResult = validateYear(dYear);
+								//if(mResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + mResult.msg + "</td></tr>"; } else dMonth = mResult.month;
+								//if(yResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + yResult.msg + "</td></tr>"; } else dYear = yResult.year;
+															
+								dataValue.period = dYear + "" + dMonth;
+								
+								dataValue.dataElement = ds.deuid;
+								dataValue.categoryOptionCombo = ds.cocuid;
+								dataValue.orgUnit = getCellData( sheet.sheet_no, sheet.oucode_col + "" + r );
+								dataValue.value = getCellData( sheet.sheet_no, ds.col_no + "" + r );
+								dataValue.comment = currentFileName;
+								dataValues.push(dataValue);
+							}
+							//console.log(dataValue);
+						}
+					}
+				}				
 				
 				//Making the payload for event data
 				if (sheet.sheet_type == "AGGREGATE_EVENT")
@@ -312,7 +356,7 @@ function processExcelSheet()
 					//Event rows
 					for( var r = rowStart; r<rowEnd; r++ )
 					{
-						if( getCellData( sheet.sheet_no, sheet.key_column + "" + r ) != "" )
+						if( getCellData( sheet.sheet_no, sheet.key_coulmn + "" + r ) != "" )
 						{
 							var eventDataValue = {};
 							eventDataValue.orgUnit = orgUnit;
@@ -351,103 +395,6 @@ function processExcelSheet()
 						}
 					}
 				}
-
-				if (sheet.sheet_type == EVENTS)
-				{
-					console.log("Events type");
-					eventDataValues.events = [];
-					var rowStart = parseInt(sheet.data_starting_row);
-					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
-					isEventDataAvaialble = true;
-
-
-					console.log( sheet.sheet_no + " : " + rowStart );
-
-
-					//Event rows
-					numberOfEvents = 0;
-					for( var r = rowStart; r<=rowEnd; r++ )
-					{
-						console.log("One row");
-						if( getCellData( sheet.sheet_no, sheet.key_column + "" + r ) != "" )
-						{
-							var eventDataValue = {};
-							eventDataValue.orgUnit = getCellData(sheet.sheet_no, sheet.ou_col + "" + r);
-							eventDataValue.program = sheet.program;
-							eventDataValue.eventDate = getCellData( sheet.sheet_no, sheet.event_date_col + "" + r );
-							//eventDataValue.orgUnitIdScheme = orgUnitIdScheme;
-							eventDataValue.dataValues = [];
-							var columnOfData = parseInt(sheet.data_starting_col);
-
-							for( var x=0; x<sheet.event_des_length; x++ )
-							{
-								var dv = {};
-								var ds = sheet.event_des[x];
-                                              			var columnOfDataString = getColumnName(columnOfData);
-								console.log(columnOfData);
-								console.log(columnOfDataString);
-								console.log("Onecolumn");
-								dv.dataElement = getCellData( sheet.sheet_no, columnOfDataString + "" + 1 );
-								//dv.categoryOptionCombo = ds.cocuid;
-								dv.value = getCellData( sheet.sheet_no, columnOfDataString + "" + r );
-								eventDataValue.dataValues.push(dv);
-                                				++columnOfData;
-							}
-							//console.log(eventDataValue);
-							++numberOfEvents;
-							eventDataValues.events.push(eventDataValue);
-						}
-					}
-				}
-
-				if (sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES)
-				{
-					//console.log(MULTIPLE_PERIODS_AND_FACILITIES+" type");
-					isAggDataAvailable = true;
-					dataElementIdScheme = sheet.dataElementIdScheme;
-
-					// for each sheet in the list
-					var sheet_no =  t+1;
-					var orgUnit = getCellData(sheet_no, sheet.ou);
-
-				
-					if(orgUnit!==""){
-						//console.log("Hoja numero " + t);
-						
-						var year = getCellData(sheet_no, sheet.year);
-						
-						var period ;
-						var dataValue;
-						
-						// for each month
-						var dim1 =  sheet.period_dim_1_first;
-						for (var i = 0; i<sheet.period_dim_1_length; i++){
-							period = year + getPeriodNumber(sheet.period_type, sheet_no, dim1, sheet.period_dim_2);
-						 	//console.log("Dim1: "+dim1+"  - dim2 : "+sheet.period_dim_2);
-							//console.log("period" + period);
-
-							// localize and get each dataElement-category
-							for( var x=0; x<sheet.data_des.length; x++ )
-							{
-								var ds = sheet.data_des[x];
-								dataValue = {};
-								
-								dataValue.period = period;
-								dataValue.dataElement = ds.de_code;
-								dataValue.categoryOptionCombo = ds.cocuid;
-								dataValue.orgUnit = orgUnit;
-								dataValue.value = getCellDataRC(sheet_no, dim1, ds.dim );
-								
-								//console.log(dataValue);
-								
-								dataValues.push(dataValue);
-							}
-							dim1 =  nextDim(dim1);
-						}
-					}
-					//console.log(dataValues);
-				}
-
 			}
 		}
 	}
@@ -468,8 +415,7 @@ function processExcelSheet()
 	
 	if( !hasErrors )
 	{
-		if (!isAggDataAvailable) importEventData();
-		else importData();
+		importEventData();
 	}		
 	else
 	{
@@ -477,61 +423,6 @@ function processExcelSheet()
 	}
 		
 }
-
-
-/***************************************************************************************************
- *******************************         AUXILIARY FUNCTIONS        ********************************
- ***************************************************************************************************/
-
-
-
-function getPeriodNumber(period_type, sheet_no, dim1, dim2){
-	var period = getCellDataRC(sheet_no, dim1, dim2);
-	if(period_type === WEEKLY_PERIOD){
-		return "W" + (period < 10 ? '0' : '') + period;
-
-	} else if(period_type === MONTHLY_PERIOD){
-		return months[period.toLowerCase()];
-
-	}
-}
-/**
- * returns dim+1 if number or next letter if string (AZ -> BA)
- * dim : either a string or a number
- */
-function nextDim (dim){
-	if (isNaN(dim)){
-		return nextLetter(dim);
-	} else {
-		return dim+1;
-	}
-
-}
-
-/**
- * Return next letter. A->B, AB->AC, Z->AA
- * @param {string} key a string [a-zA-Z]+
- */
-
-function nextLetter (key) {
-  if (key === 'Z' || key === 'z') {
-    return String.fromCharCode(key.charCodeAt() - 25) + String.fromCharCode(key.charCodeAt() - 25); // AA or aa
-  } else {
-    var lastChar = key.slice(-1);
-    var sub = key.slice(0, -1);
-    if (lastChar === 'Z' || lastChar === 'z') {
-      // If a string of length > 1 ends in Z/z,
-      // increment the string (excluding the last Z/z) recursively,
-      // and append A/a (depending on casing) to it
-      return nextLetter(sub) + String.fromCharCode(lastChar.charCodeAt() - 25);
-    } else {
-      // (take till last char) append with (increment last char)
-      return sub + String.fromCharCode(lastChar.charCodeAt() + 1);
-    }
-  }
-  return key;
-};
-
 
 //function to get the row number of the last row in a sheet
 function getLastRowNumber(sheetNum)
@@ -544,43 +435,9 @@ function getLastRowNumber(sheetNum)
 		return sheetEndRows[sheetNum-1];
 	else
 		return 2000;	
-};
-
-function getColumnName(num) {
-  for (var ret = '', a = 1, b = 26; (num -= a) >= 0; a = b, b *= 26) {
-    ret = String.fromCharCode(parseInt((num % b) / a) + 65) + ret;
-  }
-  return ret;
-};
-
-chr = function (codePt) {
-        if (codePt > 0xFFFF) { 
-            codePt -= 0x10000;
-            return String.fromCharCode(0xD800 + (codePt >> 10), 0xDC00 + (codePt & 0x3FF));
-        }
-        return String.fromCharCode(codePt);
-    }
-
-/**
- * Calls getCellData. Use it when you dont know which of the dims is the column and the row.
- * @param {*} sheetNum 
- * @param {string/Number} dim1 One of the dimension (row or column)
- * @param {string/Number} dim2 One of the dimension (row or column)
- */
-function getCellDataRC( sheetNum, dim1, dim2 )
-{
-	if (isNaN(dim1)){
-		return getCellData(sheetNum, dim1 + dim2);
-	} else {
-		return getCellData(sheetNum, dim2 + dim1);
-	}
-
 }
 
-/* Returns the data in the cell address of the target sheet
-	sheetNum : the sheet number of the woorkbook (starting at 1)
-	address : the cell number in text. i.e. A12
-*/
+//Function to get data with the cell address
 function getCellData( sheetNum, address )
 {
 	var val = "";
@@ -602,6 +459,39 @@ function getCellData( sheetNum, address )
 	return(val);
 }
 
+//Function to get Summation of data with the cell address
+function getSummationCellData( sheetNum, column, startAddress,endAddress )
+{
+	//var data = "";
+	var Sum = "";
+	var address = "";  //the first address cell
+	
+	//startAddress = startAddress.toUpperCase(); //making addresses with simple letters into capital
+	//endAddress = endAddress.toUpperCase(); //making addresses with simple letters into capital
+
+	try
+	{
+		for( var x = startAddress; x<= endAddress; x++ )
+		{
+			address = column + "" + x;
+			console.log("address="+address);
+			var data = resultArray[sheetNum-1][address.toUpperCase()];
+			console.log("data="+data);
+		
+			if( data != undefined )
+				Sum = Sum + parseInt(data);
+		}
+		
+	}
+	catch(ex)
+	{
+		hasErrors = true;
+		errorString += "</br>Something went wrong. Err:" + ex.message;
+	}
+	console.log("Sum="+Sum);
+	return(Sum);
+}
+
 //Importing data
 var eventHtmlString = "";
 
@@ -613,12 +503,11 @@ function importEventData()
 	{	
 		//eventDataValues.orgUnitIdScheme = orgUnitIdScheme;
 		var eventDataJSON = JSON.stringify(eventDataValues);
-		console.log(eventDataValues);
-		console.log("eventDataValues json");
-		console.log(eventDataJSON);
+		//console.log(eventDataValues);
+		//console.log(eventDataJSON);
 		
 		//alert(orgUnitIdScheme);
-		var url = "../../events?dataElementIdScheme=code&orgUnitIdScheme="+orgUnitIdScheme;
+		var url = "../../events?orgUnitIdScheme="+orgUnitIdScheme;
 		//var url = "../../events";
 		
 		$.ajax({
@@ -644,7 +533,15 @@ function importEventData()
 			isum.status = res.status;
 			isum.message = res.message;
 			
-			var imEventCount = numberOfEvents;
+			var imEventCount = "";
+			try
+			{
+				imEventCount = res.response.importSummaries.length;
+			}
+			catch(ex)
+			{
+				imEventCount = "Couldn't fetch";
+			}
 			
 			isum.summary = "<b>Imported Events:</b>" + imEventCount + ", <b>Imported Fields:</b>" + res.response.imported + ", <b>Not Imported Fields:</b>" + res.response.ignored;
 			importSummary.push(isum);
@@ -653,7 +550,6 @@ function importEventData()
 			try
 			{
 				console.log("Event data import response");
-				console.log(request);
 				var response = request.responseJSON.response;
 				console.log(response);
 				
@@ -664,12 +560,16 @@ function importEventData()
 				isum.status = "Error";
 				isum.message = "";
 				
-				isum.summary = isum.summary = "<b>Imported Events:</b>" + numberOfEvents;
+				for( var c=0; c<response.importSummaries.length; c++ )
+				{
+					isum.message += "<tr><td></td><td>" + response.importSummaries[c].description + "</td></tr>";
+				}
+				
+				isum.summary = request.responseJSON.message;
 				importSummary.push(isum);
 			}
 			catch(ex)
 			{
-				console.log(ex);
 				console.log("Something went wrong while fetching event import error summary");
 			}
 			
@@ -700,6 +600,7 @@ function importData()
 		var dataValueSet = {};
 		dataValueSet.dataElementIdScheme = dataElementIdScheme;
 		dataValueSet.orgUnitIdScheme = orgUnitIdScheme;
+		dataValueSet.idScheme = idScheme;
 		dataValueSet.dataValues = dataValues;
 		var dataJSON = JSON.stringify(dataValueSet);
 		
@@ -932,7 +833,20 @@ function printSummary()
 
 function formatDate(date)
 {
-
+	var months = [];
+	months["jan"] = "01";
+	months["feb"] = "02";
+	months["mar"] = "03";
+	months["apr"] = "04";
+	months["may"] = "05";
+	months["jun"] = "06";
+	months["jul"] = "07";
+	months["aug"] = "08";
+	months["sep"] = "09";
+	months["oct"] = "10";
+	months["nov"] = "11";
+	months["dec"] = "12";
+	
 	var components = date.split("/");
 	if( components.length != 3 )
 		return null;

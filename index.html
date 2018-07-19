@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -86,7 +85,7 @@
 				<div class="action-buttons">
 					<div id="uploadLogo" title="Upload data sheets"></div>
 					<a id="downloadLogo" title="Download a sample template" download> </a>
-					<input type="file" id="uploadFile"  name="uploadFile" style="display:none" accept=".xlsx, .xls" multiple />					
+					<input type="file" id="uploadFile"  name="uploadFile" style="display:none" accept=".xlsx" multiple />					
 				</div>
 				
 				<div id="helpText">
@@ -171,7 +170,6 @@
   
 		<div id="footer"> Powered By DHIS</div>
 		
-		<script src="js/constants.js"></script>
 		<script src="libraries/jquery/2.2.3/jquery.js"></script>
 		<script src="libraries/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="js/validations.js"></script>
@@ -219,7 +217,7 @@
 					currentFileName = currentFile.name;
 					console.log( "**************************** "+currentFile.name+" **************" );
 					 
-					if( extension == "xlsx" || extension == "xls")
+					if( extension == "xlsx" )
 					{
 						currentFileNum++;
 						handleFile(currentFile);
@@ -242,9 +240,7 @@
 			}
 		</script>
 		
-		<script src="template_cambo.js"></script>
-		<script src="template_indo.js"></script>
-		<script src="template_bu02.js"></script>
+		<script src="who.js"></script>
 		<script src="config.js"></script>
 		
 		<script type="text/javascript" src="libraries/excel_reader/jszip.min.js"></script>
