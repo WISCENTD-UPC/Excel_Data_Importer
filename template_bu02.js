@@ -16,40 +16,12 @@ var data_ntd =
                     sheet_type: EVENTS,
                     sheet_no: 1,
                     data_starting_row : "5",
+                    data_starting_col : "4",
                     key_column : "B",
                     ou_col : "B",
                     program : "lAu94BiaY5s",
                     event_date_col: "C", //should be a letter
 
-                    event_des: [
-                        {deuid: "GEN_FirstName_T", column: "D"},
-                        {deuid: "GEN_Registry Number_T", column: "E"},
-                        {deuid: "GEN_Age_T", column: "F"},
-                        {deuid: "GEN_Sexe_T", column: "G"},
-                        {deuid: "GEN_Address_T", column: "H"},
-                        {deuid: "GEN_Locality_T", column: "I"},
-                        {deuid: "Skin_Cl_Classif_T", column: "J"},
-                        {deuid: "Skin_Cl_Nodule_T", column: "K"},
-                        {deuid: "Skin_Cl_Oedema_T", column: "L"},
-                        {deuid: "Skin_Cl_Osteomyelitis_T", column: "M"},
-                        {deuid: "Skin_Cl_Papule_T", column: "N"},
-                        {deuid: "Skin_Cl_Ulcer_T", column: "O"},
-                        {deuid: "Skin_Cl_Plaque_T", column: "P"},
-                        {deuid: "Skin_Cl_Eye_T", column: "Q"},
-                        {deuid: "Skin_Cl_Breast_T", column: "R"},
-                        {deuid: "Skin_Cl_Genitalia_T", column: "S"},
-                        {deuid: "Skin_Cl_Abdomen_T", column: "T"},
-                        {deuid: "Skin_Cl_Back_T", column: "U"},
-                        {deuid: "Skin_Cl_Buttocks perineum_T", column: "V"},
-                        {deuid: "Skin_Cl_Head Neck_T", column: "W"},
-                        {deuid: "Skin_Cl_Lower Limb_T", column: "X"},
-                        {deuid: "Skin_Cl_Thorax_T", column: "Y"},
-                        {deuid: "Skin_Cl_Upper limb_T", column: "Z"},
-                        {deuid: "BU_Cl_category_T", column: "AA"},
-                        {deuid: "BU_Cl_jointLimitation_T", column: "AB"},
-                        {deuid: "BU_Spe_T", column: "AC"},
-                        {deuid: "BU_Tx_AB_T", column: "AD"}
-                    ]
                 }
             ]
         },
@@ -67,7 +39,7 @@ var data_ntd =
                     ou_col : "B",
                     program : "TFTLPseQEgi",
                     event_date_col: "C", //should be a letter
-                    event_des_length : 33,
+                    //event_des_length : 33,
 
                     event_des: [
                         {deuid: "GEN_ID Number_T", column: "D"},
@@ -113,7 +85,7 @@ var data_ntd =
                     ou_col : "B",
                     program : "TFTLPseQEgi",
                     event_date_col: "C", //should be a letter
-                    event_des_length : 33,
+                   // event_des_length : 33,
 
                     event_des: [
                         {deuid: "GEN_ID Number_T", column: "D"},
@@ -152,7 +124,7 @@ var data_ntd =
                     ou_col : "F",
                     program : "dBAcTWcDpbO",
                     event_date_col: "C", //should be a letter
-                    event_des_length : 33,
+                   // event_des_length : 33,
 
                     event_des: [
                         {deuid: "GEN_ID Number_T", column: "D"},
@@ -199,7 +171,7 @@ var data_ntd =
                     ou_col : "E",
                     program : "uYKG1KOUIy1",
                     event_date_col: "F", //should be a letter
-                    event_des_length : 93,
+                   // event_des_length : 93,
 
                     event_des: []
                 }
@@ -220,7 +192,7 @@ var data_ntd =
                     ou_col : "F",
                     program : "h1KVXwrpKKf",
                     event_date_col: "G",    //should be a letter
-                    event_des_length : 10,
+                   // event_des_length : 10,
 
                     event_des: []
                 }

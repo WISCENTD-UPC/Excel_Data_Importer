@@ -377,19 +377,31 @@ function processExcelSheet()
 							//eventDataValue.orgUnitIdScheme = orgUnitIdScheme;
 							eventDataValue.dataValues = [];
 							var columnOfData = parseInt(sheet.data_starting_col);
+							var columnOfDataLetter = getColumnName(columnOfData);
 
+							var dv = {};
+							while (dv.dataElement = getCellData( sheet.sheet_no, columnOfDataLetter + "" + 1 )) {
+
+								dv.value = getCellData( sheet.sheet_no, columnOfDataLetter + "" + r );
+
+								columnOfDataLetter = nextLetter(columnOfDataLetter);
+								eventDataValue.dataValues.push(dv);
+								dv = {};
+							}
+							/*
 							for( var x=0; x<sheet.event_des_length; x++ )
 							{
 								var dv = {};
 								var ds = sheet.event_des[x];
-                                var columnOfDataString = getColumnName(columnOfData);
 
 								dv.dataElement = getCellData( sheet.sheet_no, columnOfDataString + "" + 1 );
 								//dv.categoryOptionCombo = ds.cocuid;
 								dv.value = getCellData( sheet.sheet_no, columnOfDataString + "" + r );
 								eventDataValue.dataValues.push(dv);
-                                ++columnOfData;
+								++columnOfData;
+								
 							}
+							*/
 							//console.log(eventDataValue);
 							++numberOfEvents;
 							eventDataValues.events.push(eventDataValue);
