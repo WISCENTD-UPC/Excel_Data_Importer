@@ -26,6 +26,35 @@ var data_ntd =
             ]
         },
         {
+            name: "BU02 data template + from Village TEST",
+            file:"BU02_template.xlsx",
+            sheet_mode : DIFFERENT_MODEL_SHEETS,
+            sheets: [
+                {
+                    sheet_type: EVENTS,
+                    sheet_no: 1,
+                    data_starting_row : "5",
+                    data_starting_col : "4",
+                    key_column : "B",
+                    ou_col : "B",
+                    program : "lAu94BiaY5s",
+                    event_date_col: "C", //should be a letter
+
+                },
+                {
+                    sheet_type: EVENTS,
+                    sheet_no: 1,
+                    data_starting_row : "5",
+                    data_starting_col : "4",
+                    key_column : "I",
+                    ou_col : "I",
+                    program : "MECZlaC9Ef6",
+                    event_date_col: "C", //should be a letter
+
+                }
+            ]
+        },
+        {
             name: "VL register template",
             file:"VL_register_template.xlsx",
             sheet_mode : DIFFERENT_MODEL_SHEETS,
@@ -39,7 +68,7 @@ var data_ntd =
                     ou_col : "B",
                     program : "TFTLPseQEgi",
                     event_date_col: "C", //should be a letter
-                    //event_des_length : 33,
+  
 
                     event_des: [
                         {deuid: "GEN_ID Number_T", column: "D"},

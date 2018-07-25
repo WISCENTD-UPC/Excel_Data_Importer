@@ -25,9 +25,9 @@ var importSummary = [];
 var numberOfEvents;
 var dEOfThisSheet, cocuidOfThisSheet;
 
-var isEventDataAvaialble = false;
+var uploadEventData = false;
+var uploadAggregatedData = false;
 
-var isAggDataAvailable = false;
 var excelHeaders = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK", "AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT", "AU", "AV", "AW", "AX", "AY", "AZ", "BA", "BB", "BC", "BD", "BE", "BF", "BG", "BH"]
 
 var months = [];
@@ -168,8 +168,10 @@ function processExcelSheet()
 	eventDataValues.events = [];
 	errorString = "";
 	hasErrors = false;
-	isEventDataAvaialble = false;
-	isAggDataAvailable = false;	
+	uploadEventData = false;
+	uploadAggregatedData = false;	
+
+	numberOfEvents = 0;
 
 	console.log("before for processExcelSheet");
 	//ResultArray is defined and populated in funcxl.js
@@ -217,7 +219,7 @@ function processExcelSheet()
 				console.log("No errors in the sheet");
 				if (sheet.sheet_type == "AGGREGATE_EVENT" || sheet.sheet_type == "AGGREGATE_STATIC")
 				{
-					isAggDataAvailable = true;
+					uploadAggregatedData = true;
 					for( var x=0; x<sheet.agg_des.length; x++ )
 					{
 						var ds = sheet.agg_des[x];
@@ -233,7 +235,7 @@ function processExcelSheet()
 				
 				if( sheet.sheet_type == MULTIPLE_DE_OU_PE )
 				{
-					isAggDataAvailable = true;
+					uploadAggregatedData = true;
 					
 					var rowStart = parseInt(sheet.data_starting_row);
 					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no)) - 1;
@@ -306,7 +308,7 @@ function processExcelSheet()
 					//orgUnitIdScheme = sheet.orgUnitIdScheme;
 					var rowStart = parseInt(sheet.data_starting_row);
 					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
-					isEventDataAvaialble = true;
+					uploadEventData = true;
 					
 					//console.log( sheet.sheet_no + " : " + rowEnd );
 					
@@ -347,7 +349,7 @@ function processExcelSheet()
 									errorString += "<tr><td></td><td> " + result.msg + " in " + ds.column + "" + r + " of sheet " + sheet.sheet_no + " </td></tr>";
 								}
 							}	
-							//console.log(eventDataValue);
+							++numberOfEvents;
 							eventDataValues.events.push(eventDataValue);
 						}
 					}
@@ -358,14 +360,13 @@ function processExcelSheet()
 					console.log("Events type");
 					var rowStart = parseInt(sheet.data_starting_row);
 					var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
-					isEventDataAvaialble = true;
+					uploadEventData = true;
 
 
 					console.log( sheet.sheet_no + " : " + rowStart );
 
 
 					//Event rows
-					numberOfEvents = 0;
 					for( var r = rowStart; r<=rowEnd; r++ )
 					{
 						if( getCellData( sheet.sheet_no, sheet.key_column + "" + r ) != "" )
@@ -412,7 +413,7 @@ function processExcelSheet()
 				if (sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES)
 				{
 					//console.log(MULTIPLE_PERIODS_AND_FACILITIES+" type");
-					isAggDataAvailable = true;
+					uploadAggregatedData = true;
 					dataElementIdScheme = sheet.dataElementIdScheme;
 
 					// for each sheet in the list
@@ -460,7 +461,7 @@ function processExcelSheet()
 				if (sheet.sheet_type == UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS)
 				{
 					console.log(UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS+" type");
-					isAggDataAvailable = true;
+					uploadAggregatedData = true;
 					dataElementIdScheme = sheet.dataElementIdScheme;
 
 					// for each sheet in the list
@@ -523,7 +524,7 @@ function processExcelSheet()
 				if (sheet.sheet_type == UNLIMITED_FLEXIBLE)
 				{
 					console.log(UNLIMITED_FLEXIBLE+" type");
-					isAggDataAvailable = true;
+					uploadAggregatedData = true;
 					dataElementIdScheme = sheet.dataElementIdScheme;
 
 					// for each sheet in the list
@@ -654,7 +655,7 @@ function processExcelSheet()
 	
 	if( !hasErrors )
 	{
-		if (!isAggDataAvailable) importEventData();
+		if (!uploadAggregatedData) importEventData();
 		else importData();
 	}		
 	else
@@ -896,7 +897,7 @@ function importEventData()
 {
 	$("#loader").show();
 
-	if( isEventDataAvaialble )
+	if( uploadEventData )
 	{	
 		//eventDataValues.orgUnitIdScheme = orgUnitIdScheme;
 		var eventDataJSON = JSON.stringify(eventDataValues);
@@ -931,7 +932,7 @@ function importEventData()
 			
 			var imEventCount = numberOfEvents;
 			
-			isum.summary = "<b>Imported Events:</b>" + imEventCount + ", <b>Imported Fields:</b>" + res.response.imported + ", <b>Not Imported Fields:</b>" + res.response.ignored;
+			isum.summary = "<b>(theoric) Imported Events:</b>" + imEventCount + ", <b>Imported Values:</b>" + res.response.imported + ", <b>Not Imported Values:</b>" + res.response.ignored;
 			importSummary.push(isum);
 			importData();
 		}).fail(function (request, textStatus, errorThrown) {
@@ -979,7 +980,7 @@ function importEventData()
 
 function importData()
 {
-	if( isAggDataAvailable )
+	if( uploadAggregatedData )
 	{				
 		//alert(orgUnitIdScheme);
 		var dataValueSet = {};
