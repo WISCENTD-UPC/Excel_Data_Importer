@@ -877,6 +877,11 @@ function getCellData( sheetNum, address )
 			} else {
 				val = data;
 			}
+			// workaround, excel put these values automatically in UPPERCASE and DHIS2 does not accept as boolean
+			if (val == "TRUE" || val == "FALSE"){
+				val = val.toLowerCase();
+			}
+
 		}
 			
 	}
@@ -891,6 +896,22 @@ function getCellData( sheetNum, address )
 
 //Importing data
 var eventHtmlString = "";
+
+function countEventConflicts(importSummaries){
+	register_start();
+
+	for (var i = 0; i<importSummaries.length; i++){
+		if (typeof importSummaries[i].conflicts !== 'undefined') {
+
+			for (var j = 0; j<importSummaries[i].conflicts.length; j++){
+				
+				register_add_pair(importSummaries[i].conflicts[j].object, 
+					importSummaries[i].conflicts[j].value);				
+			}
+		}
+	}
+	console.log(register_get());
+}
 
 function importEventData()
 {
@@ -931,17 +952,13 @@ function importEventData()
 			
 			var imEventCount = numberOfEvents;
 			
-			isum.summary = "<b>Imported Events:</b>" + imEventCount + ", <b>Imported Fields:</b>" + res.response.imported + ", <b>Not Imported Fields:</b>" + res.response.ignored;
 
-			var conlictsArray ;
-			var conflicts = res.response.importSummaries
+			countEventConflicts(res.response.importSummaries);
 
-			for (var i = 0; i<res.response.importSummaries.length; i++){
-				for (var j = 0; j<res.response.importSummaries[i].conflicts; j++){
-					
-				
-				}
-			}
+
+
+			isum.summary = "<b>Imported Events:</b>" + imEventCount + ", <b>Imported Fields:</b>" + res.response.imported + ", <b>Not Imported Fields:</b>" + res.response.ignored
+						+ "<br> Total types of conflicts : " + register_get_total_unique() + "<br> Total conflicts : " + register_get_total ();
 
 			importSummary.push(isum);
 			importData();
@@ -960,7 +977,12 @@ function importEventData()
 				isum.status = "Error";
 				isum.message = "";
 				
-				isum.summary = isum.summary = "<b>Imported Events:</b>" + numberOfEvents;
+				countEventConflicts(response.importSummaries);
+
+
+				isum.summary = isum.summary = "<b>Imported Events:</b>" + numberOfEvents
+				+ "<br> Total types of conflicts : " + register_get_total_unique() + "<br> Total conflicts : " + register_get_total ();
+				
 				importSummary.push(isum);
 			}
 			catch(ex)
@@ -1149,9 +1171,9 @@ function printSummary()
 		htmlStr += "<tr>";
 		
 		if( !(hasValidationErrors || hasEventImportErrors || hasDataValueImportErrors) )
-			htmlStr += "<td> <img src='images/right.jpg' width='20' /> </td>";
+			htmlStr += "<td> <img src='images/right.png' width='64' /> </td>";
 		else
-			htmlStr += "<td> <img src='images/wrong.jpg' width='20' /> </td>";
+			htmlStr += "<td> <img src='images/wrong.png' width='64' /> </td>";
 			
 		htmlStr += "<td>" + uploadedFiles[f].name + "</td>";
 		htmlStr += "<td>" + eis.summary + "</td>";
@@ -1184,7 +1206,7 @@ function printSummary()
 		{
 			//name
 			htmlMsgStr += "<tr>";
-			htmlMsgStr += "<td colspan='2' style='background:#FFC8B6;text-align:center' >" + uploadedFiles[f].name + "</td>";
+			htmlMsgStr += "<td colspan='3' style='background:#FFC8B6;text-align:center' >" + uploadedFiles[f].name + "</td>";
 			htmlMsgStr += "</tr>";			
 			
 			//Pre Import messages
@@ -1203,7 +1225,7 @@ function printSummary()
 			htmlMsgStr += "<tr>";
 			htmlMsgStr += "<td>Event Data Message</td>";
 			htmlMsgStr += "<td></td>";
-			htmlMsgStr += "</tr>" + eis.message;		
+			htmlMsgStr += "</tr>" + eis.message;	
 			
 			//dv status
 			htmlMsgStr += "<tr>";
@@ -1216,6 +1238,11 @@ function printSummary()
 			htmlMsgStr += "<td>Data Value Message</td>";
 			htmlMsgStr += "<td></td>";
 			htmlMsgStr += "</tr>" + dis.message;
+
+			// event details
+			htmlMsgStr += getSummaryAsTableTR();
+
+
 					
 		}
 		$("#imSumTable").append(htmlStr);

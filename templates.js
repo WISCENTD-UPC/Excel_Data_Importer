@@ -8,7 +8,7 @@ var data_ntd =
             sheets: []
         },
         {
-            name: "BU02 data template",
+            name: "BU02 data template (ONLY one program)",
             file:"BU02_template.xlsx",
             sheet_mode : DIFFERENT_MODEL_SHEETS,
             sheets: [
@@ -26,7 +26,7 @@ var data_ntd =
             ]
         },
         {
-            name: "BU02 data template + from Village TEST",
+            name: "BU02 data template + from Village",
             file:"BU02_template.xlsx",
             sheet_mode : DIFFERENT_MODEL_SHEETS,
             sheets: [
