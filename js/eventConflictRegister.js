@@ -15,11 +15,11 @@ function register_get(){
 function register_add_pair(key, value){
     if (!(key in eventConflictRegister)) {
         eventConflictRegister[key] = new Object();
-        eventConflictRegister[key][value] = 0;
+        eventConflictRegister[key][value] = 1;
         eventConflictRegister_total_unique++;
     } else {
         if (!(value in eventConflictRegister[key])) {
-            eventConflictRegister[key][value] = 0;
+            eventConflictRegister[key][value] = 1;
             eventConflictRegister_total_unique++;
         } else {
             eventConflictRegister[key][value] ++;

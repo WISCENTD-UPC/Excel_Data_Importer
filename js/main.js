@@ -909,6 +909,11 @@ function countEventConflicts(importSummaries){
 					importSummaries[i].conflicts[j].value);				
 			}
 		}
+		
+		if (importSummaries[i].status.localeCompare('ERROR') == 0) {
+			register_add_pair(importSummaries[i].status, 
+					importSummaries[i].description);		
+		}
 	}
 	console.log(register_get());
 }
