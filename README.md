@@ -4,6 +4,9 @@ Authors: Marc Garnica and Ramon Jimenez Pomareta
 
 ## Changelog 
 
+##### 2.13.3
+VL register template cleaned and VL register template + fromVillage fixed to work on one sheet.
+
 ##### 2.13.2
 "Unlimited Flexible Monthly" templates change orgUnits column from B to A
 changelog created
