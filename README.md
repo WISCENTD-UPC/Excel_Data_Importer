@@ -4,12 +4,12 @@ Authors: Marc Garnica and Ramon Jimenez Pomareta (minor modifications by Ignacio
 
 ## Changelog
 
+##### 2.14.1
+Bugfix: home page link compatible with 2.30
+
 ##### 2.14
 yearly simple template added
 some fixes in unlimited templates
-
-##### 2.13.4
-Dataset yearly added 
 
 ##### 2.13.3
 VL register template cleaned and VL register template + fromVillage fixed to work on one sheet.
