@@ -4,6 +4,9 @@ Authors: Marc Garnica and Ramon Jimenez Pomareta (minor modifications by Ignacio
 
 ## Changelog
 
+##### 2.14.1-unlimited
+Removed all templates except Unlimited Flexible
+
 ##### 2.14.1
 Bugfix: home page link compatible with 2.30
 

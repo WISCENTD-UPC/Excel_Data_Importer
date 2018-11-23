@@ -1,20 +1,32 @@
 {
-    "version": "2.14.1",
-    "name": "Excel Data Importer",
-    "description": "Excel Data Importer",
+    "version": "2.14.1-unlimited",
+    "name": "Excel Data Importer - Unlimited Flexible",
+    "description": "Excel Data Importer - Unlimited Flexible",
     "icons": {
             "48": "img/icons/logo.png"
     },
-    "developer": {
+    "original_developer": {
         "url": "",
         "name": "Hisp Vietnam",
         "company": "",
         "email": null
     },
+    "developer": {
+        "url": "",
+        "name": "Ramón José Jiménez Pomareta",
+        "company": "",
+        "email": "pomaretar@who.int"
+    },
     "activities": {
         "dhis": {
             "href": "*"
         }
+    },
+    "versions":
+    {
+        "version": "2.14.1-unlimited",
+        "minDhisVersion": "2.26",
+        "maxDhisVersion": "2.30"
     },
     "launchUrl": null,
     "launch_path": "index.html",
