@@ -101,7 +101,24 @@ var data_ntd =
                 }
             ]
         },
-	{
+        {
+            name: "VL Mortality template",
+            file:"VL_mortality_template.xlsx",
+            sheet_mode : DIFFERENT_MODEL_SHEETS,
+            sheets: [
+                {
+                    sheet_type: EVENTS,
+                    sheet_no: 1,
+                    data_starting_row : "5",
+		            data_starting_col : "4",
+                    key_column : "B",
+                    ou_col : "B",
+                    program : "ZwMIBxTm2FW",
+                    event_date_col: "C" //should be a letter
+                }
+            ]
+        },
+	    {
             name: "Kenya VL case management form",
             file:"VL_case_form_template.xlsx",
             sheet_mode : DIFFERENT_MODEL_SHEETS,
