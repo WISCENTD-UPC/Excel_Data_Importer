@@ -4,6 +4,9 @@ Authors: Marc Garnica and Ramon Jimenez Pomareta (minor modifications by Ignacio
 
 ## Changelog
 
+##### 2.14.2 - Nepal
+Special version for Nepal. All templated removed. Nepal template added.
+
 ##### 2.14.2
 Added VL Mortality Template
 
