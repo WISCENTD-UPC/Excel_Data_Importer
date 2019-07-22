@@ -4,6 +4,9 @@ Authors: Marc Garnica and Ramon Jimenez Pomareta (minor modifications by Ignacio
 
 ## Changelog
 
+##### 2.14.3
+Updated: VL Template (2019-07-17)
+
 ##### 2.14.2
 Added VL Mortality Template
 

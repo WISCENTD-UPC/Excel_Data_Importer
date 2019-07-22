@@ -56,7 +56,7 @@ var data_ntd =
         },
         {
             name: "VL register template",
-            file:"VL_register_template.xlsx",
+            file:"VL_register_generic_v2_20190717.xlsx",
             sheet_mode : DIFFERENT_MODEL_SHEETS,
             sheets: [
                 {
@@ -73,7 +73,7 @@ var data_ntd =
         },
         {
             name: "VL register template + From Village",
-            file:"VL_register_template.xlsx",
+            file:"VL_register_generic_v2_20190717.xlsx",
             sheet_mode : DIFFERENT_MODEL_SHEETS,
             sheets: [
                 {
