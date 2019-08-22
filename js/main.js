@@ -230,6 +230,8 @@ function processExcelSheet() {
                 errorString +=
                     "<tr><td></td><td> Sheet " +
                     sheet.sheet_no +
+                    "," +
+                    resultArray.length +
                     " was not found. Please download template excel to verify or contact admin.</td></tr>";
             }
 
@@ -250,6 +252,26 @@ function processExcelSheet() {
                     errorString +=
                         "<tr><td></td><td> " + mResult.msg + "</td></tr>";
                 } else dMonth = mResult.month;
+                if (yResult.isErr) {
+                    hasErrors = true;
+                    errorString +=
+                        "<tr><td></td><td> " + yResult.msg + "</td></tr>";
+                } else dYear = yResult.year;
+            }
+
+            if (
+                sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" ||
+                sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY"
+            ) {
+                var orgUnit = getCellData(sheet.sheet_no, sheet.oucode_cell);
+                //var dMonth = getCellData( sheet.sheet_no, sheet.month_cell );
+                var dYear = getCellData(sheet.sheet_no, sheet.year_cell);
+                //orgUnitIdScheme = sheet.orgUnitIdScheme;
+
+                //validating month and year
+                //var mResult = validateMonth(dMonth);
+                var yResult = validateYear(dYear);
+                //if(mResult.isErr) { hasErrors = true; errorString += "<tr><td></td><td> " + mResult.msg + "</td></tr>"; } else dMonth = mResult.month;
                 if (yResult.isErr) {
                     hasErrors = true;
                     errorString +=
@@ -279,6 +301,44 @@ function processExcelSheet() {
                     }
                 }
 
+
+                if (sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY") {
+                    isAggDataAvailable = true;
+                    for (var x = 0; x < sheet.agg_des.length; x++) {
+                        var ds = sheet.agg_des[x];
+                        var dataValue = {};
+                        dataValue.period = dYear;
+                        dataValue.dataElement = ds.deuid;
+                        dataValue.categoryOptionCombo = ds.cocuid;
+                        dataValue.orgUnit = orgUnit;
+                        dataValue.value = getCellData(
+                            sheet.sheet_no,
+                            ds.cell_no
+                        );
+                        if (dataValue.value == "TRUE") {
+                            dataValue.value = "true";
+                            dataValues.push(dataValue);
+                        }
+                    }
+                }
+
+                if (sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN") {
+                    isAggDataAvailable = true;
+                    for (var x = 0; x < sheet.agg_des.length; x++) {
+                        var ds = sheet.agg_des[x];
+                        var dataValue = {};
+                        dataValue.period = dYear;
+                        dataValue.dataElement = ds.deuid;
+                        dataValue.categoryOptionCombo = ds.cocuid;
+                        dataValue.orgUnit = orgUnit;
+                        dataValue.value = getCellData(
+                            sheet.sheet_no,
+                            ds.cell_no
+                        );
+                        dataValues.push(dataValue);
+                    }
+                }
+
                 if (sheet.sheet_type == "MULTIPLE_DE_OU_PE") {
                     isAggDataAvailable = true;
 
@@ -292,10 +352,10 @@ function processExcelSheet() {
                     ) {
                         console.log(
                             sheet.key_column +
-                                getCellData(
-                                    sheet.sheet_no,
-                                    sheet.key_column + "" + lastRow
-                                )
+                            getCellData(
+                                sheet.sheet_no,
+                                sheet.key_column + "" + lastRow
+                            )
                         );
                         if (
                             getCellData(
@@ -693,7 +753,7 @@ function processExcelSheet() {
                     }
                     console.log("dataValues");
                     console.log(dataValues);
-                }
+                    }
 
                 if (sheet.sheet_type == "UNLIMITED_FLEXIBLE") {
                     console.log("UNLIMITED_FLEXIBLE" + " type");
@@ -889,7 +949,7 @@ function getObjectWithKeys(
                     !isNaN(k.charAt(theMatchingString.length))) ||
                 (!isNaN(theMatchingString) &&
                     k.indexOf(theMatchingString) ==
-                        Math.abs(k.length - theMatchingString.length) &&
+                    Math.abs(k.length - theMatchingString.length) &&
                     isNaN(
                         k.charAt(
                             Math.abs(k.length - theMatchingString.length - 1)
@@ -1136,9 +1196,7 @@ function importEventData() {
         console.log(eventDataValues);
 
         //alert(orgUnitIdScheme);
-        var url =
-            "../../events?dataElementIdScheme=code&orgUnitIdScheme=" +
-            orgUnitIdScheme;
+        var url = "../../events?orgUnitIdScheme=" + orgUnitIdScheme;
         //var url = "../../events";
 
         $.ajax({
@@ -1197,6 +1255,13 @@ function importEventData() {
                     isum.status = "Error";
                     isum.message = "";
 
+                    for (var c = 0; c < response.importSummaries.length; c++) {
+                        isum.message +=
+                            "<tr><td></td><td>" +
+                            response.importSummaries[c].description +
+                            "</td></tr>";
+                    }
+
                     countEventConflicts(response.importSummaries);
 
                     isum.summary = isum.summary =
@@ -1205,7 +1270,7 @@ function importEventData() {
                         "<br> Total types of conflicts : " +
                         register_get_total_unique() +
                         "<br> Total conflicts : " +
-                        register_get_total();
+                    register_get_total() + "<br>" + request.responseJSON.message;
 
                     importSummary.push(isum);
                 } catch (ex) {
@@ -1237,6 +1302,7 @@ function importData() {
         var dataValueSet = {};
         dataValueSet.dataElementIdScheme = dataElementIdScheme;
         dataValueSet.orgUnitIdScheme = orgUnitIdScheme;
+        dataValueSet.idScheme = idScheme;
         dataValueSet.dataValues = dataValues;
         var dataJSON = JSON.stringify(dataValueSet);
 
