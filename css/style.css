@@ -114,7 +114,7 @@
 #uploadLogo {
     width: 150px;
     height: 50px;
-    background: url("../images/upload_b.png");
+    background: url("../img/upload_b.png");
     background-size: 100% 100%;
     z-index: 100;
     cursor: pointer;
@@ -126,7 +126,7 @@
 #downloadLogo {
     width: 150px;
     height: 50px;
-    background: url("../images/download_b.png");
+    background: url("../img/download_b.png");
     background-size: 100% 100%;
     z-index: 100;
     margin-left: 20px;
@@ -168,7 +168,7 @@
     left: 50%;
     margin-top: -75px;
     margin-left: -75px;
-    background: url("../images/loader.gif");
+    background: url("../img/loader.gif");
     background-size: 100% 100%;
 }
 

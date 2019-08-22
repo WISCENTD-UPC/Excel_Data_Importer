@@ -1399,8 +1399,8 @@ function printSummary() {
                 hasDataValueImportErrors
             )
         )
-            htmlStr += "<td> <img src='images/right.png' width='64' /> </td>";
-        else htmlStr += "<td> <img src='images/wrong.png' width='64' /> </td>";
+            htmlStr += "<td> <img src='img/right.png' width='64' /> </td>";
+        else htmlStr += "<td> <img src='img/wrong.png' width='64' /> </td>";
 
         htmlStr += "<td>" + uploadedFiles[f].name + "</td>";
         htmlStr += "<td>" + eis.summary + "</td>";

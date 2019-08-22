@@ -3,7 +3,7 @@
     "name": "Excel Data Importer",
     "description": "Excel Data Importer",
     "icons": {
-            "48": "img/icons/logo.png"
+            "48": "img/logo.png"
     },
     "developer": {
         "url": "",
