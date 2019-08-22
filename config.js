@@ -3,16 +3,16 @@ var data = {
         {
             name: "Select an option",
             file: "empty.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: []
         },
         {
             name: "BU02 data template (ONLY one program)",
             file: "BU02_template.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     data_starting_col: "4",
@@ -26,10 +26,10 @@ var data = {
         {
             name: "BU02 data template + from Village",
             file: "BU02_template.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     data_starting_col: "4",
@@ -39,7 +39,7 @@ var data = {
                     event_date_col: "C" //should be a letter
                 },
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     data_starting_col: "4",
@@ -53,10 +53,10 @@ var data = {
         {
             name: "VL register template",
             file: "VL_register_generic_v2_20190717.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     data_starting_col: "4",
@@ -70,10 +70,10 @@ var data = {
         {
             name: "VL register template + From Village",
             file: "VL_register_generic_v2_20190717.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     data_starting_col: "4",
@@ -84,7 +84,7 @@ var data = {
                     // event_des_length : 33,
                 },
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     data_starting_col: "4",
@@ -98,10 +98,10 @@ var data = {
         {
             name: "VL Mortality template",
             file: "VL_mortality_template.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     data_starting_col: "4",
@@ -115,10 +115,10 @@ var data = {
         {
             name: "Kenya VL case management form",
             file: "VL_case_form_template.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "6",
                     data_starting_col: "7",
@@ -136,10 +136,10 @@ var data = {
         {
             name: "Kenya VL laboratory log",
             file: "VL_lab_log.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "6",
                     data_starting_col: "8",
@@ -157,10 +157,10 @@ var data = {
         {
             name: "HAT sentinel sites",
             file: "HAT_template.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: EVENTS,
+                    sheet_type: "EVENTS",
                     sheet_no: 1,
                     data_starting_row: "5",
                     key_column: "B",
@@ -192,14 +192,14 @@ var data = {
         {
             name: "Rabies template",
             file: "rabies_template.xlsx",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: MULTIPLE_DE_OU_PE,
+                    sheet_type: "MULTIPLE_DE_OU_PE",
                     sheet_no: 1,
-                    orgUnitIdScheme: ORG_CODE_SCHEME,
-                    dataElementIdScheme: ORG_UID_SCHEME,
-                    idScheme: ORG_UID_SCHEME,
+                    orgUnitIdScheme: "CODE",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
                     oucode_col: "B",
                     month_col: "A",
                     year_col: "A",
@@ -336,15 +336,15 @@ var data = {
         {
             name: "South Sudan Monthly template",
             file: "SOUTH_SUDAN_KA_TREATMENT_MONTHLY_SUMMARY.xlsx",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: MULTIPLE_PERIODS_AND_FACILITIES,
-                    period_type: MONTHLY_PERIOD,
+                    sheet_type: "MULTIPLE_FLEXIBLE",
+                    period_type: "MONTHLY",
                     year: "A3",
                     ou: "L1",
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
                     period_dim_1_first: "B",
                     period_dim_1_length: 12,
                     period_dim_2: 3,
@@ -431,15 +431,15 @@ var data = {
         {
             name: "South Sudan Weekly template",
             file: "SOUTH_SUDAN_KA_TREATMENT_WEEKLY_SUMMARY.xlsx",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: MULTIPLE_PERIODS_AND_FACILITIES,
-                    period_type: WEEKLY_PERIOD,
+                    sheet_type: "MULTIPLE_FLEXIBLE",
+                    period_type: "WEEKLY_PERIOD",
                     year: "B8",
                     ou: "M6",
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
                     period_dim_1_first: 13,
                     period_dim_1_length: 52,
                     period_dim_2: "C",
@@ -511,14 +511,14 @@ var data = {
         {
             name: "Unlimited VL Monthly template",
             file: "unlimited_monthly_template.xlsx",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type: MONTHLY_PERIOD,
+                    sheet_type: "UNLIMITED_DE_OU_PE",
+                    period_type: "MONTHLY",
                     year: "B2",
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
 
                     orgUnit_dim: "B",
                     data_starting_row: 7,
@@ -535,14 +535,14 @@ var data = {
         {
             name: "Unlimited VL Yearly template",
             file: "unlimited_annual_template.xlsx",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type: YEARLY_PERIOD,
+                    sheet_type: "UNLIMITED_DE_OU_PE",
+                    period_type: "YEARLY_PERIOD",
                     year: "B2",
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
 
                     orgUnit_dim: "B",
                     data_starting_row: 7,
@@ -559,14 +559,14 @@ var data = {
         {
             name: "Unlimited AmBisome Balance Monthly Template",
             file: "ambisome_balance_monthly_template.xlsx",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type: MONTHLY_PERIOD,
+                    sheet_type: "UNLIMITED_DE_OU_PE",
+                    period_type: "MONTHLY",
                     year: "F2",
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
 
                     orgUnit_dim: "B",
                     data_starting_row: 4,
@@ -582,14 +582,14 @@ var data = {
         {
             name: "Unlimited AmBisome 5 Monthly template",
             file: "unlimited_ambisome_monthly_template.xlsx",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS,
-                    period_type: MONTHLY_PERIOD,
+                    sheet_type: "UNLIMITED_DE_OU_PE",
+                    period_type: "MONTHLY",
                     year: "B2",
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
 
                     orgUnit_dim: "E",
                     data_starting_row: 4,
@@ -621,15 +621,15 @@ var data = {
         {
             name: "Unlimited Flexible Monthly - Different Model",
             file: "unlimited_flexible_monthly_templates.zip",
-            sheet_mode: DIFFERENT_MODEL_SHEETS,
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: UNLIMITED_FLEXIBLE,
-                    period_type: MONTHLY_PERIOD,
+                    sheet_type: "UNLIMITED_FLEXIBLE",
+                    period_type: "MONTHLY",
                     year_column: "D",
                     year_row: 1,
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
                     orgUnit_dim: "A",
                     data_starting_row: 4,
                     data_starting_row_advanced: 7,
@@ -647,15 +647,15 @@ var data = {
         {
             name: "Unlimited Flexible Monthly - Same Model ",
             file: "unlimited_flexible_monthly_templates.zip",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: UNLIMITED_FLEXIBLE,
-                    period_type: MONTHLY_PERIOD,
+                    sheet_type: "UNLIMITED_FLEXIBLE",
+                    period_type: "MONTHLY",
                     year_column: "D",
                     year_row: 1,
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_CODE_SCHEME,
+                    dataElementIdScheme: "CODE",
                     orgUnit_dim: "A",
                     data_starting_row: 4,
                     data_starting_row_advanced: 7,
@@ -673,15 +673,15 @@ var data = {
         {
             name: "Unlimited Flexible Yearly - Same Model ",
             file: "unlimited_flexible_yearly_template_simple.zip",
-            sheet_mode: SAME_MODEL_SHEETS,
+            sheet_mode: "SAME_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: UNLIMITED_FLEXIBLE,
-                    period_type: YEARLY_PERIOD,
+                    sheet_type: "UNLIMITED_FLEXIBLE",
+                    period_type: "YEARLY_PERIOD",
                     year_column: "D",
                     year_row: 1,
                     sheet_no: 1,
-                    dataElementIdScheme: ORG_UID_SCHEME,
+                    dataElementIdScheme: "UID",
                     orgUnit_dim: "A",
                     data_starting_row: 4,
                     data_starting_row_advanced: 7,
@@ -696,7 +696,7 @@ var data = {
                 }
             ]
         },
-                {
+        {
             name: "NHWA Module 1 Template",
             file: "NHWA_Module_1_Template.xlsx",
             sheets: [

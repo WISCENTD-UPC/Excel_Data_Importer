@@ -16,9 +16,9 @@ var eventDataValues;
 var errorString = "";
 var hasErrors = false;
 
-var orgUnitIdScheme = ORG_UID_SCHEME;
-var dataElementIdScheme = ORG_UID_SCHEME;
-var idScheme = ORG_UID_SCHEME;
+var orgUnitIdScheme = "UID";
+var dataElementIdScheme = "UID";
+var idScheme = "UID";
 
 var preImportValidationSummary = [];
 var importSummary = [];
@@ -190,8 +190,8 @@ function changeTemplate() {
 function changeOUScheme() {
     var ous = $("#ousSelectBox").val();
 
-    if (ous == 1) orgUnitIdScheme = ORG_UID_SCHEME;
-    else orgUnitIdScheme = ORG_CODE_SCHEME;
+    if (ous == 1) orgUnitIdScheme = "UID";
+    else orgUnitIdScheme = "CODE";
 
     //alert(orgUnitIdScheme);
 }
@@ -210,7 +210,7 @@ function processExcelSheet() {
     //ResultArray is defined and populated in funcxl.js
 
     var length, modelSelector;
-    if (templateObject.sheet_mode == SAME_MODEL_SHEETS) {
+    if (templateObject.sheet_mode == "SAME_MODEL_SHEETS") {
         length = resultArray.length;
         modelSelector = 0;
     } else {
@@ -279,7 +279,7 @@ function processExcelSheet() {
                     }
                 }
 
-                if (sheet.sheet_type == MULTIPLE_DE_OU_PE) {
+                if (sheet.sheet_type == "MULTIPLE_DE_OU_PE") {
                     isAggDataAvailable = true;
 
                     var rowStart = parseInt(sheet.data_starting_row);
@@ -472,7 +472,7 @@ function processExcelSheet() {
                     }
                 }
 
-                if (sheet.sheet_type == EVENTS) {
+                if (sheet.sheet_type == "EVENTS") {
                     console.log("Events type");
                     var rowStart = parseInt(sheet.data_starting_row);
                     var rowEnd = parseInt(getLastRowNumber(sheet.sheet_no));
@@ -547,8 +547,8 @@ function processExcelSheet() {
                     }
                 }
 
-                if (sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES) {
-                    //console.log(MULTIPLE_PERIODS_AND_FACILITIES+" type");
+                if (sheet.sheet_type == "MULTIPLE_FLEXIBLE") {
+                    //console.log("MULTIPLE_FLEXIBLE"+" type");
                     isAggDataAvailable = true;
                     dataElementIdScheme = sheet.dataElementIdScheme;
 
@@ -603,12 +603,8 @@ function processExcelSheet() {
                     //console.log(dataValues);
                 }
 
-                if (
-                    sheet.sheet_type == UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS
-                ) {
-                    console.log(
-                        UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS + " type"
-                    );
+                if (sheet.sheet_type == "UNLIMITED_DE_OU_PE") {
+                    console.log("UNLIMITED_DE_OU_PE" + " type");
                     isAggDataAvailable = true;
                     dataElementIdScheme = sheet.dataElementIdScheme;
 
@@ -626,7 +622,7 @@ function processExcelSheet() {
                         var de_per_period = sheet.data_des.length;
 
                         var lastColumn;
-                        //		if (sheet.period_type == YEARLY_PERIOD) {
+                        //		if (sheet.period_type == "YEARLY_PERIOD") {
                         lastColumn = distanceBetween(
                             sheet.period_dim_1,
                             lastColumnForRow(
@@ -699,8 +695,8 @@ function processExcelSheet() {
                     console.log(dataValues);
                 }
 
-                if (sheet.sheet_type == UNLIMITED_FLEXIBLE) {
-                    console.log(UNLIMITED_FLEXIBLE + " type");
+                if (sheet.sheet_type == "UNLIMITED_FLEXIBLE") {
+                    console.log("UNLIMITED_FLEXIBLE" + " type");
                     isAggDataAvailable = true;
                     dataElementIdScheme = sheet.dataElementIdScheme;
 
@@ -750,9 +746,9 @@ function processExcelSheet() {
                             getCOCUID = getCOCUIDSimple;
                         }
 
-                        if (sheet.period_type == YEARLY_PERIOD) {
+                        if (sheet.period_type == "YEARLY_PERIOD") {
                             getPeriod = getYearlyPeriod;
-                        } else if (sheet.period_type == MONTHLY_PERIOD) {
+                        } else if (sheet.period_type == "MONTHLY") {
                             getPeriod = getMonthlyPeriod;
                         } else {
                             console.log(
@@ -836,11 +832,11 @@ function processExcelSheet() {
     }
 
     function getMonthlyPeriod(lastPeriod, year, sheet_no, col, row) {
-        if (getPeriodNumber(MONTHLY_PERIOD, sheet_no, col, row).length == 0) {
+        if (getPeriodNumber("MONTHLY", sheet_no, col, row).length == 0) {
             // for advanced templates it uses this line n-1 times per period where n is number of columns.
             return lastPeriod;
         } else {
-            return year + getPeriodNumber(MONTHLY_PERIOD, sheet_no, col, row);
+            return year + getPeriodNumber("MONTHLY", sheet_no, col, row);
         }
     }
 
@@ -963,11 +959,11 @@ function getPeriodNumber(period_type, sheet_no, dim1, dim2) {
         console.log("WARN. Got empty period");
         return period;
     } else {
-        if (period_type === WEEKLY_PERIOD) {
+        if (period_type === "WEEKLY_PERIOD") {
             return "W" + (period < 10 ? "0" : "") + period;
-        } else if (period_type === MONTHLY_PERIOD) {
+        } else if (period_type === "MONTHLY") {
             return months[period.toLowerCase()];
-        } else if (period_type === YEARLY_PERIOD) {
+        } else if (period_type === "YEARLY_PERIOD") {
             return period;
         }
     }

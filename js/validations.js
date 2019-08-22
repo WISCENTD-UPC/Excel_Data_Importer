@@ -133,7 +133,7 @@ function validateJSON(templates) {
                         (t + 1);
                 } else if (
                     (sheet.sheet_type == "AGGREGATE_STATIC" ||
-                        sheet.sheet_type == MULTIPLE_DE_OU_PE) &&
+                        sheet.sheet_type == "MULTIPLE_DE_OU_PE") &&
                     !sheet.hasOwnProperty("agg_des")
                 ) {
                     result.isValidated = false;
@@ -146,13 +146,12 @@ function validateJSON(templates) {
                 } else if (
                     !(
                         sheet.sheet_type == "AGGREGATE_EVENT" ||
-                        sheet.sheet_type == EVENTS ||
+                        sheet.sheet_type == "EVENTS" ||
                         sheet.sheet_type == "AGGREGATE_STATIC" ||
-                        sheet.sheet_type == MULTIPLE_DE_OU_PE ||
-                        sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES ||
-                        sheet.sheet_type ==
-                            UNLIMITED_ORGUNITS_PERIODS_DATAELEMENTS ||
-                        sheet.sheet_type == UNLIMITED_FLEXIBLE
+                        sheet.sheet_type == "MULTIPLE_DE_OU_PE" ||
+                        sheet.sheet_type == "MULTIPLE_FLEXIBLE" ||
+                        sheet.sheet_type == "UNLIMITED_DE_OU_PE" ||
+                        sheet.sheet_type == "UNLIMITED_FLEXIBLE"
                     )
                 ) {
                     result.isValidated = false;
@@ -198,7 +197,7 @@ function validateJSON(templates) {
                         " of template : " +
                         (t + 1);
                 }
-            } else if (sheet.sheet_type == MULTIPLE_DE_OU_PE) {
+            } else if (sheet.sheet_type == "MULTIPLE_DE_OU_PE") {
                 if (!sheet.hasOwnProperty("oucode_col")) {
                     result.isValidated = false;
                     result.msg +=
@@ -228,7 +227,7 @@ function validateJSON(templates) {
                         " of template : " +
                         (t + 1);
                 }
-            } else if (sheet.sheet_type == MULTIPLE_PERIODS_AND_FACILITIES) {
+            } else if (sheet.sheet_type == "MULTIPLE_FLEXIBLE") {
                 if (!sheet.hasOwnProperty("period_type")) {
                     result.isValidated = false;
                     result.msg +=
