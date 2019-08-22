@@ -1,4 +1,1 @@
-function readJSON()
-{
-	
-}
+function readJSON() {}

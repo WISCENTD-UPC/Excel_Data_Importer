@@ -1,6 +1,11 @@
 # Excel Data Importer
 
-Authors: Marc Garnica and Ramon Jimenez Pomareta (minor modifications by Ignacio Foche)
+Authors:
+
+- Marc Garnica 
+- Ramon Jimenez Pomareta 
+- Ignacio Foche
+- Alexis Rico
 
 ## Changelog
 

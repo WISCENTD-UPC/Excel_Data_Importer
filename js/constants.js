@@ -13,7 +13,7 @@ var MONTHLY_PERIOD = 0;
 var WEEKLY_PERIOD = 1;
 var YEARLY_PERIOD = 2;
 
-// Indicates if the excel has the same or different type of sheets 
+// Indicates if the excel has the same or different type of sheets
 var DIFFERENT_MODEL_SHEETS = 1;
 var SAME_MODEL_SHEETS = 2;
 
