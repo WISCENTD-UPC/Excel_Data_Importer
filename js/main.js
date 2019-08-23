@@ -418,7 +418,7 @@ function processExcelSheet() {
                                         "</td></tr>";
                                 } else dYear = yResult.year;
 
-                                if (sheet.month_col == "A" || !!dMonth)
+                                if (sheet.month_col == "A")
                                     dataValue.period = dYear;
                                 else dataValue.period = dYear + "" + dMonth;
 
