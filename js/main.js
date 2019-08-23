@@ -811,7 +811,7 @@ function processExcelSheet() {
 
                         if (sheet.period_type == "YEARLY_PERIOD") {
                             getPeriod = getYearlyPeriod;
-                        } else if (sheet.period_type == "MONTHLY") {
+                        } else if (sheet.period_type == "MONTHLY_PERIOD") {
                             getPeriod = getMonthlyPeriod;
                         } else {
                             console.log(
@@ -895,11 +895,11 @@ function processExcelSheet() {
     }
 
     function getMonthlyPeriod(lastPeriod, year, sheet_no, col, row) {
-        if (getPeriodNumber("MONTHLY", sheet_no, col, row).length == 0) {
+        if (getPeriodNumber("MONTHLY_PERIOD", sheet_no, col, row).length == 0) {
             // for advanced templates it uses this line n-1 times per period where n is number of columns.
             return lastPeriod;
         } else {
-            return year + getPeriodNumber("MONTHLY", sheet_no, col, row);
+            return year + getPeriodNumber("MONTHLY_PERIOD", sheet_no, col, row);
         }
     }
 
@@ -1024,7 +1024,7 @@ function getPeriodNumber(period_type, sheet_no, dim1, dim2) {
     } else {
         if (period_type === "WEEKLY_PERIOD") {
             return "W" + (period < 10 ? "0" : "") + period;
-        } else if (period_type === "MONTHLY") {
+        } else if (period_type === "MONTHLY_PERIOD") {
             return months[period.toLowerCase()];
         } else if (period_type === "YEARLY_PERIOD") {
             return period;

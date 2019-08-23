@@ -340,7 +340,7 @@ var data = {
             sheets: [
                 {
                     sheet_type: "MULTIPLE_FLEXIBLE",
-                    period_type: "MONTHLY",
+                    period_type: "MONTHLY_PERIOD",
                     year: "A3",
                     ou: "L1",
                     sheet_no: 1,
@@ -515,7 +515,7 @@ var data = {
             sheets: [
                 {
                     sheet_type: "UNLIMITED_DE_OU_PE",
-                    period_type: "MONTHLY",
+                    period_type: "MONTHLY_PERIOD",
                     year: "B2",
                     sheet_no: 1,
                     dataElementIdScheme: "CODE",
@@ -563,7 +563,7 @@ var data = {
             sheets: [
                 {
                     sheet_type: "UNLIMITED_DE_OU_PE",
-                    period_type: "MONTHLY",
+                    period_type: "MONTHLY_PERIOD",
                     year: "F2",
                     sheet_no: 1,
                     dataElementIdScheme: "CODE",
@@ -586,7 +586,7 @@ var data = {
             sheets: [
                 {
                     sheet_type: "UNLIMITED_DE_OU_PE",
-                    period_type: "MONTHLY",
+                    period_type: "MONTHLY_PERIOD",
                     year: "B2",
                     sheet_no: 1,
                     dataElementIdScheme: "CODE",
@@ -625,7 +625,7 @@ var data = {
             sheets: [
                 {
                     sheet_type: "UNLIMITED_FLEXIBLE",
-                    period_type: "MONTHLY",
+                    period_type: "MONTHLY_PERIOD",
                     year_column: "D",
                     year_row: 1,
                     sheet_no: 1,
@@ -651,7 +651,7 @@ var data = {
             sheets: [
                 {
                     sheet_type: "UNLIMITED_FLEXIBLE",
-                    period_type: "MONTHLY",
+                    period_type: "MONTHLY_PERIOD",
                     year_column: "D",
                     year_row: 1,
                     sheet_no: 1,
