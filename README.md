@@ -9,6 +9,11 @@ Authors:
 
 ## Changelog
 
+##### 2.15.0
+Merge Excel Data Importer with NHWA Data Importer
+
+Add support for 8 new datasets
+
 ##### 2.14.3
 Updated: VL Template (2019-07-17)
 
