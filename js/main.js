@@ -260,6 +260,7 @@ function processExcelSheet() {
             }
 
             if (
+                sheet.sheet_type == "AGGREGATE_STATIC_YEARLY" ||
                 sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" ||
                 sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY"
             ) {
@@ -301,6 +302,25 @@ function processExcelSheet() {
                     }
                 }
 
+                if (
+                    sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" ||
+                    sheet.sheet_type == "AGGREGATE_STATIC_YEARLY"
+                ) {
+                    isAggDataAvailable = true;
+                    for (var x = 0; x < sheet.agg_des.length; x++) {
+                        var ds = sheet.agg_des[x];
+                        var dataValue = {};
+                        dataValue.period = dYear;
+                        dataValue.dataElement = ds.deuid;
+                        dataValue.categoryOptionCombo = ds.cocuid;
+                        dataValue.orgUnit = orgUnit;
+                        dataValue.value = getCellData(
+                            sheet.sheet_no,
+                            ds.cell_no
+                        );
+                        dataValues.push(dataValue);
+                    }
+                }
 
                 if (sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY") {
                     isAggDataAvailable = true;
@@ -322,23 +342,6 @@ function processExcelSheet() {
                     }
                 }
 
-                if (sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN") {
-                    isAggDataAvailable = true;
-                    for (var x = 0; x < sheet.agg_des.length; x++) {
-                        var ds = sheet.agg_des[x];
-                        var dataValue = {};
-                        dataValue.period = dYear;
-                        dataValue.dataElement = ds.deuid;
-                        dataValue.categoryOptionCombo = ds.cocuid;
-                        dataValue.orgUnit = orgUnit;
-                        dataValue.value = getCellData(
-                            sheet.sheet_no,
-                            ds.cell_no
-                        );
-                        dataValues.push(dataValue);
-                    }
-                }
-
                 if (sheet.sheet_type == "MULTIPLE_DE_OU_PE") {
                     isAggDataAvailable = true;
 
@@ -352,10 +355,10 @@ function processExcelSheet() {
                     ) {
                         console.log(
                             sheet.key_column +
-                            getCellData(
-                                sheet.sheet_no,
-                                sheet.key_column + "" + lastRow
-                            )
+                                getCellData(
+                                    sheet.sheet_no,
+                                    sheet.key_column + "" + lastRow
+                                )
                         );
                         if (
                             getCellData(
@@ -415,7 +418,7 @@ function processExcelSheet() {
                                         "</td></tr>";
                                 } else dYear = yResult.year;
 
-                                if (sheet.month_col == "A")
+                                if (sheet.month_col == "A" || !!dMonth)
                                     dataValue.period = dYear;
                                 else dataValue.period = dYear + "" + dMonth;
 
@@ -753,7 +756,7 @@ function processExcelSheet() {
                     }
                     console.log("dataValues");
                     console.log(dataValues);
-                    }
+                }
 
                 if (sheet.sheet_type == "UNLIMITED_FLEXIBLE") {
                     console.log("UNLIMITED_FLEXIBLE" + " type");
@@ -949,7 +952,7 @@ function getObjectWithKeys(
                     !isNaN(k.charAt(theMatchingString.length))) ||
                 (!isNaN(theMatchingString) &&
                     k.indexOf(theMatchingString) ==
-                    Math.abs(k.length - theMatchingString.length) &&
+                        Math.abs(k.length - theMatchingString.length) &&
                     isNaN(
                         k.charAt(
                             Math.abs(k.length - theMatchingString.length - 1)
@@ -1270,7 +1273,9 @@ function importEventData() {
                         "<br> Total types of conflicts : " +
                         register_get_total_unique() +
                         "<br> Total conflicts : " +
-                    register_get_total() + "<br>" + request.responseJSON.message;
+                        register_get_total() +
+                        "<br>" +
+                        request.responseJSON.message;
 
                     importSummary.push(isum);
                 } catch (ex) {

@@ -133,6 +133,7 @@ function validateJSON(templates) {
                         (t + 1);
                 } else if (
                     (sheet.sheet_type == "AGGREGATE_STATIC" ||
+                        sheet.sheet_type == "AGGREGATE_STATIC_YEARLY" ||
                         sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" ||
                         sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY" ||
                         sheet.sheet_type == "MULTIPLE_DE_OU_PE") &&
@@ -147,13 +148,14 @@ function validateJSON(templates) {
                         (t + 1);
                 } else if (
                     !(
-                        sheet.sheet_type == "AGGREGATE_EVENT" ||
                         sheet.sheet_type == "EVENTS" ||
-                        sheet.sheet_type == "AGGREGATE_STATIC" ||
                         sheet.sheet_type == "MULTIPLE_DE_OU_PE" ||
                         sheet.sheet_type == "MULTIPLE_FLEXIBLE" ||
                         sheet.sheet_type == "UNLIMITED_DE_OU_PE" ||
                         sheet.sheet_type == "UNLIMITED_FLEXIBLE" ||
+                        sheet.sheet_type == "AGGREGATE_EVENT" ||
+                        sheet.sheet_type == "AGGREGATE_STATIC" ||
+                        sheet.sheet_type == "AGGREGATE_STATIC_YEARLY" ||
                         sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" ||
                         sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY"
                     )
@@ -170,9 +172,7 @@ function validateJSON(templates) {
 
             if (
                 sheet.sheet_type == "AGGREGATE_EVENT" ||
-                sheet.sheet_type == "AGGREGATE_STATIC" ||
-                sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" ||
-                sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY"
+                sheet.sheet_type == "AGGREGATE_STATIC"
             ) {
                 if (!sheet.hasOwnProperty("oucode_cell")) {
                     result.isValidated = false;
@@ -189,6 +189,30 @@ function validateJSON(templates) {
                     result.msg +=
                         "</br>" +
                         "'month_cell' is not provided for sheet object-" +
+                        (x + 1) +
+                        " of template : " +
+                        (t + 1);
+                }
+
+                if (!sheet.hasOwnProperty("year_cell")) {
+                    result.isValidated = false;
+                    result.msg +=
+                        "</br>" +
+                        "'year_cell' is not provided for sheet object-" +
+                        (x + 1) +
+                        " of template : " +
+                        (t + 1);
+                }
+            } else if (
+                sheet.sheet_type == "AGGREGATE_STATIC_YEARLY" ||
+                sheet.sheet_type == "AGGREGATE_STATIC_BOOLEAN" ||
+                sheet.sheet_type == "AGGREGATE_STATIC_YES_ONLY"
+            ) {
+                if (!sheet.hasOwnProperty("oucode_cell")) {
+                    result.isValidated = false;
+                    result.msg +=
+                        "</br>" +
+                        "'oucode_cell' is not provided for sheet object-" +
                         (x + 1) +
                         " of template : " +
                         (t + 1);
@@ -364,7 +388,7 @@ function validateDate(data, isMandatory) {
         result.hasError = true;
         result.msg = "Invalid date format; follow dd-mm-yyyy";
     }
-    
+
     return result;
 }
 

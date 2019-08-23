@@ -699,9 +699,10 @@ var data = {
         {
             name: "NHWA Module 1 Template",
             file: "NHWA_Module_1_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1,
                     sheet_name: "Demographic sheet",
                     orgUnitIdScheme: "UID",
@@ -10805,7 +10806,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 2,
                     sheet_name: "Other sheet",
                     orgUnitIdScheme: "UID",
@@ -16225,7 +16226,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 3,
                     sheet_name: "Foreign Trained",
                     orgUnitIdScheme: "UID",
@@ -27011,9 +27012,10 @@ var data = {
         {
             name: "NHWA Module 2 Template",
             file: "NHWA_Module_2_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1, //Input sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -27376,7 +27378,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 2, //Output&Institutions sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -27796,9 +27798,10 @@ var data = {
         {
             name: "NHWA Module 3 Template",
             file: "NHWA_Module_3_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1,
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -28213,9 +28216,10 @@ var data = {
         {
             name: "NHWA Module 4 Template",
             file: "NHWA_Module_4_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1, //Finance sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -28333,7 +28337,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 2, //Education Costs sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -28538,9 +28542,10 @@ var data = {
         {
             name: "NHWA Module 5 Template",
             file: "NHWA_Module_5_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1, //Market Labour Entry sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -28728,7 +28733,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 2, //Market Labour Exit sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -28885,9 +28890,10 @@ var data = {
         {
             name: "NHWA Module 6 Template",
             file: "NHWA_Module_6_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1, //Characteristics sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -29010,7 +29016,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 2, //Conditions sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -29043,7 +29049,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 3, //Regulation sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -29105,9 +29111,10 @@ var data = {
         {
             name: "NHWA Module 7 Template",
             file: "NHWA_Module_7_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1, //Expenditure sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -29180,7 +29187,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 2, //Wages sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -29307,9 +29314,10 @@ var data = {
         {
             name: "NHWA Module 8_10 Template",
             file: "NHWA_Module_8_10_Template.xlsx",
+            sheet_mode: "DIFFERENT_MODEL_SHEETS",
             sheets: [
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 1, //Skill Mix sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -29352,7 +29360,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 2, //Governance sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
@@ -29390,7 +29398,7 @@ var data = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YEARLY",
                     sheet_no: 3, //HRHIS sheet
                     orgUnitIdScheme: "UID",
                     dataElementIdScheme: "UID",
