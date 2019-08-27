@@ -203,7 +203,7 @@ function processExcelSheet() {
                         dataValue.categoryOptionCombo = ds.cocuid;
                         dataValue.orgUnit = orgUnit;
                         var tempValue = getCellData(sheet.sheet_no, ds.cell_no);
-                        if (tempValue != "") {
+                        if (tempValue != "" && !ds.total) {
                             dataValue.value = tempValue;
                             dataValues.push(dataValue);
                         }
@@ -223,7 +223,7 @@ function processExcelSheet() {
                             sheet.sheet_no,
                             ds.cell_no
                         );
-                        if (dataValue.value == "TRUE") {
+                        if (dataValue.value == "TRUE" && !ds.total) {
                             dataValue.value = "true";
                             dataValues.push(dataValue);
                         }
