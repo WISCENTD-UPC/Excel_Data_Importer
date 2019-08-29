@@ -16,8 +16,6 @@ let getDataElements = (tabSelector, letters, dataRowStart, type = "entryfield") 
         deuid: data[0],
         cocuid: data[1],
         cell_no: `${letters[i % letters.length]}${parseInt(i / letters.length) + dataRowStart}`,
-        row: parseInt(i / letters.length) + dataRowStart,
-        column: letters[i % letters.length],
         total: input.disabled,
         name: `${metadata.get(data[0]).name} ${metadata.get(data[1]).name}`
     };
