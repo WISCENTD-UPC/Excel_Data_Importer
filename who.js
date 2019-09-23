@@ -20470,7 +20470,7 @@ var whoTemplate = {
     },
     {
       name: "Module 4 Template",
-      file: "Module_4_Template.xlsx",
+      file: "NHWA_Module_4.xlsx",
       sheets: [
         {
           sheet_type: "AGGREGATE_STATIC",
@@ -21287,7 +21287,7 @@ var whoTemplate = {
     },
     {
       name: "Module 5 Template",
-      file: "Module_5_Template.xlsx",
+      file: "NHWA_Module_5.xlsx",
       sheets: [
         {
           sheet_type: "AGGREGATE_STATIC",
