@@ -40,10 +40,10 @@ function getDataElements(
   tabSelector,
   letters,
   dataRowStart,
-  type = "entryfield"
+  type = "input.entryfield"
 ) {
   return Array.from(
-    document.querySelector(tabSelector).querySelectorAll(`input.${type}`)
+    document.querySelector(tabSelector).querySelectorAll(type)
   ).map((input, i) => {
     const id = input.getAttribute("id");
     const data = id.split("-");
@@ -107,11 +107,25 @@ let sheet1 = {
   agg_des: dataElementsSheet1
 };
 
-let dataElementsSheet2 = getDataElements(
-  "#tab1",
-  ["D", "E", "F", "G", "H", "I"],
-  10
-);
+let dataElementsSheet2 = [
+  ...getDataElements(
+    "#tab1",
+    ["D", "E", "F", "G", "H", "I"],
+    10
+  ),
+  ...getDataElements(
+    "#tab1",
+    ["N"],
+    20,
+    "input.entryselect[value='true']"
+  ),
+  ...getDataElements(
+    "#tab1",
+    ["E"],
+    20,
+    "textarea.entryfield"
+  ),
+];
 
 let sheet2 = {
   sheet_type: "AGGREGATE_STATIC",
@@ -132,4 +146,4 @@ const module7 = {
   sheets: [sheet1, sheet2]
 };
 
-JSON.stringify(module7);
+JSON.stringify(module7, null, 4);
