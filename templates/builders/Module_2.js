@@ -65,8 +65,8 @@ const sheet1 = {
   orgUnitIdScheme: "UID",
   dataElementIdScheme: "UID",
   idScheme: "UID",
-  oucode_cell: "N2",
-  year_cell: "I4",
+  oucode_cell: "V2",
+  year_cell: "L4",
   last_data_column: "ZZ",
   agg_des: dataElementsSheet1
 };
@@ -79,7 +79,7 @@ const sheet2 = {
   dataElementIdScheme: "UID",
   idScheme: "UID",
   oucode_cell: "N2",
-  year_cell: "I4",
+  year_cell: "L4",
   last_data_column: "ZZ",
   agg_des: dataElementsSheet2
 };
@@ -91,7 +91,7 @@ const sheet3 = {
   orgUnitIdScheme: "UID",
   dataElementIdScheme: "UID",
   idScheme: "UID",
-  oucode_cell: "N2",
+  oucode_cell: "P2",
   year_cell: "I4",
   last_data_column: "ZZ",
   agg_des: dataElementsSheet3

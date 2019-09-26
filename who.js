@@ -20479,8 +20479,8 @@ var whoTemplate = {
           orgUnitIdScheme: "UID",
           dataElementIdScheme: "UID",
           idScheme: "UID",
-          oucode_cell: "N2",
-          year_cell: "I4",
+          oucode_cell: "V2",
+          year_cell: "L4",
           last_data_column: "ZZ",
           agg_des: [
             {
@@ -20993,7 +20993,7 @@ var whoTemplate = {
           dataElementIdScheme: "UID",
           idScheme: "UID",
           oucode_cell: "N2",
-          year_cell: "I4",
+          year_cell: "L4",
           last_data_column: "ZZ",
           agg_des: [
             {
@@ -21501,7 +21501,7 @@ var whoTemplate = {
           orgUnitIdScheme: "UID",
           dataElementIdScheme: "UID",
           idScheme: "UID",
-          oucode_cell: "N2",
+          oucode_cell: "P2",
           year_cell: "I4",
           last_data_column: "ZZ",
           agg_des: [
