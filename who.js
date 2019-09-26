@@ -20469,6 +20469,1271 @@ var whoTemplate = {
       ]
     },
     {
+      name: "Module 2 Template",
+      file: "NHWA_Module_2.xlsx",
+      sheets: [
+        {
+          sheet_type: "AGGREGATE_STATIC",
+          sheet_no: 1,
+          sheet_name: "Input",
+          orgUnitIdScheme: "UID",
+          dataElementIdScheme: "UID",
+          idScheme: "UID",
+          oucode_cell: "N2",
+          year_cell: "I4",
+          last_data_column: "ZZ",
+          agg_des: [
+            {
+              deuid: "GZZ2BDHZX5w",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "D8",
+              total: false,
+              name:
+                "Applications in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "HVOexl8T1Tv",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "E8",
+              total: false,
+              name:
+                "Male applications in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "ljMIY6HvkD6",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "F8",
+              total: false,
+              name:
+                "Female applications in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "Ca8zQsc1xjC",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "G8",
+              total: false,
+              name:
+                "Admissions in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "orhcprpuyDa",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "H8",
+              total: false,
+              name:
+                "Male admissions in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "xpBCkAdPXni",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "I8",
+              total: false,
+              name:
+                "Female admissions in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "dOdILuGzOCT",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "J8",
+              total: false,
+              name:
+                "Entrants in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "OJIzrlkgQh8",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "K8",
+              total: false,
+              name:
+                "Male entrants in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "utIBHSRqgVj",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "L8",
+              total: false,
+              name:
+                "Female entrants in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "GZZ2BDHZX5w",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "D9",
+              total: false,
+              name:
+                "Applications in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "HVOexl8T1Tv",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "E9",
+              total: false,
+              name:
+                "Male applications in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "ljMIY6HvkD6",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "F9",
+              total: false,
+              name:
+                "Female applications in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "Ca8zQsc1xjC",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "G9",
+              total: false,
+              name:
+                "Admissions in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "orhcprpuyDa",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "H9",
+              total: false,
+              name:
+                "Male admissions in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "xpBCkAdPXni",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "I9",
+              total: false,
+              name:
+                "Female admissions in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "dOdILuGzOCT",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "J9",
+              total: false,
+              name:
+                "Entrants in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "OJIzrlkgQh8",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "K9",
+              total: false,
+              name:
+                "Male entrants in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "utIBHSRqgVj",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "L9",
+              total: false,
+              name:
+                "Female entrants in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "GZZ2BDHZX5w",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "D10",
+              total: false,
+              name:
+                "Applications in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "HVOexl8T1Tv",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "E10",
+              total: false,
+              name:
+                "Male applications in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "ljMIY6HvkD6",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "F10",
+              total: false,
+              name:
+                "Female applications in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "Ca8zQsc1xjC",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "G10",
+              total: false,
+              name:
+                "Admissions in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "orhcprpuyDa",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "H10",
+              total: false,
+              name:
+                "Male admissions in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "xpBCkAdPXni",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "I10",
+              total: false,
+              name:
+                "Female admissions in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "dOdILuGzOCT",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "J10",
+              total: false,
+              name:
+                "Entrants in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "OJIzrlkgQh8",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "K10",
+              total: false,
+              name:
+                "Male entrants in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "utIBHSRqgVj",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "L10",
+              total: false,
+              name:
+                "Female entrants in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "GZZ2BDHZX5w",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "D11",
+              total: false,
+              name:
+                "Applications in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "HVOexl8T1Tv",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "E11",
+              total: false,
+              name:
+                "Male applications in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "ljMIY6HvkD6",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "F11",
+              total: false,
+              name:
+                "Female applications in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "Ca8zQsc1xjC",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "G11",
+              total: false,
+              name:
+                "Admissions in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "orhcprpuyDa",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "H11",
+              total: false,
+              name:
+                "Male admissions in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "xpBCkAdPXni",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "I11",
+              total: false,
+              name:
+                "Female admissions in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "dOdILuGzOCT",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "J11",
+              total: false,
+              name:
+                "Entrants in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "OJIzrlkgQh8",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "K11",
+              total: false,
+              name:
+                "Male entrants in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "utIBHSRqgVj",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "L11",
+              total: false,
+              name:
+                "Female entrants in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "GZZ2BDHZX5w",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "D12",
+              total: false,
+              name:
+                "Applications in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "HVOexl8T1Tv",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "E12",
+              total: false,
+              name:
+                "Male applications in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "ljMIY6HvkD6",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "F12",
+              total: false,
+              name:
+                "Female applications in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "Ca8zQsc1xjC",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "G12",
+              total: false,
+              name:
+                "Admissions in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "orhcprpuyDa",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "H12",
+              total: false,
+              name:
+                "Male admissions in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "xpBCkAdPXni",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "I12",
+              total: false,
+              name:
+                "Female admissions in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "dOdILuGzOCT",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "J12",
+              total: false,
+              name:
+                "Entrants in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "OJIzrlkgQh8",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "K12",
+              total: false,
+              name:
+                "Male entrants in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "utIBHSRqgVj",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "L12",
+              total: false,
+              name:
+                "Female entrants in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "GZZ2BDHZX5w",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "D13",
+              total: false,
+              name: "Applications in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "HVOexl8T1Tv",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "E13",
+              total: false,
+              name:
+                "Male applications in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "ljMIY6HvkD6",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "F13",
+              total: false,
+              name:
+                "Female applications in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "Ca8zQsc1xjC",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "G13",
+              total: false,
+              name: "Admissions in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "orhcprpuyDa",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "H13",
+              total: false,
+              name:
+                "Male admissions in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "xpBCkAdPXni",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "I13",
+              total: false,
+              name:
+                "Female admissions in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "dOdILuGzOCT",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "J13",
+              total: false,
+              name: "Entrants in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "OJIzrlkgQh8",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "K13",
+              total: false,
+              name:
+                "Male entrants in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "utIBHSRqgVj",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "L13",
+              total: false,
+              name:
+                "Female entrants in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "GZZ2BDHZX5w",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "D14",
+              total: false,
+              name:
+                "Applications in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "HVOexl8T1Tv",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "E14",
+              total: false,
+              name:
+                "Male applications in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "ljMIY6HvkD6",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "F14",
+              total: false,
+              name:
+                "Female applications in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "Ca8zQsc1xjC",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "G14",
+              total: false,
+              name:
+                "Admissions in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "orhcprpuyDa",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "H14",
+              total: false,
+              name:
+                "Male admissions in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "xpBCkAdPXni",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "I14",
+              total: false,
+              name:
+                "Female admissions in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "dOdILuGzOCT",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "J14",
+              total: false,
+              name: "Entrants in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "OJIzrlkgQh8",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "K14",
+              total: false,
+              name:
+                "Male entrants in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "utIBHSRqgVj",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "L14",
+              total: false,
+              name:
+                "Female entrants in HWF Education and Training centers Pharmacist"
+            }
+          ]
+        },
+        {
+          sheet_type: "AGGREGATE_STATIC",
+          sheet_no: 2,
+          sheet_name: "Input",
+          orgUnitIdScheme: "UID",
+          dataElementIdScheme: "UID",
+          idScheme: "UID",
+          oucode_cell: "N2",
+          year_cell: "I4",
+          last_data_column: "ZZ",
+          agg_des: [
+            {
+              deuid: "W3hjWF2zAkt",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "D12",
+              total: false,
+              name:
+                "Graduates in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "b5Y5ttOan5u",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "E12",
+              total: false,
+              name:
+                "Male graduates in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "d9aRkLridyB",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "F12",
+              total: false,
+              name:
+                "Female graduates in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "h0MrvKyI3Nk",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "G12",
+              total: false,
+              name:
+                "Public graduates in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "bXegTxbu4XB",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "H12",
+              total: false,
+              name:
+                "Private graduates in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "GAikjDurEiF",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "I12",
+              total: false,
+              name:
+                "Male students absconding in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "W3hjWF2zAkt",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "D13",
+              total: false,
+              name:
+                "Graduates in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "b5Y5ttOan5u",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "E13",
+              total: false,
+              name:
+                "Male graduates in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "d9aRkLridyB",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "F13",
+              total: false,
+              name:
+                "Female graduates in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "h0MrvKyI3Nk",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "G13",
+              total: false,
+              name:
+                "Public graduates in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "bXegTxbu4XB",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "H13",
+              total: false,
+              name:
+                "Private graduates in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "GAikjDurEiF",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "I13",
+              total: false,
+              name:
+                "Male students absconding in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "W3hjWF2zAkt",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "D14",
+              total: false,
+              name:
+                "Graduates in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "b5Y5ttOan5u",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "E14",
+              total: false,
+              name:
+                "Male graduates in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "d9aRkLridyB",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "F14",
+              total: false,
+              name:
+                "Female graduates in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "h0MrvKyI3Nk",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "G14",
+              total: false,
+              name:
+                "Public graduates in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "bXegTxbu4XB",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "H14",
+              total: false,
+              name:
+                "Private graduates in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "GAikjDurEiF",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "I14",
+              total: false,
+              name:
+                "Male students absconding in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "W3hjWF2zAkt",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "D15",
+              total: false,
+              name:
+                "Graduates in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "b5Y5ttOan5u",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "E15",
+              total: false,
+              name:
+                "Male graduates in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "d9aRkLridyB",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "F15",
+              total: false,
+              name:
+                "Female graduates in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "h0MrvKyI3Nk",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "G15",
+              total: false,
+              name:
+                "Public graduates in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "bXegTxbu4XB",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "H15",
+              total: false,
+              name:
+                "Private graduates in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "GAikjDurEiF",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "I15",
+              total: false,
+              name:
+                "Male students absconding in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "W3hjWF2zAkt",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "D16",
+              total: false,
+              name:
+                "Graduates in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "b5Y5ttOan5u",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "E16",
+              total: false,
+              name:
+                "Male graduates in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "d9aRkLridyB",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "F16",
+              total: false,
+              name:
+                "Female graduates in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "h0MrvKyI3Nk",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "G16",
+              total: false,
+              name:
+                "Public graduates in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "bXegTxbu4XB",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "H16",
+              total: false,
+              name:
+                "Private graduates in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "GAikjDurEiF",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "I16",
+              total: false,
+              name:
+                "Male students absconding in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "W3hjWF2zAkt",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "D17",
+              total: false,
+              name: "Graduates in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "b5Y5ttOan5u",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "E17",
+              total: false,
+              name:
+                "Male graduates in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "d9aRkLridyB",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "F17",
+              total: false,
+              name:
+                "Female graduates in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "h0MrvKyI3Nk",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "G17",
+              total: false,
+              name:
+                "Public graduates in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "bXegTxbu4XB",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "H17",
+              total: false,
+              name:
+                "Private graduates in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "GAikjDurEiF",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "I17",
+              total: false,
+              name:
+                "Male students absconding in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "W3hjWF2zAkt",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "D18",
+              total: false,
+              name: "Graduates in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "b5Y5ttOan5u",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "E18",
+              total: false,
+              name:
+                "Male graduates in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "d9aRkLridyB",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "F18",
+              total: false,
+              name:
+                "Female graduates in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "h0MrvKyI3Nk",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "G18",
+              total: false,
+              name:
+                "Public graduates in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "bXegTxbu4XB",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "H18",
+              total: false,
+              name:
+                "Private graduates in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "GAikjDurEiF",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "I18",
+              total: false,
+              name:
+                "Male students absconding in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "AeURkaiQxjy",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "J12",
+              total: false,
+              name:
+                "Educators in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "RnxSxiLePqc",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "K12",
+              total: false,
+              name:
+                "Health workforce education and training centers capacity Medical Doctors"
+            },
+            {
+              deuid: "WBxm9A5Qkea",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "L12",
+              total: false,
+              name: "Training Duration for HWF programmes Medical Doctors"
+            },
+            {
+              deuid: "AeURkaiQxjy",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "J13",
+              total: false,
+              name:
+                "Educators in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "RnxSxiLePqc",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "K13",
+              total: false,
+              name:
+                "Health workforce education and training centers capacity General Medical Practitioner"
+            },
+            {
+              deuid: "WBxm9A5Qkea",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "L13",
+              total: false,
+              name:
+                "Training Duration for HWF programmes General Medical Practitioner"
+            },
+            {
+              deuid: "AeURkaiQxjy",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "J14",
+              total: false,
+              name:
+                "Educators in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "RnxSxiLePqc",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "K14",
+              total: false,
+              name:
+                "Health workforce education and training centers capacity Specialist Medical Practitioner"
+            },
+            {
+              deuid: "WBxm9A5Qkea",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "L14",
+              total: false,
+              name:
+                "Training Duration for HWF programmes Specialist Medical Practitioner"
+            },
+            {
+              deuid: "AeURkaiQxjy",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "J15",
+              total: false,
+              name:
+                "Educators in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "RnxSxiLePqc",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "K15",
+              total: false,
+              name:
+                "Health workforce education and training centers capacity Nursing Professional"
+            },
+            {
+              deuid: "WBxm9A5Qkea",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "L15",
+              total: false,
+              name: "Training Duration for HWF programmes Nursing Professional"
+            },
+            {
+              deuid: "AeURkaiQxjy",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "J16",
+              total: false,
+              name:
+                "Educators in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "RnxSxiLePqc",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "K16",
+              total: false,
+              name:
+                "Health workforce education and training centers capacity Midwifery Professional"
+            },
+            {
+              deuid: "WBxm9A5Qkea",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "L16",
+              total: false,
+              name:
+                "Training Duration for HWF programmes Midwifery Professional"
+            },
+            {
+              deuid: "AeURkaiQxjy",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "J17",
+              total: false,
+              name: "Educators in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "RnxSxiLePqc",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "K17",
+              total: false,
+              name:
+                "Health workforce education and training centers capacity Dentist"
+            },
+            {
+              deuid: "WBxm9A5Qkea",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "L17",
+              total: false,
+              name: "Training Duration for HWF programmes Dentist"
+            },
+            {
+              deuid: "AeURkaiQxjy",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "J18",
+              total: false,
+              name: "Educators in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "RnxSxiLePqc",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "K18",
+              total: false,
+              name:
+                "Health workforce education and training centers capacity Pharmacist"
+            },
+            {
+              deuid: "WBxm9A5Qkea",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "L18",
+              total: false,
+              name: "Training Duration for HWF programmes Pharmacist"
+            }
+          ]
+        },
+        {
+          sheet_type: "AGGREGATE_STATIC",
+          sheet_no: 3,
+          sheet_name: "Sourcetype",
+          orgUnitIdScheme: "UID",
+          dataElementIdScheme: "UID",
+          idScheme: "UID",
+          oucode_cell: "N2",
+          year_cell: "I4",
+          last_data_column: "ZZ",
+          agg_des: [
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "P8",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "Q8",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R8",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Training Institutes"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S8",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Other databases"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "P9",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "Q9",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R9",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Training Institutes"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S9",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Other databases"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "P10",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "Q10",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R10",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Training Institutes"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S10",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Other databases"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "P11",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "Q11",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R11",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Training Institutes"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S11",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Other databases"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "P12",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "Q12",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R12",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Training Institutes"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S12",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Other databases"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "P13",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "Q13",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R13",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Training Institutes"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S13",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Other databases"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "P14",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "Q14",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R14",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Training Institutes"
+            },
+            {
+              deuid: "GHRcigiFyO0",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S14",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Other databases"
+            }
+          ]
+        }
+      ]
+    },
+    {
       name: "Module 4 Template",
       file: "NHWA_Module_4.xlsx",
       sheets: [
@@ -22361,438 +23626,468 @@ var whoTemplate = {
       ]
     },
     {
-      "name": "Module 7 Template",
-      "file": "NHWA_Module_7.xlsx",
-      "sheets": [
+      name: "Module 7 Template",
+      file: "NHWA_Module_7.xlsx",
+      sheets: [
         {
-          "sheet_type": "AGGREGATE_STATIC",
-          "sheet_no": 1,
-          "sheet_name": "Expenditure",
-          "orgUnitIdScheme": "UID",
-          "dataElementIdScheme": "UID",
-          "idScheme": "UID",
-          "oucode_cell": "V2",
-          "year_cell": "I4",
-          "last_data_column": "ZZ",
-          "agg_des": [
+          sheet_type: "AGGREGATE_STATIC",
+          sheet_no: 1,
+          sheet_name: "Expenditure",
+          orgUnitIdScheme: "UID",
+          dataElementIdScheme: "UID",
+          idScheme: "UID",
+          oucode_cell: "V2",
+          year_cell: "I4",
+          last_data_column: "ZZ",
+          agg_des: [
             {
-              "deuid": "Wgfv9IaDiWM",
-              "cocuid": "Xr12mI7VPn3",
-              "cell_no": "D8",
-              "total": false,
-              "name": "Financial income received from official development assistance and allocated to HWF default"
+              deuid: "Wgfv9IaDiWM",
+              cocuid: "Xr12mI7VPn3",
+              cell_no: "D8",
+              total: false,
+              name:
+                "Financial income received from official development assistance and allocated to HWF default"
             },
             {
-              "deuid": "gNDFctqpNyv",
-              "cocuid": "IMqululFzhP",
-              "cell_no": "D12",
-              "total": false,
-              "name": "Expenditure on health workforce Public"
+              deuid: "gNDFctqpNyv",
+              cocuid: "IMqululFzhP",
+              cell_no: "D12",
+              total: false,
+              name: "Expenditure on health workforce Public"
             },
             {
-              "deuid": "gNDFctqpNyv",
-              "cocuid": "N3nYJ6ScaYx",
-              "cell_no": "E12",
-              "total": false,
-              "name": "Expenditure on health workforce Private not for profit"
+              deuid: "gNDFctqpNyv",
+              cocuid: "N3nYJ6ScaYx",
+              cell_no: "E12",
+              total: false,
+              name: "Expenditure on health workforce Private not for profit"
             },
             {
-              "deuid": "gNDFctqpNyv",
-              "cocuid": "UKbfaRlqkpY",
-              "cell_no": "F12",
-              "total": false,
-              "name": "Expenditure on health workforce Private for profit"
+              deuid: "gNDFctqpNyv",
+              cocuid: "UKbfaRlqkpY",
+              cell_no: "F12",
+              total: false,
+              name: "Expenditure on health workforce Private for profit"
             },
             {
-              "deuid": "xWfKWoc4ggg",
-              "cocuid": "cFkpPfqFrJW",
-              "cell_no": "D16",
-              "total": false,
-              "name": "Public expenditure on health workforce Compensation"
+              deuid: "xWfKWoc4ggg",
+              cocuid: "cFkpPfqFrJW",
+              cell_no: "D16",
+              total: false,
+              name: "Public expenditure on health workforce Compensation"
             },
             {
-              "deuid": "xWfKWoc4ggg",
-              "cocuid": "TQ5H1Za7ZMR",
-              "cell_no": "E16",
-              "total": false,
-              "name": "Public expenditure on health workforce Training"
+              deuid: "xWfKWoc4ggg",
+              cocuid: "TQ5H1Za7ZMR",
+              cell_no: "E16",
+              total: false,
+              name: "Public expenditure on health workforce Training"
             },
             {
-              "deuid": "xWfKWoc4ggg",
-              "cocuid": "dVpd180cEmo",
-              "cell_no": "F16",
-              "total": false,
-              "name": "Public expenditure on health workforce Others"
+              deuid: "xWfKWoc4ggg",
+              cocuid: "dVpd180cEmo",
+              cell_no: "F16",
+              total: false,
+              name: "Public expenditure on health workforce Others"
             },
             {
-              "deuid": "l5RPrypr3Wg",
-              "cocuid": "LfoJLP7BbDk",
-              "cell_no": "D20",
-              "total": false,
-              "name": "Public expenditure on compensation of employees Wages and Salary"
+              deuid: "l5RPrypr3Wg",
+              cocuid: "LfoJLP7BbDk",
+              cell_no: "D20",
+              total: false,
+              name:
+                "Public expenditure on compensation of employees Wages and Salary"
             },
             {
-              "deuid": "l5RPrypr3Wg",
-              "cocuid": "hL8lKfXNzln",
-              "cell_no": "E20",
-              "total": false,
-              "name": "Public expenditure on compensation of employees Social contribution"
+              deuid: "l5RPrypr3Wg",
+              cocuid: "hL8lKfXNzln",
+              cell_no: "E20",
+              total: false,
+              name:
+                "Public expenditure on compensation of employees Social contribution"
             },
             {
-              "deuid": "l5RPrypr3Wg",
-              "cocuid": "VWIQFya88eZ",
-              "cell_no": "F20",
-              "total": false,
-              "name": "Public expenditure on compensation of employees Others"
+              deuid: "l5RPrypr3Wg",
+              cocuid: "VWIQFya88eZ",
+              cell_no: "F20",
+              total: false,
+              name: "Public expenditure on compensation of employees Others"
             },
             {
-              "deuid": "CvaGFNVhuQl",
-              "cocuid": "HQPWV8cT7li",
-              "cell_no": "D24",
-              "total": false,
-              "name": "Total expenditure on compensation of employees Government"
+              deuid: "CvaGFNVhuQl",
+              cocuid: "HQPWV8cT7li",
+              cell_no: "D24",
+              total: false,
+              name: "Total expenditure on compensation of employees Government"
             },
             {
-              "deuid": "CvaGFNVhuQl",
-              "cocuid": "FiRcnmXF1Yg",
-              "cell_no": "E24",
-              "total": false,
-              "name": "Total expenditure on compensation of employees Out of Pocket"
+              deuid: "CvaGFNVhuQl",
+              cocuid: "FiRcnmXF1Yg",
+              cell_no: "E24",
+              total: false,
+              name:
+                "Total expenditure on compensation of employees Out of Pocket"
             },
             {
-              "deuid": "CvaGFNVhuQl",
-              "cocuid": "QKhM7ublqzd",
-              "cell_no": "F24",
-              "total": false,
-              "name": "Total expenditure on compensation of employees Official Development Assistance"
+              deuid: "CvaGFNVhuQl",
+              cocuid: "QKhM7ublqzd",
+              cell_no: "F24",
+              total: false,
+              name:
+                "Total expenditure on compensation of employees Official Development Assistance"
             },
             {
-              "deuid": "CvaGFNVhuQl",
-              "cocuid": "txxKPnVUGvV",
-              "cell_no": "G24",
-              "total": false,
-              "name": "Total expenditure on compensation of employees Others"
+              deuid: "CvaGFNVhuQl",
+              cocuid: "txxKPnVUGvV",
+              cell_no: "G24",
+              total: false,
+              name: "Total expenditure on compensation of employees Others"
             }
           ]
         },
         {
-          "sheet_type": "AGGREGATE_STATIC",
-          "sheet_no": 2,
-          "sheet_name": "Remuneration",
-          "orgUnitIdScheme": "UID",
-          "dataElementIdScheme": "UID",
-          "idScheme": "UID",
-          "oucode_cell": "N2",
-          "year_cell": "I4",
-          "last_data_column": "ZZ",
-          "agg_des": [
+          sheet_type: "AGGREGATE_STATIC",
+          sheet_no: 2,
+          sheet_name: "Remuneration",
+          orgUnitIdScheme: "UID",
+          dataElementIdScheme: "UID",
+          idScheme: "UID",
+          oucode_cell: "N2",
+          year_cell: "I4",
+          last_data_column: "ZZ",
+          agg_des: [
             {
-              "deuid": "FVANVRToxVF",
-              "cocuid": "aBpbcEgtzgw",
-              "cell_no": "D10",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Medical Doctors"
+              deuid: "FVANVRToxVF",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "D10",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Medical Doctors"
             },
             {
-              "deuid": "BOsqct4iCpa",
-              "cocuid": "aBpbcEgtzgw",
-              "cell_no": "E10",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Medical Doctors"
+              deuid: "BOsqct4iCpa",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "E10",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Medical Doctors"
             },
             {
-              "deuid": "H6pdAoosHWN",
-              "cocuid": "aBpbcEgtzgw",
-              "cell_no": "F10",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Medical Doctors"
+              deuid: "H6pdAoosHWN",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "F10",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Medical Doctors"
             },
             {
-              "deuid": "BCjjT4Xujzu",
-              "cocuid": "aBpbcEgtzgw",
-              "cell_no": "G10",
-              "total": false,
-              "name": "total median earnings HWF Medical Doctors"
+              deuid: "BCjjT4Xujzu",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "G10",
+              total: false,
+              name: "total median earnings HWF Medical Doctors"
             },
             {
-              "deuid": "oTcSBrUk1hs",
-              "cocuid": "aBpbcEgtzgw",
-              "cell_no": "H10",
-              "total": false,
-              "name": "median earnings of men HWF Medical Doctors"
+              deuid: "oTcSBrUk1hs",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "H10",
+              total: false,
+              name: "median earnings of men HWF Medical Doctors"
             },
             {
-              "deuid": "kOWad32u5xr",
-              "cocuid": "aBpbcEgtzgw",
-              "cell_no": "I10",
-              "total": false,
-              "name": "median earnings of female HWF Medical Doctors"
+              deuid: "kOWad32u5xr",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "I10",
+              total: false,
+              name: "median earnings of female HWF Medical Doctors"
             },
             {
-              "deuid": "FVANVRToxVF",
-              "cocuid": "LHbCtHlZr3Y",
-              "cell_no": "D11",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Generalist Medical Practitioner"
+              deuid: "FVANVRToxVF",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "D11",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Generalist Medical Practitioner"
             },
             {
-              "deuid": "BOsqct4iCpa",
-              "cocuid": "LHbCtHlZr3Y",
-              "cell_no": "E11",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Generalist Medical Practitioner"
+              deuid: "BOsqct4iCpa",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "E11",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Generalist Medical Practitioner"
             },
             {
-              "deuid": "H6pdAoosHWN",
-              "cocuid": "LHbCtHlZr3Y",
-              "cell_no": "F11",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Generalist Medical Practitioner"
+              deuid: "H6pdAoosHWN",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "F11",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Generalist Medical Practitioner"
             },
             {
-              "deuid": "BCjjT4Xujzu",
-              "cocuid": "LHbCtHlZr3Y",
-              "cell_no": "G11",
-              "total": false,
-              "name": "total median earnings HWF Generalist Medical Practitioner"
+              deuid: "BCjjT4Xujzu",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "G11",
+              total: false,
+              name: "total median earnings HWF Generalist Medical Practitioner"
             },
             {
-              "deuid": "oTcSBrUk1hs",
-              "cocuid": "LHbCtHlZr3Y",
-              "cell_no": "H11",
-              "total": false,
-              "name": "median earnings of men HWF Generalist Medical Practitioner"
+              deuid: "oTcSBrUk1hs",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "H11",
+              total: false,
+              name: "median earnings of men HWF Generalist Medical Practitioner"
             },
             {
-              "deuid": "kOWad32u5xr",
-              "cocuid": "LHbCtHlZr3Y",
-              "cell_no": "I11",
-              "total": false,
-              "name": "median earnings of female HWF Generalist Medical Practitioner"
+              deuid: "kOWad32u5xr",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "I11",
+              total: false,
+              name:
+                "median earnings of female HWF Generalist Medical Practitioner"
             },
             {
-              "deuid": "FVANVRToxVF",
-              "cocuid": "VtVkbvygJnm",
-              "cell_no": "D12",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Specialist Medical Practitioner"
+              deuid: "FVANVRToxVF",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "D12",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Specialist Medical Practitioner"
             },
             {
-              "deuid": "BOsqct4iCpa",
-              "cocuid": "VtVkbvygJnm",
-              "cell_no": "E12",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Specialist Medical Practitioner"
+              deuid: "BOsqct4iCpa",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "E12",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Specialist Medical Practitioner"
             },
             {
-              "deuid": "H6pdAoosHWN",
-              "cocuid": "VtVkbvygJnm",
-              "cell_no": "F12",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Specialist Medical Practitioner"
+              deuid: "H6pdAoosHWN",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "F12",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Specialist Medical Practitioner"
             },
             {
-              "deuid": "BCjjT4Xujzu",
-              "cocuid": "VtVkbvygJnm",
-              "cell_no": "G12",
-              "total": false,
-              "name": "total median earnings HWF Specialist Medical Practitioner"
+              deuid: "BCjjT4Xujzu",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "G12",
+              total: false,
+              name: "total median earnings HWF Specialist Medical Practitioner"
             },
             {
-              "deuid": "oTcSBrUk1hs",
-              "cocuid": "VtVkbvygJnm",
-              "cell_no": "H12",
-              "total": false,
-              "name": "median earnings of men HWF Specialist Medical Practitioner"
+              deuid: "oTcSBrUk1hs",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "H12",
+              total: false,
+              name: "median earnings of men HWF Specialist Medical Practitioner"
             },
             {
-              "deuid": "kOWad32u5xr",
-              "cocuid": "VtVkbvygJnm",
-              "cell_no": "I12",
-              "total": false,
-              "name": "median earnings of female HWF Specialist Medical Practitioner"
+              deuid: "kOWad32u5xr",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "I12",
+              total: false,
+              name:
+                "median earnings of female HWF Specialist Medical Practitioner"
             },
             {
-              "deuid": "FVANVRToxVF",
-              "cocuid": "fGOgbIqsxDn",
-              "cell_no": "D13",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Nursing Professional"
+              deuid: "FVANVRToxVF",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "D13",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Nursing Professional"
             },
             {
-              "deuid": "BOsqct4iCpa",
-              "cocuid": "fGOgbIqsxDn",
-              "cell_no": "E13",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Nursing Professional"
+              deuid: "BOsqct4iCpa",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "E13",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Nursing Professional"
             },
             {
-              "deuid": "H6pdAoosHWN",
-              "cocuid": "fGOgbIqsxDn",
-              "cell_no": "F13",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Nursing Professional"
+              deuid: "H6pdAoosHWN",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "F13",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Nursing Professional"
             },
             {
-              "deuid": "BCjjT4Xujzu",
-              "cocuid": "fGOgbIqsxDn",
-              "cell_no": "G13",
-              "total": false,
-              "name": "total median earnings HWF Nursing Professional"
+              deuid: "BCjjT4Xujzu",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "G13",
+              total: false,
+              name: "total median earnings HWF Nursing Professional"
             },
             {
-              "deuid": "oTcSBrUk1hs",
-              "cocuid": "fGOgbIqsxDn",
-              "cell_no": "H13",
-              "total": false,
-              "name": "median earnings of men HWF Nursing Professional"
+              deuid: "oTcSBrUk1hs",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "H13",
+              total: false,
+              name: "median earnings of men HWF Nursing Professional"
             },
             {
-              "deuid": "kOWad32u5xr",
-              "cocuid": "fGOgbIqsxDn",
-              "cell_no": "I13",
-              "total": false,
-              "name": "median earnings of female HWF Nursing Professional"
+              deuid: "kOWad32u5xr",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "I13",
+              total: false,
+              name: "median earnings of female HWF Nursing Professional"
             },
             {
-              "deuid": "FVANVRToxVF",
-              "cocuid": "MPzyVWiSFF2",
-              "cell_no": "D14",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Midwifery Professional"
+              deuid: "FVANVRToxVF",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "D14",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Midwifery Professional"
             },
             {
-              "deuid": "BOsqct4iCpa",
-              "cocuid": "MPzyVWiSFF2",
-              "cell_no": "E14",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Midwifery Professional"
+              deuid: "BOsqct4iCpa",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "E14",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Midwifery Professional"
             },
             {
-              "deuid": "H6pdAoosHWN",
-              "cocuid": "MPzyVWiSFF2",
-              "cell_no": "F14",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Midwifery Professional"
+              deuid: "H6pdAoosHWN",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "F14",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Midwifery Professional"
             },
             {
-              "deuid": "BCjjT4Xujzu",
-              "cocuid": "MPzyVWiSFF2",
-              "cell_no": "G14",
-              "total": false,
-              "name": "total median earnings HWF Midwifery Professional"
+              deuid: "BCjjT4Xujzu",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "G14",
+              total: false,
+              name: "total median earnings HWF Midwifery Professional"
             },
             {
-              "deuid": "oTcSBrUk1hs",
-              "cocuid": "MPzyVWiSFF2",
-              "cell_no": "H14",
-              "total": false,
-              "name": "median earnings of men HWF Midwifery Professional"
+              deuid: "oTcSBrUk1hs",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "H14",
+              total: false,
+              name: "median earnings of men HWF Midwifery Professional"
             },
             {
-              "deuid": "kOWad32u5xr",
-              "cocuid": "MPzyVWiSFF2",
-              "cell_no": "I14",
-              "total": false,
-              "name": "median earnings of female HWF Midwifery Professional"
+              deuid: "kOWad32u5xr",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "I14",
+              total: false,
+              name: "median earnings of female HWF Midwifery Professional"
             },
             {
-              "deuid": "FVANVRToxVF",
-              "cocuid": "ALBRKpJsddQ",
-              "cell_no": "D15",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Dentist"
+              deuid: "FVANVRToxVF",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "D15",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Dentist"
             },
             {
-              "deuid": "BOsqct4iCpa",
-              "cocuid": "ALBRKpJsddQ",
-              "cell_no": "E15",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Dentist"
+              deuid: "BOsqct4iCpa",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "E15",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Dentist"
             },
             {
-              "deuid": "H6pdAoosHWN",
-              "cocuid": "ALBRKpJsddQ",
-              "cell_no": "F15",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Dentist"
+              deuid: "H6pdAoosHWN",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "F15",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Dentist"
             },
             {
-              "deuid": "BCjjT4Xujzu",
-              "cocuid": "ALBRKpJsddQ",
-              "cell_no": "G15",
-              "total": false,
-              "name": "total median earnings HWF Dentist"
+              deuid: "BCjjT4Xujzu",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "G15",
+              total: false,
+              name: "total median earnings HWF Dentist"
             },
             {
-              "deuid": "oTcSBrUk1hs",
-              "cocuid": "ALBRKpJsddQ",
-              "cell_no": "H15",
-              "total": false,
-              "name": "median earnings of men HWF Dentist"
+              deuid: "oTcSBrUk1hs",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "H15",
+              total: false,
+              name: "median earnings of men HWF Dentist"
             },
             {
-              "deuid": "kOWad32u5xr",
-              "cocuid": "ALBRKpJsddQ",
-              "cell_no": "I15",
-              "total": false,
-              "name": "median earnings of female HWF Dentist"
+              deuid: "kOWad32u5xr",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "I15",
+              total: false,
+              name: "median earnings of female HWF Dentist"
             },
             {
-              "deuid": "FVANVRToxVF",
-              "cocuid": "iWRW6jXAzvP",
-              "cell_no": "D16",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Pharmacist"
+              deuid: "FVANVRToxVF",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "D16",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Pharmacist"
             },
             {
-              "deuid": "BOsqct4iCpa",
-              "cocuid": "iWRW6jXAzvP",
-              "cell_no": "E16",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Pharmacist"
+              deuid: "BOsqct4iCpa",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "E16",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Pharmacist"
             },
             {
-              "deuid": "H6pdAoosHWN",
-              "cocuid": "iWRW6jXAzvP",
-              "cell_no": "F16",
-              "total": false,
-              "name": "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Pharmacist"
+              deuid: "H6pdAoosHWN",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "F16",
+              total: false,
+              name:
+                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Pharmacist"
             },
             {
-              "deuid": "BCjjT4Xujzu",
-              "cocuid": "iWRW6jXAzvP",
-              "cell_no": "G16",
-              "total": false,
-              "name": "total median earnings HWF Pharmacist"
+              deuid: "BCjjT4Xujzu",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "G16",
+              total: false,
+              name: "total median earnings HWF Pharmacist"
             },
             {
-              "deuid": "oTcSBrUk1hs",
-              "cocuid": "iWRW6jXAzvP",
-              "cell_no": "H16",
-              "total": false,
-              "name": "median earnings of men HWF Pharmacist"
+              deuid: "oTcSBrUk1hs",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "H16",
+              total: false,
+              name: "median earnings of men HWF Pharmacist"
             },
             {
-              "deuid": "kOWad32u5xr",
-              "cocuid": "iWRW6jXAzvP",
-              "cell_no": "I16",
-              "total": false,
-              "name": "median earnings of female HWF Pharmacist"
+              deuid: "kOWad32u5xr",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "I16",
+              total: false,
+              name: "median earnings of female HWF Pharmacist"
             },
             {
-              "deuid": "M7R7LVsXlAN",
-              "cocuid": "Xr12mI7VPn3",
-              "cell_no": "N20",
-              "total": false,
-              "name": "Existence of national/subnational policies or standards on public sector wage ceiling default"
+              deuid: "M7R7LVsXlAN",
+              cocuid: "Xr12mI7VPn3",
+              cell_no: "N20",
+              total: false,
+              name:
+                "Existence of national/subnational policies or standards on public sector wage ceiling default"
             },
             {
-              "deuid": "cXn60b9eotz",
-              "cocuid": "Xr12mI7VPn3",
-              "cell_no": "E20",
-              "total": false,
-              "name": "Comment of Existence of national/subnational policies or standards on public sector wage ceiling  default"
+              deuid: "cXn60b9eotz",
+              cocuid: "Xr12mI7VPn3",
+              cell_no: "E20",
+              total: false,
+              name:
+                "Comment of Existence of national/subnational policies or standards on public sector wage ceiling  default"
             }
           ]
         }
