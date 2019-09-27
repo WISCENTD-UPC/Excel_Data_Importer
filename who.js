@@ -21977,6 +21977,14 @@ var whoTemplate = {
               total: false,
               name:
                 "Existence of national health workforce strategies and national institutional financing reforms that identify and commit adequate budgetary resources for transformative education No"
+            },
+            {
+              deuid: "fXxS36qL9Vt",
+              cocuid: "Xr12mI7VPn3",
+              cell_no: "F15",
+              total: false,
+              name:
+                "Comment of existence of national health workforce strategies and national institutional financing reforms that identify and commit adequate budgetary resources for transformative education default"
             }
           ]
         },
@@ -22025,7 +22033,7 @@ var whoTemplate = {
               cell_no: "D10",
               total: false,
               name:
-                "Tuition Fee by Student enrolled Generalist Medical Practitioner"
+                "Tuition Fee by Student enrolled General Medical Practitioner"
             },
             {
               deuid: "FQpontg7YBJ",
@@ -22033,7 +22041,7 @@ var whoTemplate = {
               cell_no: "E10",
               total: false,
               name:
-                "Public Expenditure on HWF education Generalist Medical Practitioner"
+                "Public Expenditure on HWF education General Medical Practitioner"
             },
             {
               deuid: "tsRGEPI6G9W",
@@ -22041,7 +22049,7 @@ var whoTemplate = {
               cell_no: "F10",
               total: false,
               name:
-                "Private Expenditure on HWF education Generalist Medical Practitioner"
+                "Private Expenditure on HWF education General Medical Practitioner"
             },
             {
               deuid: "FM20fzfsNov",
@@ -22049,7 +22057,7 @@ var whoTemplate = {
               cell_no: "G10",
               total: false,
               name:
-                "Recurrent costs of qualified educators Generalist Medical Practitioner"
+                "Recurrent costs of qualified educators General Medical Practitioner"
             },
             {
               deuid: "EI6IOp5v4dR",
@@ -22502,7 +22510,7 @@ var whoTemplate = {
               cell_no: "D12",
               total: false,
               name:
-                "Public expenditure on Continuing Professional Development Generalist Medical Practitioner"
+                "Public expenditure on Continuing Professional Development General Medical Practitioner"
             },
             {
               deuid: "go9xficYy4f",
@@ -22510,7 +22518,7 @@ var whoTemplate = {
               cell_no: "E12",
               total: false,
               name:
-                "Out of Pockets expenditure on Continuing Professional Development Generalist Medical Practitioner"
+                "Out of Pockets expenditure on Continuing Professional Development General Medical Practitioner"
             },
             {
               deuid: "BMJGeU5QjPU",
@@ -22518,7 +22526,7 @@ var whoTemplate = {
               cell_no: "F12",
               total: false,
               name:
-                "Official Development Assistanc expenditure on Continuing Professional Development Generalist Medical Practitioner"
+                "Official Development Assistanc expenditure on Continuing Professional Development General Medical Practitioner"
             },
             {
               deuid: "hUqp2FZFNGA",
@@ -22526,7 +22534,7 @@ var whoTemplate = {
               cell_no: "G12",
               total: false,
               name:
-                "Others expenditure on Continuing Professional Development Generalist Medical Practitioner"
+                "Others expenditure on Continuing Professional Development General Medical Practitioner"
             },
             {
               deuid: "k31vRXPe1UA",
