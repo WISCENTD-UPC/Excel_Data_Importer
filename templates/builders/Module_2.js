@@ -17,10 +17,10 @@ function getDataElements(
   tabSelector,
   letters,
   dataRowStart,
-  type = "entryfield"
+  type = "input.entryfield"
 ) {
   return Array.from(
-    document.querySelector(tabSelector).querySelectorAll(`input.${type}`)
+    document.querySelector(tabSelector).querySelectorAll(`${type}`)
   ).map((input, i) => {
     const id = input.getAttribute("id");
     const data = id.split("-");
@@ -43,19 +43,33 @@ const dataElementsSheet1 = getDataElements(
 
 const dataElementsTab2 = getDataElements(
   "#tab1",
-  ["D", "E", "F", "G", "H", "I"],
+  ["D", "E", "F", "G", "H", "I", "J", "K"],
   12
 );
 
+const yesPartialNoTab2 = getDataElements(
+  "#tab2",
+  ["R", "S", "T"],
+  6,
+  "input.entrytrueonly"
+);
+
+const commentsTab2 = getDataElements("#tab2", ["F"], 8, "textarea.entryfield");
+
 const dataElementsTab3 = getDataElements("#tab2", ["J", "K", "L"], 12);
 
-const dataElementsSheet2 = [...dataElementsTab2, ...dataElementsTab3];
+const dataElementsSheet2 = [
+  ...dataElementsTab2,
+  ...yesPartialNoTab2,
+  ...commentsTab2,
+  ...dataElementsTab3
+];
 
 const dataElementsSheet3 = getDataElements(
   "#tab0",
   ["P", "Q", "R", "S"],
-  8,
-  "entrytrueonly"
+  16,
+  "input.entrytrueonly"
 );
 
 const sheet1 = {
@@ -78,7 +92,7 @@ const sheet2 = {
   orgUnitIdScheme: "UID",
   dataElementIdScheme: "UID",
   idScheme: "UID",
-  oucode_cell: "N2",
+  oucode_cell: "P2",
   year_cell: "L4",
   last_data_column: "ZZ",
   agg_des: dataElementsSheet2

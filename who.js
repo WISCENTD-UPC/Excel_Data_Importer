@@ -20992,7 +20992,7 @@ var whoTemplate = {
           orgUnitIdScheme: "UID",
           dataElementIdScheme: "UID",
           idScheme: "UID",
-          oucode_cell: "N2",
+          oucode_cell: "P2",
           year_cell: "L4",
           last_data_column: "ZZ",
           agg_des: [
@@ -21042,7 +21042,23 @@ var whoTemplate = {
               cell_no: "I12",
               total: false,
               name:
-                "Male students absconding in HWF Education and Training centers Medical Doctors"
+                "Drop-outs in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "GrRfteXDhyS",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "J12",
+              total: false,
+              name:
+                "Male drop-outs in HWF Education and Training centers Medical Doctors"
+            },
+            {
+              deuid: "f9lz93NUbMQ",
+              cocuid: "aBpbcEgtzgw",
+              cell_no: "K12",
+              total: false,
+              name:
+                "Female drop-outs in HWF Education and Training centers Medical Doctors"
             },
             {
               deuid: "W3hjWF2zAkt",
@@ -21090,7 +21106,23 @@ var whoTemplate = {
               cell_no: "I13",
               total: false,
               name:
-                "Male students absconding in HWF Education and Training centers General Medical Practitioner"
+                "Drop-outs in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "GrRfteXDhyS",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "J13",
+              total: false,
+              name:
+                "Male drop-outs in HWF Education and Training centers General Medical Practitioner"
+            },
+            {
+              deuid: "f9lz93NUbMQ",
+              cocuid: "LHbCtHlZr3Y",
+              cell_no: "K13",
+              total: false,
+              name:
+                "Female drop-outs in HWF Education and Training centers General Medical Practitioner"
             },
             {
               deuid: "W3hjWF2zAkt",
@@ -21138,7 +21170,23 @@ var whoTemplate = {
               cell_no: "I14",
               total: false,
               name:
-                "Male students absconding in HWF Education and Training centers Specialist Medical Practitioner"
+                "Drop-outs in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "GrRfteXDhyS",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "J14",
+              total: false,
+              name:
+                "Male drop-outs in HWF Education and Training centers Specialist Medical Practitioner"
+            },
+            {
+              deuid: "f9lz93NUbMQ",
+              cocuid: "VtVkbvygJnm",
+              cell_no: "K14",
+              total: false,
+              name:
+                "Female drop-outs in HWF Education and Training centers Specialist Medical Practitioner"
             },
             {
               deuid: "W3hjWF2zAkt",
@@ -21186,7 +21234,23 @@ var whoTemplate = {
               cell_no: "I15",
               total: false,
               name:
-                "Male students absconding in HWF Education and Training centers Nursing Professional"
+                "Drop-outs in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "GrRfteXDhyS",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "J15",
+              total: false,
+              name:
+                "Male drop-outs in HWF Education and Training centers Nursing Professional"
+            },
+            {
+              deuid: "f9lz93NUbMQ",
+              cocuid: "fGOgbIqsxDn",
+              cell_no: "K15",
+              total: false,
+              name:
+                "Female drop-outs in HWF Education and Training centers Nursing Professional"
             },
             {
               deuid: "W3hjWF2zAkt",
@@ -21234,7 +21298,23 @@ var whoTemplate = {
               cell_no: "I16",
               total: false,
               name:
-                "Male students absconding in HWF Education and Training centers Midwifery Professional"
+                "Drop-outs in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "GrRfteXDhyS",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "J16",
+              total: false,
+              name:
+                "Male drop-outs in HWF Education and Training centers Midwifery Professional"
+            },
+            {
+              deuid: "f9lz93NUbMQ",
+              cocuid: "MPzyVWiSFF2",
+              cell_no: "K16",
+              total: false,
+              name:
+                "Female drop-outs in HWF Education and Training centers Midwifery Professional"
             },
             {
               deuid: "W3hjWF2zAkt",
@@ -21280,8 +21360,23 @@ var whoTemplate = {
               cocuid: "ALBRKpJsddQ",
               cell_no: "I17",
               total: false,
+              name: "Drop-outs in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "GrRfteXDhyS",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "J17",
+              total: false,
               name:
-                "Male students absconding in HWF Education and Training centers Dentist"
+                "Male drop-outs in HWF Education and Training centers Dentist"
+            },
+            {
+              deuid: "f9lz93NUbMQ",
+              cocuid: "ALBRKpJsddQ",
+              cell_no: "K17",
+              total: false,
+              name:
+                "Female drop-outs in HWF Education and Training centers Dentist"
             },
             {
               deuid: "W3hjWF2zAkt",
@@ -21327,8 +21422,55 @@ var whoTemplate = {
               cocuid: "iWRW6jXAzvP",
               cell_no: "I18",
               total: false,
+              name: "Drop-outs in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "GrRfteXDhyS",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "J18",
+              total: false,
               name:
-                "Male students absconding in HWF Education and Training centers Pharmacist"
+                "Male drop-outs in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "f9lz93NUbMQ",
+              cocuid: "iWRW6jXAzvP",
+              cell_no: "K18",
+              total: false,
+              name:
+                "Female drop-outs in HWF Education and Training centers Pharmacist"
+            },
+            {
+              deuid: "EtX7FWQ8HOf",
+              cocuid: "I93t0K7b1oN",
+              cell_no: "R6",
+              total: false,
+              name:
+                "Number of Accredited education institutions up to date and available in the public domain Yes"
+            },
+            {
+              deuid: "EtX7FWQ8HOf",
+              cocuid: "Xgr3PJxcWfJ",
+              cell_no: "S6",
+              total: false,
+              name:
+                "Number of Accredited education institutions up to date and available in the public domain Partial"
+            },
+            {
+              deuid: "EtX7FWQ8HOf",
+              cocuid: "Y7EAGQA1bfv",
+              cell_no: "T6",
+              total: false,
+              name:
+                "Number of Accredited education institutions up to date and available in the public domain No"
+            },
+            {
+              deuid: "aAuKVcYFTB8",
+              cocuid: "Xr12mI7VPn3",
+              cell_no: "F8",
+              total: true,
+              name:
+                "Comment of Number of Accredited education institutions up to date and available in the public domain default"
             },
             {
               deuid: "AeURkaiQxjy",
@@ -21507,24 +21649,24 @@ var whoTemplate = {
           agg_des: [
             {
               deuid: "GHRcigiFyO0",
-              cocuid: "ukju4pkJeXV",
-              cell_no: "P8",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Regulatory bodies"
-            },
-            {
-              deuid: "GHRcigiFyO0",
               cocuid: "dYLYgidzGd0",
-              cell_no: "Q8",
+              cell_no: "P16",
               total: false,
               name:
                 "Medical Doctors in education and training source type Ministry of Education"
             },
             {
               deuid: "GHRcigiFyO0",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "Q16",
+              total: false,
+              name:
+                "Medical Doctors in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "GHRcigiFyO0",
               cocuid: "mGDxxaXpJHJ",
-              cell_no: "R8",
+              cell_no: "R16",
               total: false,
               name:
                 "Medical Doctors in education and training source type Training Institutes"
@@ -21532,202 +21674,202 @@ var whoTemplate = {
             {
               deuid: "GHRcigiFyO0",
               cocuid: "h0uO1nflznJ",
-              cell_no: "S8",
+              cell_no: "S16",
               total: false,
               name:
                 "Medical Doctors in education and training source type Other databases"
             },
             {
-              deuid: "GHRcigiFyO0",
-              cocuid: "ukju4pkJeXV",
-              cell_no: "P9",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Regulatory bodies"
-            },
-            {
-              deuid: "GHRcigiFyO0",
+              deuid: "uwBMy7jAOzr",
               cocuid: "dYLYgidzGd0",
-              cell_no: "Q9",
+              cell_no: "P17",
               total: false,
               name:
-                "Medical Doctors in education and training source type Ministry of Education"
+                "General Medical Practitioners in education and training source type Ministry of Education"
             },
             {
-              deuid: "GHRcigiFyO0",
-              cocuid: "mGDxxaXpJHJ",
-              cell_no: "R9",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Training Institutes"
-            },
-            {
-              deuid: "GHRcigiFyO0",
-              cocuid: "h0uO1nflznJ",
-              cell_no: "S9",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Other databases"
-            },
-            {
-              deuid: "GHRcigiFyO0",
+              deuid: "uwBMy7jAOzr",
               cocuid: "ukju4pkJeXV",
-              cell_no: "P10",
+              cell_no: "Q17",
               total: false,
               name:
-                "Medical Doctors in education and training source type Regulatory bodies"
+                "General Medical Practitioners in education and training source type Regulatory bodies"
             },
             {
-              deuid: "GHRcigiFyO0",
-              cocuid: "dYLYgidzGd0",
-              cell_no: "Q10",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Ministry of Education"
-            },
-            {
-              deuid: "GHRcigiFyO0",
+              deuid: "uwBMy7jAOzr",
               cocuid: "mGDxxaXpJHJ",
-              cell_no: "R10",
+              cell_no: "R17",
               total: false,
               name:
-                "Medical Doctors in education and training source type Training Institutes"
+                "General Medical Practitioners in education and training source type Training Institutes"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "uwBMy7jAOzr",
               cocuid: "h0uO1nflznJ",
-              cell_no: "S10",
+              cell_no: "S17",
               total: false,
               name:
-                "Medical Doctors in education and training source type Other databases"
+                "General Medical Practitioners in education and training source type Other databases"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "lvkcxdk6ewE",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "P18",
+              total: false,
+              name:
+                "Specialist Medical Practitioners in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "lvkcxdk6ewE",
               cocuid: "ukju4pkJeXV",
-              cell_no: "P11",
+              cell_no: "Q18",
               total: false,
               name:
-                "Medical Doctors in education and training source type Regulatory bodies"
+                "Specialist Medical Practitioners in education and training source type Regulatory bodies"
             },
             {
-              deuid: "GHRcigiFyO0",
-              cocuid: "dYLYgidzGd0",
-              cell_no: "Q11",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Ministry of Education"
-            },
-            {
-              deuid: "GHRcigiFyO0",
+              deuid: "lvkcxdk6ewE",
               cocuid: "mGDxxaXpJHJ",
-              cell_no: "R11",
+              cell_no: "R18",
               total: false,
               name:
-                "Medical Doctors in education and training source type Training Institutes"
+                "Specialist Medical Practitioners in education and training source type Training Institutes"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "lvkcxdk6ewE",
               cocuid: "h0uO1nflznJ",
-              cell_no: "S11",
+              cell_no: "S18",
               total: false,
               name:
-                "Medical Doctors in education and training source type Other databases"
+                "Specialist Medical Practitioners in education and training source type Other databases"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "Tu7mmoVDSFh",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "P19",
+              total: false,
+              name:
+                "Nursing Professionals in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "Tu7mmoVDSFh",
               cocuid: "ukju4pkJeXV",
-              cell_no: "P12",
+              cell_no: "Q19",
               total: false,
               name:
-                "Medical Doctors in education and training source type Regulatory bodies"
+                "Nursing Professionals in education and training source type Regulatory bodies"
             },
             {
-              deuid: "GHRcigiFyO0",
-              cocuid: "dYLYgidzGd0",
-              cell_no: "Q12",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Ministry of Education"
-            },
-            {
-              deuid: "GHRcigiFyO0",
+              deuid: "Tu7mmoVDSFh",
               cocuid: "mGDxxaXpJHJ",
-              cell_no: "R12",
+              cell_no: "R19",
               total: false,
               name:
-                "Medical Doctors in education and training source type Training Institutes"
+                "Nursing Professionals in education and training source type Training Institutes"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "Tu7mmoVDSFh",
               cocuid: "h0uO1nflznJ",
-              cell_no: "S12",
+              cell_no: "S19",
               total: false,
               name:
-                "Medical Doctors in education and training source type Other databases"
+                "Nursing Professionals in education and training source type Other databases"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "baxzJnblwIA",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "P20",
+              total: false,
+              name:
+                "Midwifery Professionals in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "baxzJnblwIA",
               cocuid: "ukju4pkJeXV",
-              cell_no: "P13",
+              cell_no: "Q20",
               total: false,
               name:
-                "Medical Doctors in education and training source type Regulatory bodies"
+                "Midwifery Professionals in education and training source type Regulatory bodies"
             },
             {
-              deuid: "GHRcigiFyO0",
-              cocuid: "dYLYgidzGd0",
-              cell_no: "Q13",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Ministry of Education"
-            },
-            {
-              deuid: "GHRcigiFyO0",
+              deuid: "baxzJnblwIA",
               cocuid: "mGDxxaXpJHJ",
-              cell_no: "R13",
+              cell_no: "R20",
               total: false,
               name:
-                "Medical Doctors in education and training source type Training Institutes"
+                "Midwifery Professionals in education and training source type Training Institutes"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "baxzJnblwIA",
               cocuid: "h0uO1nflznJ",
-              cell_no: "S13",
+              cell_no: "S20",
               total: false,
               name:
-                "Medical Doctors in education and training source type Other databases"
+                "Midwifery Professionals in education and training source type Other databases"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "vERGKxg4ky5",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "P21",
+              total: false,
+              name:
+                "Dentists in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "vERGKxg4ky5",
               cocuid: "ukju4pkJeXV",
-              cell_no: "P14",
+              cell_no: "Q21",
               total: false,
               name:
-                "Medical Doctors in education and training source type Regulatory bodies"
+                "Dentists in education and training source type Regulatory bodies"
             },
             {
-              deuid: "GHRcigiFyO0",
-              cocuid: "dYLYgidzGd0",
-              cell_no: "Q14",
-              total: false,
-              name:
-                "Medical Doctors in education and training source type Ministry of Education"
-            },
-            {
-              deuid: "GHRcigiFyO0",
+              deuid: "vERGKxg4ky5",
               cocuid: "mGDxxaXpJHJ",
-              cell_no: "R14",
+              cell_no: "R21",
               total: false,
               name:
-                "Medical Doctors in education and training source type Training Institutes"
+                "Dentists in education and training source type Training Institutes"
             },
             {
-              deuid: "GHRcigiFyO0",
+              deuid: "vERGKxg4ky5",
               cocuid: "h0uO1nflznJ",
-              cell_no: "S14",
+              cell_no: "S21",
               total: false,
               name:
-                "Medical Doctors in education and training source type Other databases"
+                "Dentists in education and training source type Other databases"
+            },
+            {
+              deuid: "ZeF4Zhl5iSz",
+              cocuid: "dYLYgidzGd0",
+              cell_no: "P22",
+              total: false,
+              name:
+                "Pharmacists in education and training source type Ministry of Education"
+            },
+            {
+              deuid: "ZeF4Zhl5iSz",
+              cocuid: "ukju4pkJeXV",
+              cell_no: "Q22",
+              total: false,
+              name:
+                "Pharmacists in education and training source type Regulatory bodies"
+            },
+            {
+              deuid: "ZeF4Zhl5iSz",
+              cocuid: "mGDxxaXpJHJ",
+              cell_no: "R22",
+              total: false,
+              name:
+                "Pharmacists in education and training source type Training Institutes"
+            },
+            {
+              deuid: "ZeF4Zhl5iSz",
+              cocuid: "h0uO1nflznJ",
+              cell_no: "S22",
+              total: false,
+              name:
+                "Pharmacists in education and training source type Other databases"
             }
           ]
         }
