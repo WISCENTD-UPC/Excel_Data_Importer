@@ -29,7 +29,7 @@ let getDataElements = (
       cocuid: data[1],
       cell_no: `${letters[i % letters.length]}${parseInt(i / letters.length) +
         dataRowStart}`,
-      total: input.disabled,
+      total: false,
       name: `${metadata.get(data[0]).name} ${metadata.get(data[1]).name}`
     };
   });
@@ -97,10 +97,13 @@ let dataTab1Checks = getDataElements(
 
 let dataTab1Comments = getDataElements("#tab0", ["E"], 13, "textarea");
 
+let dataTab1OptionSets = getDataElements("#tab0", ["V", "W"], 23, "input", "entryoptionset");
+
 const dataElementsSheet1 = [
   ...dataElementsTab1,
   ...dataTab1Checks,
-  ...dataTab1Comments
+  ...dataTab1Comments,
+  ...dataTab1OptionSets,
 ];
 
 let sheet1 = {

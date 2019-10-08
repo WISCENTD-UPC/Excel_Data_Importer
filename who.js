@@ -22400,7 +22400,7 @@ var whoTemplate = {
                     dataElementIdScheme: "UID",
                     idScheme: "UID",
                     oucode_cell: "X2",
-                    year_cell: "L4",
+                    year_cell: "M4",
                     last_data_column: "ZZ",
                     agg_des: [
                         {
@@ -22637,7 +22637,7 @@ var whoTemplate = {
                     dataElementIdScheme: "UID",
                     idScheme: "UID",
                     oucode_cell: "AT2",
-                    year_cell: "AQ4",
+                    year_cell: "P4",
                     last_data_column: "ZZ",
                     agg_des: [
                         {
@@ -23994,7 +23994,7 @@ var whoTemplate = {
                     dataElementIdScheme: "UID",
                     idScheme: "UID",
                     oucode_cell: "W2",
-                    year_cell: "S4",
+                    year_cell: "Q4",
                     last_data_column: "ZZ",
                     agg_des: [
                         {
@@ -26837,7 +26837,7 @@ var whoTemplate = {
                             deuid: "d7hKlZbQARX",
                             cocuid: "Xr12mI7VPn3",
                             cell_no: "E10",
-                            total: true,
+                            total: false,
                             name:
                                 "Comment of Existence of national/subnational policies for regulating compulsory service default"
                         },
@@ -27707,6 +27707,22 @@ var whoTemplate = {
                             total: false,
                             name:
                                 "Comment of existence of advanced nursing roles default"
+                        },
+                        {
+                            deuid: "EVairjAiRv6",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "V23",
+                            total: false,
+                            name:
+                                "Availability of human resources to implement IHR default"
+                        },
+                        {
+                            deuid: "u6F6nBWeomT",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "W23",
+                            total: false,
+                            name:
+                                "Applied epidemiology training programme default"
                         }
                     ]
                 },
