@@ -22150,7 +22150,7 @@ var whoTemplate = {
                     ]
                 },
                 {
-                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_type: "AGGREGATE_STATIC_YES_ONLY",
                     sheet_no: 3,
                     sheet_name: "Sourcetype",
                     orgUnitIdScheme: "UID",

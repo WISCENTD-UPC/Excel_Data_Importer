@@ -29,7 +29,7 @@ function getDataElements(
       cocuid: data[1],
       cell_no: `${letters[i % letters.length]}${parseInt(i / letters.length) +
         dataRowStart}`,
-      total: input.disabled,
+      total: false,
       name: `${metadata.get(data[0]).name} ${metadata.get(data[1]).name}`
     };
   });
@@ -99,7 +99,7 @@ const sheet2 = {
 };
 
 const sheet3 = {
-  sheet_type: "AGGREGATE_STATIC",
+  sheet_type: "AGGREGATE_STATIC_YES_ONLY",
   sheet_no: 3,
   sheet_name: "Sourcetype",
   orgUnitIdScheme: "UID",
