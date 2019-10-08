@@ -40,3 +40,5 @@
         Next: Next: Next: Next: Next: Next
     End Sub
  ```
+
+ If the above method did not work for you then you can try this method for removing passwords from an Excel spreadsheet [link](http://www.excelsupersite.com/how-to-remove-an-excel-spreadsheet-password-in-6-easy-steps/)

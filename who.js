@@ -20967,6 +20967,7208 @@ var whoTemplate = {
                     ]
                 }
             ]
+        },
+        {
+            name: "Module 2 Template",
+            file: "NHWA_Module_2.xlsx",
+            sheets: [
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 1,
+                    sheet_name: "Input",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "V2",
+                    year_cell: "L4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "GZZ2BDHZX5w",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D8",
+                            total: false,
+                            name:
+                                "Applications in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "HVOexl8T1Tv",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E8",
+                            total: false,
+                            name:
+                                "Male applications in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "ljMIY6HvkD6",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F8",
+                            total: false,
+                            name:
+                                "Female applications in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "Ca8zQsc1xjC",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G8",
+                            total: false,
+                            name:
+                                "Admissions in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "orhcprpuyDa",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "H8",
+                            total: false,
+                            name:
+                                "Male admissions in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "xpBCkAdPXni",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "I8",
+                            total: false,
+                            name:
+                                "Female admissions in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "dOdILuGzOCT",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "J8",
+                            total: false,
+                            name:
+                                "Entrants in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "OJIzrlkgQh8",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "K8",
+                            total: false,
+                            name:
+                                "Male entrants in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "utIBHSRqgVj",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "L8",
+                            total: false,
+                            name:
+                                "Female entrants in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "GZZ2BDHZX5w",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D9",
+                            total: false,
+                            name:
+                                "Applications in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "HVOexl8T1Tv",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Male applications in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "ljMIY6HvkD6",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Female applications in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "Ca8zQsc1xjC",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Admissions in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "orhcprpuyDa",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "H9",
+                            total: false,
+                            name:
+                                "Male admissions in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "xpBCkAdPXni",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "I9",
+                            total: false,
+                            name:
+                                "Female admissions in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "dOdILuGzOCT",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "J9",
+                            total: false,
+                            name:
+                                "Entrants in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "OJIzrlkgQh8",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "K9",
+                            total: false,
+                            name:
+                                "Male entrants in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "utIBHSRqgVj",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "L9",
+                            total: false,
+                            name:
+                                "Female entrants in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "GZZ2BDHZX5w",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Applications in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "HVOexl8T1Tv",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Male applications in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "ljMIY6HvkD6",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Female applications in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "Ca8zQsc1xjC",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Admissions in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "orhcprpuyDa",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "H10",
+                            total: false,
+                            name:
+                                "Male admissions in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "xpBCkAdPXni",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "I10",
+                            total: false,
+                            name:
+                                "Female admissions in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "dOdILuGzOCT",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "J10",
+                            total: false,
+                            name:
+                                "Entrants in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "OJIzrlkgQh8",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "K10",
+                            total: false,
+                            name:
+                                "Male entrants in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "utIBHSRqgVj",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "L10",
+                            total: false,
+                            name:
+                                "Female entrants in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "GZZ2BDHZX5w",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Applications in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "HVOexl8T1Tv",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Male applications in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "ljMIY6HvkD6",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Female applications in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "Ca8zQsc1xjC",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Admissions in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "orhcprpuyDa",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "Male admissions in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "xpBCkAdPXni",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "I11",
+                            total: false,
+                            name:
+                                "Female admissions in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "dOdILuGzOCT",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "J11",
+                            total: false,
+                            name:
+                                "Entrants in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "OJIzrlkgQh8",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "K11",
+                            total: false,
+                            name:
+                                "Male entrants in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "utIBHSRqgVj",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "L11",
+                            total: false,
+                            name:
+                                "Female entrants in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "GZZ2BDHZX5w",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Applications in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "HVOexl8T1Tv",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Male applications in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "ljMIY6HvkD6",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Female applications in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "Ca8zQsc1xjC",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Admissions in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "orhcprpuyDa",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Male admissions in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "xpBCkAdPXni",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "Female admissions in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "dOdILuGzOCT",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "J12",
+                            total: false,
+                            name:
+                                "Entrants in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "OJIzrlkgQh8",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "K12",
+                            total: false,
+                            name:
+                                "Male entrants in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "utIBHSRqgVj",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "L12",
+                            total: false,
+                            name:
+                                "Female entrants in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "GZZ2BDHZX5w",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Applications in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "HVOexl8T1Tv",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Male applications in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "ljMIY6HvkD6",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Female applications in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "Ca8zQsc1xjC",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Admissions in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "orhcprpuyDa",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Male admissions in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "xpBCkAdPXni",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Female admissions in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "dOdILuGzOCT",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "J13",
+                            total: false,
+                            name:
+                                "Entrants in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "OJIzrlkgQh8",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "K13",
+                            total: false,
+                            name:
+                                "Male entrants in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "utIBHSRqgVj",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "L13",
+                            total: false,
+                            name:
+                                "Female entrants in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "GZZ2BDHZX5w",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Applications in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "HVOexl8T1Tv",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Male applications in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "ljMIY6HvkD6",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Female applications in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "Ca8zQsc1xjC",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "Admissions in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "orhcprpuyDa",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "H14",
+                            total: false,
+                            name:
+                                "Male admissions in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "xpBCkAdPXni",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "I14",
+                            total: false,
+                            name:
+                                "Female admissions in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "dOdILuGzOCT",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "J14",
+                            total: false,
+                            name:
+                                "Entrants in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "OJIzrlkgQh8",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "K14",
+                            total: false,
+                            name:
+                                "Male entrants in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "utIBHSRqgVj",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "L14",
+                            total: false,
+                            name:
+                                "Female entrants in HWF Education and Training centers Pharmacist"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 2,
+                    sheet_name: "Input",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "P2",
+                    year_cell: "L4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "W3hjWF2zAkt",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Graduates in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "b5Y5ttOan5u",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Male graduates in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "d9aRkLridyB",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Female graduates in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "h0MrvKyI3Nk",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Public graduates in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "bXegTxbu4XB",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Private graduates in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "GAikjDurEiF",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "Drop-outs in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "GrRfteXDhyS",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "J12",
+                            total: false,
+                            name:
+                                "Male drop-outs in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "f9lz93NUbMQ",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "K12",
+                            total: false,
+                            name:
+                                "Female drop-outs in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "W3hjWF2zAkt",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Graduates in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "b5Y5ttOan5u",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Male graduates in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "d9aRkLridyB",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Female graduates in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "h0MrvKyI3Nk",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Public graduates in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "bXegTxbu4XB",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Private graduates in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "GAikjDurEiF",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Drop-outs in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "GrRfteXDhyS",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "J13",
+                            total: false,
+                            name:
+                                "Male drop-outs in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "f9lz93NUbMQ",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "K13",
+                            total: false,
+                            name:
+                                "Female drop-outs in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "W3hjWF2zAkt",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Graduates in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "b5Y5ttOan5u",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Male graduates in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "d9aRkLridyB",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Female graduates in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "h0MrvKyI3Nk",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "Public graduates in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "bXegTxbu4XB",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "H14",
+                            total: false,
+                            name:
+                                "Private graduates in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "GAikjDurEiF",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "I14",
+                            total: false,
+                            name:
+                                "Drop-outs in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "GrRfteXDhyS",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "J14",
+                            total: false,
+                            name:
+                                "Male drop-outs in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "f9lz93NUbMQ",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "K14",
+                            total: false,
+                            name:
+                                "Female drop-outs in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "W3hjWF2zAkt",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D15",
+                            total: false,
+                            name:
+                                "Graduates in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "b5Y5ttOan5u",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Male graduates in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "d9aRkLridyB",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Female graduates in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "h0MrvKyI3Nk",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G15",
+                            total: false,
+                            name:
+                                "Public graduates in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "bXegTxbu4XB",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "H15",
+                            total: false,
+                            name:
+                                "Private graduates in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "GAikjDurEiF",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "I15",
+                            total: false,
+                            name:
+                                "Drop-outs in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "GrRfteXDhyS",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "J15",
+                            total: false,
+                            name:
+                                "Male drop-outs in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "f9lz93NUbMQ",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "K15",
+                            total: false,
+                            name:
+                                "Female drop-outs in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "W3hjWF2zAkt",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D16",
+                            total: false,
+                            name:
+                                "Graduates in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "b5Y5ttOan5u",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E16",
+                            total: false,
+                            name:
+                                "Male graduates in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "d9aRkLridyB",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F16",
+                            total: false,
+                            name:
+                                "Female graduates in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "h0MrvKyI3Nk",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G16",
+                            total: false,
+                            name:
+                                "Public graduates in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "bXegTxbu4XB",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "H16",
+                            total: false,
+                            name:
+                                "Private graduates in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "GAikjDurEiF",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "I16",
+                            total: false,
+                            name:
+                                "Drop-outs in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "GrRfteXDhyS",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "J16",
+                            total: false,
+                            name:
+                                "Male drop-outs in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "f9lz93NUbMQ",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "K16",
+                            total: false,
+                            name:
+                                "Female drop-outs in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "W3hjWF2zAkt",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D17",
+                            total: false,
+                            name:
+                                "Graduates in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "b5Y5ttOan5u",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E17",
+                            total: false,
+                            name:
+                                "Male graduates in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "d9aRkLridyB",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F17",
+                            total: false,
+                            name:
+                                "Female graduates in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "h0MrvKyI3Nk",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G17",
+                            total: false,
+                            name:
+                                "Public graduates in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "bXegTxbu4XB",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "H17",
+                            total: false,
+                            name:
+                                "Private graduates in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "GAikjDurEiF",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "I17",
+                            total: false,
+                            name:
+                                "Drop-outs in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "GrRfteXDhyS",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "J17",
+                            total: false,
+                            name:
+                                "Male drop-outs in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "f9lz93NUbMQ",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "K17",
+                            total: false,
+                            name:
+                                "Female drop-outs in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "W3hjWF2zAkt",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D18",
+                            total: false,
+                            name:
+                                "Graduates in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "b5Y5ttOan5u",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E18",
+                            total: false,
+                            name:
+                                "Male graduates in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "d9aRkLridyB",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F18",
+                            total: false,
+                            name:
+                                "Female graduates in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "h0MrvKyI3Nk",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G18",
+                            total: false,
+                            name:
+                                "Public graduates in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "bXegTxbu4XB",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "H18",
+                            total: false,
+                            name:
+                                "Private graduates in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "GAikjDurEiF",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "I18",
+                            total: false,
+                            name:
+                                "Drop-outs in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "GrRfteXDhyS",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "J18",
+                            total: false,
+                            name:
+                                "Male drop-outs in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "f9lz93NUbMQ",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "K18",
+                            total: false,
+                            name:
+                                "Female drop-outs in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "EtX7FWQ8HOf",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R6",
+                            total: false,
+                            name:
+                                "Number of Accredited education institutions up to date and available in the public domain Yes"
+                        },
+                        {
+                            deuid: "EtX7FWQ8HOf",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S6",
+                            total: false,
+                            name:
+                                "Number of Accredited education institutions up to date and available in the public domain Partial"
+                        },
+                        {
+                            deuid: "EtX7FWQ8HOf",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T6",
+                            total: false,
+                            name:
+                                "Number of Accredited education institutions up to date and available in the public domain No"
+                        },
+                        {
+                            deuid: "aAuKVcYFTB8",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "F8",
+                            total: false,
+                            name:
+                                "Comment of Number of Accredited education institutions up to date and available in the public domain default"
+                        },
+                        {
+                            deuid: "AeURkaiQxjy",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "J12",
+                            total: false,
+                            name:
+                                "Educators in HWF Education and Training centers Medical Doctors"
+                        },
+                        {
+                            deuid: "RnxSxiLePqc",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "K12",
+                            total: false,
+                            name:
+                                "Health workforce education and training centers capacity Medical Doctors"
+                        },
+                        {
+                            deuid: "WBxm9A5Qkea",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "L12",
+                            total: false,
+                            name:
+                                "Training Duration for HWF programmes Medical Doctors"
+                        },
+                        {
+                            deuid: "AeURkaiQxjy",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "J13",
+                            total: false,
+                            name:
+                                "Educators in HWF Education and Training centers General Medical Practitioner"
+                        },
+                        {
+                            deuid: "RnxSxiLePqc",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "K13",
+                            total: false,
+                            name:
+                                "Health workforce education and training centers capacity General Medical Practitioner"
+                        },
+                        {
+                            deuid: "WBxm9A5Qkea",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "L13",
+                            total: false,
+                            name:
+                                "Training Duration for HWF programmes General Medical Practitioner"
+                        },
+                        {
+                            deuid: "AeURkaiQxjy",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "J14",
+                            total: false,
+                            name:
+                                "Educators in HWF Education and Training centers Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "RnxSxiLePqc",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "K14",
+                            total: false,
+                            name:
+                                "Health workforce education and training centers capacity Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "WBxm9A5Qkea",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "L14",
+                            total: false,
+                            name:
+                                "Training Duration for HWF programmes Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "AeURkaiQxjy",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "J15",
+                            total: false,
+                            name:
+                                "Educators in HWF Education and Training centers Nursing Professional"
+                        },
+                        {
+                            deuid: "RnxSxiLePqc",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "K15",
+                            total: false,
+                            name:
+                                "Health workforce education and training centers capacity Nursing Professional"
+                        },
+                        {
+                            deuid: "WBxm9A5Qkea",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "L15",
+                            total: false,
+                            name:
+                                "Training Duration for HWF programmes Nursing Professional"
+                        },
+                        {
+                            deuid: "AeURkaiQxjy",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "J16",
+                            total: false,
+                            name:
+                                "Educators in HWF Education and Training centers Midwifery Professional"
+                        },
+                        {
+                            deuid: "RnxSxiLePqc",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "K16",
+                            total: false,
+                            name:
+                                "Health workforce education and training centers capacity Midwifery Professional"
+                        },
+                        {
+                            deuid: "WBxm9A5Qkea",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "L16",
+                            total: false,
+                            name:
+                                "Training Duration for HWF programmes Midwifery Professional"
+                        },
+                        {
+                            deuid: "AeURkaiQxjy",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "J17",
+                            total: false,
+                            name:
+                                "Educators in HWF Education and Training centers Dentist"
+                        },
+                        {
+                            deuid: "RnxSxiLePqc",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "K17",
+                            total: false,
+                            name:
+                                "Health workforce education and training centers capacity Dentist"
+                        },
+                        {
+                            deuid: "WBxm9A5Qkea",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "L17",
+                            total: false,
+                            name: "Training Duration for HWF programmes Dentist"
+                        },
+                        {
+                            deuid: "AeURkaiQxjy",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "J18",
+                            total: false,
+                            name:
+                                "Educators in HWF Education and Training centers Pharmacist"
+                        },
+                        {
+                            deuid: "RnxSxiLePqc",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "K18",
+                            total: false,
+                            name:
+                                "Health workforce education and training centers capacity Pharmacist"
+                        },
+                        {
+                            deuid: "WBxm9A5Qkea",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "L18",
+                            total: false,
+                            name:
+                                "Training Duration for HWF programmes Pharmacist"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC_YES_ONLY",
+                    sheet_no: 3,
+                    sheet_name: "Sourcetype",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "P2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "GHRcigiFyO0",
+                            cocuid: "dYLYgidzGd0",
+                            cell_no: "P8",
+                            total: false,
+                            name:
+                                "Medical Doctors in education and training source type Ministry of Education"
+                        },
+                        {
+                            deuid: "GHRcigiFyO0",
+                            cocuid: "ukju4pkJeXV",
+                            cell_no: "Q8",
+                            total: false,
+                            name:
+                                "Medical Doctors in education and training source type Regulatory bodies"
+                        },
+                        {
+                            deuid: "GHRcigiFyO0",
+                            cocuid: "mGDxxaXpJHJ",
+                            cell_no: "R8",
+                            total: false,
+                            name:
+                                "Medical Doctors in education and training source type Training Institutes"
+                        },
+                        {
+                            deuid: "GHRcigiFyO0",
+                            cocuid: "h0uO1nflznJ",
+                            cell_no: "S8",
+                            total: false,
+                            name:
+                                "Medical Doctors in education and training source type Other databases"
+                        },
+                        {
+                            deuid: "uwBMy7jAOzr",
+                            cocuid: "dYLYgidzGd0",
+                            cell_no: "P9",
+                            total: false,
+                            name:
+                                "General Medical Practitioners in education and training source type Ministry of Education"
+                        },
+                        {
+                            deuid: "uwBMy7jAOzr",
+                            cocuid: "ukju4pkJeXV",
+                            cell_no: "Q9",
+                            total: false,
+                            name:
+                                "General Medical Practitioners in education and training source type Regulatory bodies"
+                        },
+                        {
+                            deuid: "uwBMy7jAOzr",
+                            cocuid: "mGDxxaXpJHJ",
+                            cell_no: "R9",
+                            total: false,
+                            name:
+                                "General Medical Practitioners in education and training source type Training Institutes"
+                        },
+                        {
+                            deuid: "uwBMy7jAOzr",
+                            cocuid: "h0uO1nflznJ",
+                            cell_no: "S9",
+                            total: false,
+                            name:
+                                "General Medical Practitioners in education and training source type Other databases"
+                        },
+                        {
+                            deuid: "lvkcxdk6ewE",
+                            cocuid: "dYLYgidzGd0",
+                            cell_no: "P10",
+                            total: false,
+                            name:
+                                "Specialist Medical Practitioners in education and training source type Ministry of Education"
+                        },
+                        {
+                            deuid: "lvkcxdk6ewE",
+                            cocuid: "ukju4pkJeXV",
+                            cell_no: "Q10",
+                            total: false,
+                            name:
+                                "Specialist Medical Practitioners in education and training source type Regulatory bodies"
+                        },
+                        {
+                            deuid: "lvkcxdk6ewE",
+                            cocuid: "mGDxxaXpJHJ",
+                            cell_no: "R10",
+                            total: false,
+                            name:
+                                "Specialist Medical Practitioners in education and training source type Training Institutes"
+                        },
+                        {
+                            deuid: "lvkcxdk6ewE",
+                            cocuid: "h0uO1nflznJ",
+                            cell_no: "S10",
+                            total: false,
+                            name:
+                                "Specialist Medical Practitioners in education and training source type Other databases"
+                        },
+                        {
+                            deuid: "Tu7mmoVDSFh",
+                            cocuid: "dYLYgidzGd0",
+                            cell_no: "P11",
+                            total: false,
+                            name:
+                                "Nursing Professionals in education and training source type Ministry of Education"
+                        },
+                        {
+                            deuid: "Tu7mmoVDSFh",
+                            cocuid: "ukju4pkJeXV",
+                            cell_no: "Q11",
+                            total: false,
+                            name:
+                                "Nursing Professionals in education and training source type Regulatory bodies"
+                        },
+                        {
+                            deuid: "Tu7mmoVDSFh",
+                            cocuid: "mGDxxaXpJHJ",
+                            cell_no: "R11",
+                            total: false,
+                            name:
+                                "Nursing Professionals in education and training source type Training Institutes"
+                        },
+                        {
+                            deuid: "Tu7mmoVDSFh",
+                            cocuid: "h0uO1nflznJ",
+                            cell_no: "S11",
+                            total: false,
+                            name:
+                                "Nursing Professionals in education and training source type Other databases"
+                        },
+                        {
+                            deuid: "baxzJnblwIA",
+                            cocuid: "dYLYgidzGd0",
+                            cell_no: "P12",
+                            total: false,
+                            name:
+                                "Midwifery Professionals in education and training source type Ministry of Education"
+                        },
+                        {
+                            deuid: "baxzJnblwIA",
+                            cocuid: "ukju4pkJeXV",
+                            cell_no: "Q12",
+                            total: false,
+                            name:
+                                "Midwifery Professionals in education and training source type Regulatory bodies"
+                        },
+                        {
+                            deuid: "baxzJnblwIA",
+                            cocuid: "mGDxxaXpJHJ",
+                            cell_no: "R12",
+                            total: false,
+                            name:
+                                "Midwifery Professionals in education and training source type Training Institutes"
+                        },
+                        {
+                            deuid: "baxzJnblwIA",
+                            cocuid: "h0uO1nflznJ",
+                            cell_no: "S12",
+                            total: false,
+                            name:
+                                "Midwifery Professionals in education and training source type Other databases"
+                        },
+                        {
+                            deuid: "vERGKxg4ky5",
+                            cocuid: "dYLYgidzGd0",
+                            cell_no: "P13",
+                            total: false,
+                            name:
+                                "Dentists in education and training source type Ministry of Education"
+                        },
+                        {
+                            deuid: "vERGKxg4ky5",
+                            cocuid: "ukju4pkJeXV",
+                            cell_no: "Q13",
+                            total: false,
+                            name:
+                                "Dentists in education and training source type Regulatory bodies"
+                        },
+                        {
+                            deuid: "vERGKxg4ky5",
+                            cocuid: "mGDxxaXpJHJ",
+                            cell_no: "R13",
+                            total: false,
+                            name:
+                                "Dentists in education and training source type Training Institutes"
+                        },
+                        {
+                            deuid: "vERGKxg4ky5",
+                            cocuid: "h0uO1nflznJ",
+                            cell_no: "S13",
+                            total: false,
+                            name:
+                                "Dentists in education and training source type Other databases"
+                        },
+                        {
+                            deuid: "ZeF4Zhl5iSz",
+                            cocuid: "dYLYgidzGd0",
+                            cell_no: "P14",
+                            total: false,
+                            name:
+                                "Pharmacists in education and training source type Ministry of Education"
+                        },
+                        {
+                            deuid: "ZeF4Zhl5iSz",
+                            cocuid: "ukju4pkJeXV",
+                            cell_no: "Q14",
+                            total: false,
+                            name:
+                                "Pharmacists in education and training source type Regulatory bodies"
+                        },
+                        {
+                            deuid: "ZeF4Zhl5iSz",
+                            cocuid: "mGDxxaXpJHJ",
+                            cell_no: "R14",
+                            total: false,
+                            name:
+                                "Pharmacists in education and training source type Training Institutes"
+                        },
+                        {
+                            deuid: "ZeF4Zhl5iSz",
+                            cocuid: "h0uO1nflznJ",
+                            cell_no: "S14",
+                            total: false,
+                            name:
+                                "Pharmacists in education and training source type Other databases"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Module 3 Template",
+            file: "NHWA_Module_3.xlsx",
+            sheets: [
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 1,
+                    sheet_name: "Regulation",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "X2",
+                    year_cell: "M4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "afgPWA9EO9d",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F7",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "afgPWA9EO9d",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G7",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "afgPWA9EO9d",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H7",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Medical Doctors No"
+                        },
+                        {
+                            deuid: "eaxvIzrZDyz",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F8",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "eaxvIzrZDyz",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G8",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "eaxvIzrZDyz",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H8",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "RQZXBtwBToV",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "RQZXBtwBToV",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "RQZXBtwBToV",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H9",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "h580rDibPjP",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "h580rDibPjP",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "h580rDibPjP",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H10",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Nursing Professional No"
+                        },
+                        {
+                            deuid: "c3tvWVyotti",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "c3tvWVyotti",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "c3tvWVyotti",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Midwifery Professional No"
+                        },
+                        {
+                            deuid: "u06rnfoY988",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Dentist Yes"
+                        },
+                        {
+                            deuid: "u06rnfoY988",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Dentist Partial"
+                        },
+                        {
+                            deuid: "u06rnfoY988",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Dentist No"
+                        },
+                        {
+                            deuid: "LTTnjIq6X6j",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Pharmacist Yes"
+                        },
+                        {
+                            deuid: "LTTnjIq6X6j",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Pharmacist Partial"
+                        },
+                        {
+                            deuid: "LTTnjIq6X6j",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Existence of national standard on the duration and contents of education and training for Pharmacist No"
+                        },
+                        {
+                            deuid: "slfNDnwGD4i",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I7",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on the duration and contents of education and training for Medical Doctors default"
+                        },
+                        {
+                            deuid: "KM3j2qURZvm",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I8",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on the duration and contents of education and training for General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "IRewF07UDgW",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I9",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on the duration and contents of education and training for Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "IS6oWwtsElu",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I10",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on the duration and contents of education and training for Nursing Professional default"
+                        },
+                        {
+                            deuid: "S0cJazBoB9r",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I11",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on the duration and contents of education and training for Midwifery Professional default"
+                        },
+                        {
+                            deuid: "ZVZnw9CazmI",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on the duration and contents of education and training for Dentist default"
+                        },
+                        {
+                            deuid: "RBkF8N37tQl",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on the duration and contents of education and training for Pharmacist default"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 2,
+                    sheet_name: "Acreditation",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "AT2",
+                    year_cell: "P4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "HZci3ozLEL4",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F7",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Medical Doctor Yes"
+                        },
+                        {
+                            deuid: "HZci3ozLEL4",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G7",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Medical Doctor Partial"
+                        },
+                        {
+                            deuid: "HZci3ozLEL4",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H7",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Medical Doctor No"
+                        },
+                        {
+                            deuid: "aEDrisPWh6i",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L7",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "aEDrisPWh6i",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M7",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "aEDrisPWh6i",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N7",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Medical Doctors No"
+                        },
+                        {
+                            deuid: "ubXH2Mko823",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R7",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "ubXH2Mko823",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S7",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "ubXH2Mko823",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T7",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Medical Doctors No"
+                        },
+                        {
+                            deuid: "U5S2sbEnGT9",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "X7",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "U5S2sbEnGT9",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Y7",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "U5S2sbEnGT9",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "Z7",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Medical Doctors No"
+                        },
+                        {
+                            deuid: "Qj97xn0ejxd",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AD7",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "Qj97xn0ejxd",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AE7",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "Qj97xn0ejxd",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AF7",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Medical Doctors No"
+                        },
+                        {
+                            deuid: "j4pHY4ToKPi",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AJ7",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "j4pHY4ToKPi",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AK7",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "j4pHY4ToKPi",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AL7",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Medical Doctors No"
+                        },
+                        {
+                            deuid: "QcMU3E5D2eN",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F8",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "QcMU3E5D2eN",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G8",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "QcMU3E5D2eN",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H8",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "KcDPaDGLf9P",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L8",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "KcDPaDGLf9P",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M8",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "KcDPaDGLf9P",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N8",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "KYNXNZlaQBc",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R8",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "KYNXNZlaQBc",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S8",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "KYNXNZlaQBc",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T8",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "o64uNjIuRXr",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "X8",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Generalist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "o64uNjIuRXr",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Y8",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Generalist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "o64uNjIuRXr",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "Z8",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Generalist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "nwRqq6w8MKq",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AD8",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Generalist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "nwRqq6w8MKq",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AE8",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Generalist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "nwRqq6w8MKq",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AF8",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Generalist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "Mx06wOF9Edi",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AJ8",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "Mx06wOF9Edi",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AK8",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "Mx06wOF9Edi",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AL8",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "PPfHCBsbdGU",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "PPfHCBsbdGU",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "PPfHCBsbdGU",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H9",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "zHNwRzmyOeL",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L9",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "zHNwRzmyOeL",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M9",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "zHNwRzmyOeL",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N9",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "x9MXiBfrfFG",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R9",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "x9MXiBfrfFG",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S9",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "x9MXiBfrfFG",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T9",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "XQgL1GHsnrT",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "X9",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "XQgL1GHsnrT",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Y9",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "XQgL1GHsnrT",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "Z9",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "wqcSEURdLVe",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AD9",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "wqcSEURdLVe",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AE9",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "wqcSEURdLVe",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AF9",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "hJJOo4gRjQA",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AJ9",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "hJJOo4gRjQA",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AK9",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "hJJOo4gRjQA",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AL9",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "gs8HWsMAFFl",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "gs8HWsMAFFl",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "gs8HWsMAFFl",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H10",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Nursing Professional No"
+                        },
+                        {
+                            deuid: "PE5XG7ZZgdc",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L10",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "PE5XG7ZZgdc",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M10",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "PE5XG7ZZgdc",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N10",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Nursing Professional No"
+                        },
+                        {
+                            deuid: "wY9lL47ojb6",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R10",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "wY9lL47ojb6",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S10",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "wY9lL47ojb6",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T10",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Nursing Professional No"
+                        },
+                        {
+                            deuid: "Dn2P7GXFCTr",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "X10",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "Dn2P7GXFCTr",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Y10",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "Dn2P7GXFCTr",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "Z10",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Nursing Professional No"
+                        },
+                        {
+                            deuid: "EGGz5kkdVNl",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AD10",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "EGGz5kkdVNl",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AE10",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "EGGz5kkdVNl",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AF10",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Nursing Professional No"
+                        },
+                        {
+                            deuid: "GNErbB4poQO",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AJ10",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "GNErbB4poQO",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AK10",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "GNErbB4poQO",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AL10",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Nursing Professional No"
+                        },
+                        {
+                            deuid: "Km3h0ydFI2j",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "Km3h0ydFI2j",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "Km3h0ydFI2j",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Midwifery Professional No"
+                        },
+                        {
+                            deuid: "qZ9h4jv9cgO",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L11",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "qZ9h4jv9cgO",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M11",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "qZ9h4jv9cgO",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N11",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Midwifery Professional No"
+                        },
+                        {
+                            deuid: "OBs444qCCU9",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R11",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "OBs444qCCU9",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S11",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "OBs444qCCU9",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T11",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Midwifery Professional No"
+                        },
+                        {
+                            deuid: "pnySnJ6om1A",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "X11",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "pnySnJ6om1A",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Y11",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "pnySnJ6om1A",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "Z11",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Midwifery Professional No"
+                        },
+                        {
+                            deuid: "l1U9oBgd2Pg",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AD11",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "l1U9oBgd2Pg",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AE11",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "l1U9oBgd2Pg",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AF11",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Midwifery Professional No"
+                        },
+                        {
+                            deuid: "bq7cDa5kIgG",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AJ11",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "bq7cDa5kIgG",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AK11",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "bq7cDa5kIgG",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AL11",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Midwifery Professional No"
+                        },
+                        {
+                            deuid: "fLT65oEdyRn",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Dentist Yes"
+                        },
+                        {
+                            deuid: "fLT65oEdyRn",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Dentist Partial"
+                        },
+                        {
+                            deuid: "fLT65oEdyRn",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Dentist No"
+                        },
+                        {
+                            deuid: "TdnUj1l3Z4i",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L12",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Dentist Yes"
+                        },
+                        {
+                            deuid: "TdnUj1l3Z4i",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M12",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Dentist Partial"
+                        },
+                        {
+                            deuid: "TdnUj1l3Z4i",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N12",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Dentist No"
+                        },
+                        {
+                            deuid: "mHNrhvqWd3X",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R12",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Dentist Yes"
+                        },
+                        {
+                            deuid: "mHNrhvqWd3X",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S12",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Dentist Partial"
+                        },
+                        {
+                            deuid: "mHNrhvqWd3X",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T12",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Dentist No"
+                        },
+                        {
+                            deuid: "fhe12emlYec",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "X12",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Dentist Yes"
+                        },
+                        {
+                            deuid: "fhe12emlYec",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Y12",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Dentist Partial"
+                        },
+                        {
+                            deuid: "fhe12emlYec",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "Z12",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Dentist No"
+                        },
+                        {
+                            deuid: "JLq8DlnnFF9",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AD12",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Dentist Yes"
+                        },
+                        {
+                            deuid: "JLq8DlnnFF9",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AE12",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Dentist Partial"
+                        },
+                        {
+                            deuid: "JLq8DlnnFF9",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AF12",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Dentist No"
+                        },
+                        {
+                            deuid: "Fu0P8tj6k3M",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AJ12",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Dentist Yes"
+                        },
+                        {
+                            deuid: "Fu0P8tj6k3M",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AK12",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Dentist Partial"
+                        },
+                        {
+                            deuid: "Fu0P8tj6k3M",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AL12",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Dentist No"
+                        },
+                        {
+                            deuid: "GEDhlVgull2",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Pharmacist Yes"
+                        },
+                        {
+                            deuid: "GEDhlVgull2",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Pharmacist Partial"
+                        },
+                        {
+                            deuid: "GEDhlVgull2",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Pharmacist No"
+                        },
+                        {
+                            deuid: "WsHpge8yVZM",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L13",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Pharmacist Yes"
+                        },
+                        {
+                            deuid: "WsHpge8yVZM",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M13",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Pharmacist Partial"
+                        },
+                        {
+                            deuid: "WsHpge8yVZM",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N13",
+                            total: false,
+                            name:
+                                "Existence of national standard on mechanism on social accountability Pharmacist No"
+                        },
+                        {
+                            deuid: "cemAvj8TkMX",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "R13",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Pharmacist Yes"
+                        },
+                        {
+                            deuid: "cemAvj8TkMX",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "S13",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Pharmacist Partial"
+                        },
+                        {
+                            deuid: "cemAvj8TkMX",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "T13",
+                            total: false,
+                            name:
+                                "Effective implementation of national standards on social accountability Pharmacist No"
+                        },
+                        {
+                            deuid: "wTTVz32PAOn",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "X13",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Pharmacist Yes"
+                        },
+                        {
+                            deuid: "wTTVz32PAOn",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Y13",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Pharmacist Partial"
+                        },
+                        {
+                            deuid: "wTTVz32PAOn",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "Z13",
+                            total: false,
+                            name:
+                                "Existence of national standard for considering social determinants of health accreditation for Pharmacist No"
+                        },
+                        {
+                            deuid: "YDkIX98NArQ",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AD13",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Pharmacist Yes"
+                        },
+                        {
+                            deuid: "YDkIX98NArQ",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AE13",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Pharmacist Partial"
+                        },
+                        {
+                            deuid: "YDkIX98NArQ",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AF13",
+                            total: false,
+                            name:
+                                "Existence of national standard on interprofessional education in accreditation standards Pharmacist No"
+                        },
+                        {
+                            deuid: "v6O0oWTXY34",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "AJ13",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Pharmacist Yes"
+                        },
+                        {
+                            deuid: "v6O0oWTXY34",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "AK13",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Pharmacist Partial"
+                        },
+                        {
+                            deuid: "v6O0oWTXY34",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "AL13",
+                            total: false,
+                            name:
+                                "Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Pharmacist No"
+                        },
+                        {
+                            deuid: "xIdJZgy5GSy",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I7",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Medical Doctor default"
+                        },
+                        {
+                            deuid: "oTTeFlxkljB",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O7",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanism on social accountability Medical Doctors default"
+                        },
+                        {
+                            deuid: "TVuwNm1PyRC",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "U7",
+                            total: false,
+                            name:
+                                "Comment of effective implementation of national standards on social accountability Medical Doctors default"
+                        },
+                        {
+                            deuid: "SUvvKWCJO5S",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AA7",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for considering social determinants of health accreditation for Medical Doctors default"
+                        },
+                        {
+                            deuid: "GRpQAAvLFM6",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AG7",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on interprofessional education in accreditation standards Medical Doctors default"
+                        },
+                        {
+                            deuid: "Bvwo2Tnwg6K",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AM7",
+                            total: false,
+                            name:
+                                "Comment of Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Medical Doctors default"
+                        },
+                        {
+                            deuid: "BAYPJS2PaYa",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I8",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanisms for accreditation of education and training institutions and their programmes General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "AuztI35M2eU",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O8",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanism on social accountability General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "CHeEETUlnlu",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "U8",
+                            total: false,
+                            name:
+                                "Comment of effective implementation of national standards on social accountability General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "hUTcFeRUFve",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AA8",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for considering social determinants of health accreditation for Generalist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "aNkwiAZwM7f",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AG8",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on interprofessional education in accreditation standards Generalist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "adhcUwpwjrt",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AM8",
+                            total: false,
+                            name:
+                                "Comment of existence of cooperation between education and training institutions and health professional regulators to agree on the standards General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "EUuaZTsVCUP",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I9",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "HHu5mmkn9nI",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O9",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanism on social accountability Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "SvnuCPrV3m8",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "U9",
+                            total: false,
+                            name:
+                                "Comment of effective implementation of national standards on social accountability Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "M09xmOtGx9r",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AA9",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for considering social determinants of health accreditation for Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "W1nqjNXF8t7",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AG9",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on interprofessional education in accreditation standards Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "vVPyD60zs2c",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AM9",
+                            total: false,
+                            name:
+                                "Comment of existence of cooperation between education and training institutions and health professional regulators to agree on the standards Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "qDrIfDpZQzJ",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I10",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Nursing Professional default"
+                        },
+                        {
+                            deuid: "oBOgUPGLDM8",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O10",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanism on social accountability Nursing Professional default"
+                        },
+                        {
+                            deuid: "K9YrD3rxhIm",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "U10",
+                            total: false,
+                            name:
+                                "Comment of effective implementation of national standards on social accountability Nursing Professional default"
+                        },
+                        {
+                            deuid: "s6Rrf01L045",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AA10",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for considering social determinants of health accreditation for Nursing Professional default"
+                        },
+                        {
+                            deuid: "KI35YVBqwOH",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AG10",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on interprofessional education in accreditation standards Nursing Professional default"
+                        },
+                        {
+                            deuid: "Iz9uNISIBW5",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AM10",
+                            total: false,
+                            name:
+                                "Comment of existence of cooperation between education and training institutions and health professional regulators to agree on the standards Nursing Professional default"
+                        },
+                        {
+                            deuid: "BABcY9z1yhJ",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I11",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Midwifery Professional default"
+                        },
+                        {
+                            deuid: "kf5mAEgzRro",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O11",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanism on social accountability Midwifery Professional default"
+                        },
+                        {
+                            deuid: "Px7yHDZGBQS",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "U11",
+                            total: false,
+                            name:
+                                "Comment of effective implementation of national standards on social accountability Midwifery Professional default"
+                        },
+                        {
+                            deuid: "Jo5JCqQn6a4",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AA11",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for considering social determinants of health accreditation for Midwifery Professional default"
+                        },
+                        {
+                            deuid: "HfUw03ynsgX",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AG11",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on interprofessional education in accreditation standards Midwifery Professional default"
+                        },
+                        {
+                            deuid: "FbLuOUxYtvW",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AM11",
+                            total: false,
+                            name:
+                                "Comment of existence of cooperation between education and training institutions and health professional regulators to agree on the standards Midwifery Professional default"
+                        },
+                        {
+                            deuid: "sIxOvk6qfU2",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Dentist default"
+                        },
+                        {
+                            deuid: "dNdiNzgxEAO",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O12",
+                            total: false,
+                            name:
+                                "Comment of Existence of national standard on mechanism on social accountability Dentist default"
+                        },
+                        {
+                            deuid: "H7lhdWUUWxH",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "U12",
+                            total: false,
+                            name:
+                                "Comment of Effective implementation of national standards on social accountability Dentist default"
+                        },
+                        {
+                            deuid: "grFSq6NI6Rv",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AA12",
+                            total: false,
+                            name:
+                                "Comment of Existence of national standard for considering social determinants of health accreditation for Dentist default"
+                        },
+                        {
+                            deuid: "d5tEbnmf2Yl",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AG12",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on interprofessional education in accreditation standards Dentist default"
+                        },
+                        {
+                            deuid: "zJNTztzEUjf",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AM12",
+                            total: false,
+                            name:
+                                "Comment of Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Dentist default"
+                        },
+                        {
+                            deuid: "klUdBljsnYT",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanisms for accreditation of education and training institutions and their programmes Pharmacist default"
+                        },
+                        {
+                            deuid: "Ye7wRY6LeT4",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O13",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on mechanism on social accountability Pharmacist default"
+                        },
+                        {
+                            deuid: "OJ2BPEwWYG9",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "U13",
+                            total: false,
+                            name:
+                                "Comment of effective implementation of national standards on social accountability Pharmacist default"
+                        },
+                        {
+                            deuid: "el5QnfrCW5R",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AA13",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for considering social determinants of health accreditation for Pharmacist default"
+                        },
+                        {
+                            deuid: "w3Lz42yCAiU",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AG13",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard on interprofessional education in accreditation standards Pharmacist default"
+                        },
+                        {
+                            deuid: "uEt3e82IzsK",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "AM13",
+                            total: false,
+                            name:
+                                "Comment of Existence of cooperation between education and training institutions and health professional regulators to agree on the standards Pharmacist default"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 3,
+                    sheet_name: "Lifelong Learning",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "W2",
+                    year_cell: "Q4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "VCZsq4EzHM1",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F7",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "VCZsq4EzHM1",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G7",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "VCZsq4EzHM1",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H7",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Medical Doctors No"
+                        },
+                        {
+                            deuid: "m8xYEbXD3Ee",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L7",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Medical Doctors Yes"
+                        },
+                        {
+                            deuid: "m8xYEbXD3Ee",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M7",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Medical Doctors Partial"
+                        },
+                        {
+                            deuid: "m8xYEbXD3Ee",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N7",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Medical Doctors No"
+                        },
+                        {
+                            deuid: "TYtubJjtDDs",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F8",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "TYtubJjtDDs",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G8",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "TYtubJjtDDs",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H8",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "pWAGDlaDi7y",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L8",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "pWAGDlaDi7y",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M8",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "pWAGDlaDi7y",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N8",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "kxeieT5f8wy",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "kxeieT5f8wy",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "kxeieT5f8wy",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H9",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "H4L8KbENVVk",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L9",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "H4L8KbENVVk",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M9",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "H4L8KbENVVk",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N9",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "PG2MTqzwOAT",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "PG2MTqzwOAT",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "PG2MTqzwOAT",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H10",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Nursing Professional No"
+                        },
+                        {
+                            deuid: "KPlsuTaezlc",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L10",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "KPlsuTaezlc",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M10",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "KPlsuTaezlc",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N10",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Nursing Professional No"
+                        },
+                        {
+                            deuid: "VQk5aenfDR4",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "VQk5aenfDR4",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "VQk5aenfDR4",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Midwifery Professional No"
+                        },
+                        {
+                            deuid: "Pf77Sb5TYCR",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L11",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "Pf77Sb5TYCR",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M11",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "Pf77Sb5TYCR",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N11",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Midwifery Professional No"
+                        },
+                        {
+                            deuid: "pyMHfUIDXRf",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Dentist Yes"
+                        },
+                        {
+                            deuid: "pyMHfUIDXRf",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Dentist Partial"
+                        },
+                        {
+                            deuid: "pyMHfUIDXRf",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Dentist No"
+                        },
+                        {
+                            deuid: "LJNl2upvs8S",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L12",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Dentist Yes"
+                        },
+                        {
+                            deuid: "LJNl2upvs8S",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M12",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Dentist Partial"
+                        },
+                        {
+                            deuid: "LJNl2upvs8S",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N12",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Dentist No"
+                        },
+                        {
+                            deuid: "YVbwt0lb1lA",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Pharmacist Yes"
+                        },
+                        {
+                            deuid: "YVbwt0lb1lA",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Pharmacist Partial"
+                        },
+                        {
+                            deuid: "YVbwt0lb1lA",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Existence of national standard for Continuing Professional Development for Pharmacist No"
+                        },
+                        {
+                            deuid: "vKV2AVBhstz",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "L13",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Pharmacist Yes"
+                        },
+                        {
+                            deuid: "vKV2AVBhstz",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "M13",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Pharmacist Partial"
+                        },
+                        {
+                            deuid: "vKV2AVBhstz",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "N13",
+                            total: false,
+                            name:
+                                "Existence of in-service training as an element of national education plans for the health workforce Pharmacist No"
+                        },
+                        {
+                            deuid: "zAN1yQdYbcB",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I7",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for Continuing Professional Development for Medical Doctors default"
+                        },
+                        {
+                            deuid: "wTJuvXKZCrz",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O7",
+                            total: false,
+                            name:
+                                "Comment of existence of in-service training as an element of national education plans for the health workforce Medical Doctors default"
+                        },
+                        {
+                            deuid: "Z6c1T3O7q0S",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I8",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for Continuing Professional Development for General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "GrZXd4osOGW",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O8",
+                            total: false,
+                            name:
+                                "Comment of existence of in-service training as an element of national education plans for the health workforce General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "XQajU8YgbXg",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I9",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for Continuing Professional Development for Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "ejraR8DfZPf",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O9",
+                            total: false,
+                            name:
+                                "Comment of existence of in-service training as an element of national education plans for the health workforce Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "jQ05qNtE9HB",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I10",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for Continuing Professional Development for Nursing Professional default"
+                        },
+                        {
+                            deuid: "CPexoOTnUQZ",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O10",
+                            total: false,
+                            name:
+                                "Comment of existence of in-service training as an element of national education plans for the health workforce Nursing Professional default"
+                        },
+                        {
+                            deuid: "BK0kijGEWMy",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I11",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for Continuing Professional Development for Midwifery Professional default"
+                        },
+                        {
+                            deuid: "EgaLdA1UaEV",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O11",
+                            total: false,
+                            name:
+                                "Comment of existence of in-service training as an element of national education plans for the health workforce Midwifery Professional default"
+                        },
+                        {
+                            deuid: "gytTkeQWyoA",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for Continuing Professional Development for Dentist default"
+                        },
+                        {
+                            deuid: "vRh6cPENAgr",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O12",
+                            total: false,
+                            name:
+                                "Comment of existence of in-service training as an element of national education plans for the health workforce Dentist default"
+                        },
+                        {
+                            deuid: "kfQaLeZLepq",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Comment of existence of national standard for Continuing Professional Development for Pharmacist default"
+                        },
+                        {
+                            deuid: "L8r8I4WDRUp",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O13",
+                            total: false,
+                            name:
+                                "Comment of existence of in-service training as an element of national education plans for the health workforce Pharmacist default"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Module 4 Template",
+            file: "NHWA_Module_4.xlsx",
+            sheets: [
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 1,
+                    sheet_name: "Entry into Labour Market",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "V2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "KzzMv68cifG",
+                            cocuid: "HQPWV8cT7li",
+                            cell_no: "D9",
+                            total: false,
+                            name:
+                                "Total expenditure on higher education (including for non-health sectors) Government"
+                        },
+                        {
+                            deuid: "KzzMv68cifG",
+                            cocuid: "FiRcnmXF1Yg",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Total expenditure on higher education (including for non-health sectors) Out of Pocket"
+                        },
+                        {
+                            deuid: "KzzMv68cifG",
+                            cocuid: "QKhM7ublqzd",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Total expenditure on higher education (including for non-health sectors) Official Development Assistance"
+                        },
+                        {
+                            deuid: "KzzMv68cifG",
+                            cocuid: "txxKPnVUGvV",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Total expenditure on higher education (including for non-health sectors) Others"
+                        },
+                        {
+                            deuid: "Z6Wd8wiIAfz",
+                            cocuid: "HQPWV8cT7li",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Total expenditure on health workforce pre-service education By Ownership Government"
+                        },
+                        {
+                            deuid: "Z6Wd8wiIAfz",
+                            cocuid: "FiRcnmXF1Yg",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Total expenditure on health workforce pre-service education By Ownership Out of Pocket"
+                        },
+                        {
+                            deuid: "Z6Wd8wiIAfz",
+                            cocuid: "QKhM7ublqzd",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Total expenditure on health workforce pre-service education By Ownership Official Development Assistance"
+                        },
+                        {
+                            deuid: "Z6Wd8wiIAfz",
+                            cocuid: "txxKPnVUGvV",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Total expenditure on health workforce pre-service education By Ownership Others"
+                        },
+                        {
+                            deuid: "Ybz3qUCWYKC",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q18",
+                            total: false,
+                            name:
+                                "Existence of national health workforce strategies and national institutional financing reforms that identify and commit adequate budgetary resources for transformative education Yes"
+                        },
+                        {
+                            deuid: "Ybz3qUCWYKC",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R18",
+                            total: false,
+                            name:
+                                "Existence of national health workforce strategies and national institutional financing reforms that identify and commit adequate budgetary resources for transformative education Partial"
+                        },
+                        {
+                            deuid: "Ybz3qUCWYKC",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S18",
+                            total: false,
+                            name:
+                                "Existence of national health workforce strategies and national institutional financing reforms that identify and commit adequate budgetary resources for transformative education No"
+                        },
+                        {
+                            deuid: "fXxS36qL9Vt",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Comment of existence of national health workforce strategies and national institutional financing reforms that identify and commit adequate budgetary resources for transformative education default"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 2,
+                    sheet_name: "Cost per program",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "N2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "EI6IOp5v4dR",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D9",
+                            total: false,
+                            name:
+                                "Tuition Fee by Student enrolled Medical Doctors"
+                        },
+                        {
+                            deuid: "FQpontg7YBJ",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Public Expenditure on HWF education Medical Doctors"
+                        },
+                        {
+                            deuid: "tsRGEPI6G9W",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Private Expenditure on HWF education Medical Doctors"
+                        },
+                        {
+                            deuid: "FM20fzfsNov",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Recurrent costs of qualified educators Medical Doctors"
+                        },
+                        {
+                            deuid: "EI6IOp5v4dR",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Tuition Fee by Student enrolled General Medical Practitioner"
+                        },
+                        {
+                            deuid: "FQpontg7YBJ",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Public Expenditure on HWF education General Medical Practitioner"
+                        },
+                        {
+                            deuid: "tsRGEPI6G9W",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Private Expenditure on HWF education General Medical Practitioner"
+                        },
+                        {
+                            deuid: "FM20fzfsNov",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Recurrent costs of qualified educators General Medical Practitioner"
+                        },
+                        {
+                            deuid: "EI6IOp5v4dR",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Tuition Fee by Student enrolled Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "FQpontg7YBJ",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Public Expenditure on HWF education Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "tsRGEPI6G9W",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Private Expenditure on HWF education Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "FM20fzfsNov",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Recurrent costs of qualified educators Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "EI6IOp5v4dR",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Tuition Fee by Student enrolled Nursing Professional"
+                        },
+                        {
+                            deuid: "FQpontg7YBJ",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Public Expenditure on HWF education Nursing Professional"
+                        },
+                        {
+                            deuid: "tsRGEPI6G9W",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Private Expenditure on HWF education Nursing Professional"
+                        },
+                        {
+                            deuid: "FM20fzfsNov",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Recurrent costs of qualified educators Nursing Professional"
+                        },
+                        {
+                            deuid: "EI6IOp5v4dR",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Tuition Fee by Student enrolled Midwifery Professional"
+                        },
+                        {
+                            deuid: "FQpontg7YBJ",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Public Expenditure on HWF education Midwifery Professional"
+                        },
+                        {
+                            deuid: "tsRGEPI6G9W",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Private Expenditure on HWF education Midwifery Professional"
+                        },
+                        {
+                            deuid: "FM20fzfsNov",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Recurrent costs of qualified educators Midwifery Professional"
+                        },
+                        {
+                            deuid: "EI6IOp5v4dR",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D14",
+                            total: false,
+                            name: "Tuition Fee by Student enrolled Dentist"
+                        },
+                        {
+                            deuid: "FQpontg7YBJ",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E14",
+                            total: false,
+                            name: "Public Expenditure on HWF education Dentist"
+                        },
+                        {
+                            deuid: "tsRGEPI6G9W",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F14",
+                            total: false,
+                            name: "Private Expenditure on HWF education Dentist"
+                        },
+                        {
+                            deuid: "FM20fzfsNov",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "Recurrent costs of qualified educators Dentist"
+                        },
+                        {
+                            deuid: "EI6IOp5v4dR",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D15",
+                            total: false,
+                            name: "Tuition Fee by Student enrolled Pharmacist"
+                        },
+                        {
+                            deuid: "FQpontg7YBJ",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Public Expenditure on HWF education Pharmacist"
+                        },
+                        {
+                            deuid: "tsRGEPI6G9W",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Private Expenditure on HWF education Pharmacist"
+                        },
+                        {
+                            deuid: "FM20fzfsNov",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G15",
+                            total: false,
+                            name:
+                                "Recurrent costs of qualified educators Pharmacist"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 3,
+                    sheet_name: "Specialist Costs",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "P2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "ie5rMMLaKoX",
+                            cocuid: "qJgX0mO3ph7",
+                            cell_no: "D9",
+                            total: false,
+                            name:
+                                "Total cost per graduate in medical specialist education programme General Paediatricians Practitioner"
+                        },
+                        {
+                            deuid: "VGwyxy87JTn",
+                            cocuid: "qJgX0mO3ph7",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Public cost per graduate in medical specialist education programme General Paediatricians Practitioner"
+                        },
+                        {
+                            deuid: "qwZoBgLRrQf",
+                            cocuid: "qJgX0mO3ph7",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Private (OoP) cost per graduate in medical specialist education programme General Paediatricians Practitioner"
+                        },
+                        {
+                            deuid: "Rx0MR32LJoK",
+                            cocuid: "qJgX0mO3ph7",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Private (ODA) cost per graduate in medical specialist education programme General Paediatricians Practitioner"
+                        },
+                        {
+                            deuid: "uEqspl3rRlH",
+                            cocuid: "qJgX0mO3ph7",
+                            cell_no: "H9",
+                            total: false,
+                            name:
+                                "Private (Other) cost per graduate in medical specialist education programme General Paediatricians Practitioner"
+                        },
+                        {
+                            deuid: "ie5rMMLaKoX",
+                            cocuid: "ABubevCpjCV",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Total cost per graduate in medical specialist education programme Obstetricians and Gynaecologists Practitioner"
+                        },
+                        {
+                            deuid: "VGwyxy87JTn",
+                            cocuid: "ABubevCpjCV",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Public cost per graduate in medical specialist education programme Obstetricians and Gynaecologists Practitioner"
+                        },
+                        {
+                            deuid: "qwZoBgLRrQf",
+                            cocuid: "ABubevCpjCV",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Private (OoP) cost per graduate in medical specialist education programme Obstetricians and Gynaecologists Practitioner"
+                        },
+                        {
+                            deuid: "Rx0MR32LJoK",
+                            cocuid: "ABubevCpjCV",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Private (ODA) cost per graduate in medical specialist education programme Obstetricians and Gynaecologists Practitioner"
+                        },
+                        {
+                            deuid: "uEqspl3rRlH",
+                            cocuid: "ABubevCpjCV",
+                            cell_no: "H10",
+                            total: false,
+                            name:
+                                "Private (Other) cost per graduate in medical specialist education programme Obstetricians and Gynaecologists Practitioner"
+                        },
+                        {
+                            deuid: "ie5rMMLaKoX",
+                            cocuid: "wNJfYD50ZVE",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Total cost per graduate in medical specialist education programme Psychiatrists Practitioner"
+                        },
+                        {
+                            deuid: "VGwyxy87JTn",
+                            cocuid: "wNJfYD50ZVE",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Public cost per graduate in medical specialist education programme Psychiatrists Practitioner"
+                        },
+                        {
+                            deuid: "qwZoBgLRrQf",
+                            cocuid: "wNJfYD50ZVE",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Private (OoP) cost per graduate in medical specialist education programme Psychiatrists Practitioner"
+                        },
+                        {
+                            deuid: "Rx0MR32LJoK",
+                            cocuid: "wNJfYD50ZVE",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Private (ODA) cost per graduate in medical specialist education programme Psychiatrists Practitioner"
+                        },
+                        {
+                            deuid: "uEqspl3rRlH",
+                            cocuid: "wNJfYD50ZVE",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "Private (Other) cost per graduate in medical specialist education programme Psychiatrists Practitioner"
+                        },
+                        {
+                            deuid: "ie5rMMLaKoX",
+                            cocuid: "ByPnGTyTmYa",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Total cost per graduate in medical specialist education programme Medical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "VGwyxy87JTn",
+                            cocuid: "ByPnGTyTmYa",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Public cost per graduate in medical specialist education programme Medical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "qwZoBgLRrQf",
+                            cocuid: "ByPnGTyTmYa",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Private (OoP) cost per graduate in medical specialist education programme Medical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "Rx0MR32LJoK",
+                            cocuid: "ByPnGTyTmYa",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Private (ODA) cost per graduate in medical specialist education programme Medical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "uEqspl3rRlH",
+                            cocuid: "ByPnGTyTmYa",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Private (Other) cost per graduate in medical specialist education programme Medical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "ie5rMMLaKoX",
+                            cocuid: "wJfQhJWdeLX",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Total cost per graduate in medical specialist education programme Surgical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "VGwyxy87JTn",
+                            cocuid: "wJfQhJWdeLX",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Public cost per graduate in medical specialist education programme Surgical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "qwZoBgLRrQf",
+                            cocuid: "wJfQhJWdeLX",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Private (OoP) cost per graduate in medical specialist education programme Surgical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "Rx0MR32LJoK",
+                            cocuid: "wJfQhJWdeLX",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Private (ODA) cost per graduate in medical specialist education programme Surgical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "uEqspl3rRlH",
+                            cocuid: "wJfQhJWdeLX",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Private (Other) cost per graduate in medical specialist education programme Surgical group of Specialists Practitioner"
+                        },
+                        {
+                            deuid: "ie5rMMLaKoX",
+                            cocuid: "EfAbB5kdjLD",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Total cost per graduate in medical specialist education programme Other Specialists Practitioner"
+                        },
+                        {
+                            deuid: "VGwyxy87JTn",
+                            cocuid: "EfAbB5kdjLD",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Public cost per graduate in medical specialist education programme Other Specialists Practitioner"
+                        },
+                        {
+                            deuid: "qwZoBgLRrQf",
+                            cocuid: "EfAbB5kdjLD",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Private (OoP) cost per graduate in medical specialist education programme Other Specialists Practitioner"
+                        },
+                        {
+                            deuid: "Rx0MR32LJoK",
+                            cocuid: "EfAbB5kdjLD",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "Private (ODA) cost per graduate in medical specialist education programme Other Specialists Practitioner"
+                        },
+                        {
+                            deuid: "uEqspl3rRlH",
+                            cocuid: "EfAbB5kdjLD",
+                            cell_no: "H14",
+                            total: false,
+                            name:
+                                "Private (Other) cost per graduate in medical specialist education programme Other Specialists Practitioner"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 4,
+                    sheet_name: "Lifelong Learning",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "N2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "k31vRXPe1UA",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Public expenditure on Continuing Professional Development Medical Doctors"
+                        },
+                        {
+                            deuid: "go9xficYy4f",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Out of Pockets expenditure on Continuing Professional Development Medical Doctors"
+                        },
+                        {
+                            deuid: "BMJGeU5QjPU",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Official Development Assistanc expenditure on Continuing Professional Development Medical Doctors"
+                        },
+                        {
+                            deuid: "hUqp2FZFNGA",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Others expenditure on Continuing Professional Development Medical Doctors"
+                        },
+                        {
+                            deuid: "k31vRXPe1UA",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Public expenditure on Continuing Professional Development General Medical Practitioner"
+                        },
+                        {
+                            deuid: "go9xficYy4f",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Out of Pockets expenditure on Continuing Professional Development General Medical Practitioner"
+                        },
+                        {
+                            deuid: "BMJGeU5QjPU",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Official Development Assistanc expenditure on Continuing Professional Development General Medical Practitioner"
+                        },
+                        {
+                            deuid: "hUqp2FZFNGA",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Others expenditure on Continuing Professional Development General Medical Practitioner"
+                        },
+                        {
+                            deuid: "k31vRXPe1UA",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Public expenditure on Continuing Professional Development Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "go9xficYy4f",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Out of Pockets expenditure on Continuing Professional Development Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "BMJGeU5QjPU",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Official Development Assistanc expenditure on Continuing Professional Development Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "hUqp2FZFNGA",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Others expenditure on Continuing Professional Development Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "k31vRXPe1UA",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Public expenditure on Continuing Professional Development Nursing Professional"
+                        },
+                        {
+                            deuid: "go9xficYy4f",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Out of Pockets expenditure on Continuing Professional Development Nursing Professional"
+                        },
+                        {
+                            deuid: "BMJGeU5QjPU",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Official Development Assistanc expenditure on Continuing Professional Development Nursing Professional"
+                        },
+                        {
+                            deuid: "hUqp2FZFNGA",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "Others expenditure on Continuing Professional Development Nursing Professional"
+                        },
+                        {
+                            deuid: "k31vRXPe1UA",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D15",
+                            total: false,
+                            name:
+                                "Public expenditure on Continuing Professional Development Midwifery Professional"
+                        },
+                        {
+                            deuid: "go9xficYy4f",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Out of Pockets expenditure on Continuing Professional Development Midwifery Professional"
+                        },
+                        {
+                            deuid: "BMJGeU5QjPU",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Official Development Assistanc expenditure on Continuing Professional Development Midwifery Professional"
+                        },
+                        {
+                            deuid: "hUqp2FZFNGA",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G15",
+                            total: false,
+                            name:
+                                "Others expenditure on Continuing Professional Development Midwifery Professional"
+                        },
+                        {
+                            deuid: "k31vRXPe1UA",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D16",
+                            total: false,
+                            name:
+                                "Public expenditure on Continuing Professional Development Dentist"
+                        },
+                        {
+                            deuid: "go9xficYy4f",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E16",
+                            total: false,
+                            name:
+                                "Out of Pockets expenditure on Continuing Professional Development Dentist"
+                        },
+                        {
+                            deuid: "BMJGeU5QjPU",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F16",
+                            total: false,
+                            name:
+                                "Official Development Assistanc expenditure on Continuing Professional Development Dentist"
+                        },
+                        {
+                            deuid: "hUqp2FZFNGA",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G16",
+                            total: false,
+                            name:
+                                "Others expenditure on Continuing Professional Development Dentist"
+                        },
+                        {
+                            deuid: "k31vRXPe1UA",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D17",
+                            total: false,
+                            name:
+                                "Public expenditure on Continuing Professional Development Pharmacist"
+                        },
+                        {
+                            deuid: "go9xficYy4f",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E17",
+                            total: false,
+                            name:
+                                "Out of Pockets expenditure on Continuing Professional Development Pharmacist"
+                        },
+                        {
+                            deuid: "BMJGeU5QjPU",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F17",
+                            total: false,
+                            name:
+                                "Official Development Assistanc expenditure on Continuing Professional Development Pharmacist"
+                        },
+                        {
+                            deuid: "hUqp2FZFNGA",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G17",
+                            total: false,
+                            name:
+                                "Others expenditure on Continuing Professional Development Pharmacist"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Module 5 Template",
+            file: "NHWA_Module_5.xlsx",
+            sheets: [
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 1,
+                    sheet_name: "Entry into Labour Market",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "X2",
+                    year_cell: "K4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "P9FK7e2Ngsz",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D9",
+                            total: false,
+                            name:
+                                "Health workforce Started practicing within one year of graduation Medical Doctors"
+                        },
+                        {
+                            deuid: "qNRERx0Icjw",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Male Health workforce Started practicing within one year of graduation Medical Doctors"
+                        },
+                        {
+                            deuid: "SSzpjcForGt",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Female Health workforce Started practicing within one year of graduation Medical Doctors"
+                        },
+                        {
+                            deuid: "DwYaOZuilM8",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G9",
+                            total: false,
+                            name:
+                                "Newly active domestic trained Health Workforce Medical Doctors"
+                        },
+                        {
+                            deuid: "gvkPV8aqP39",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "H9",
+                            total: false,
+                            name:
+                                "Male newly active domestic trained Health Workforce Medical Doctors"
+                        },
+                        {
+                            deuid: "sF1LtVEqk6Y",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "I9",
+                            total: false,
+                            name:
+                                "Female newly active domestic trained Health Workforce Medical Doctors"
+                        },
+                        {
+                            deuid: "OI5vu4jG4Rf",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "J9",
+                            total: false,
+                            name:
+                                "Newly active foreign trained Health Workforce Medical Doctors"
+                        },
+                        {
+                            deuid: "h1S7GCkmvVn",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "K9",
+                            total: false,
+                            name:
+                                "Male newly active foreign trained Health Workforce Medical Doctors"
+                        },
+                        {
+                            deuid: "ftfTDf31OnN",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "L9",
+                            total: false,
+                            name:
+                                "Female newly active foreign trained Health Workforce Medical Doctors"
+                        },
+                        {
+                            deuid: "P9FK7e2Ngsz",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Health workforce Started practicing within one year of graduation Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "qNRERx0Icjw",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Male Health workforce Started practicing within one year of graduation Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "SSzpjcForGt",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Female Health workforce Started practicing within one year of graduation Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "DwYaOZuilM8",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Newly active domestic trained Health Workforce Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "gvkPV8aqP39",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "H10",
+                            total: false,
+                            name:
+                                "Male newly active domestic trained Health Workforce Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "sF1LtVEqk6Y",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "I10",
+                            total: false,
+                            name:
+                                "Female newly active domestic trained Health Workforce Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "OI5vu4jG4Rf",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "J10",
+                            total: false,
+                            name:
+                                "Newly active foreign trained Health Workforce Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "h1S7GCkmvVn",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "K10",
+                            total: false,
+                            name:
+                                "Male newly active foreign trained Health Workforce Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "ftfTDf31OnN",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "L10",
+                            total: false,
+                            name:
+                                "Female newly active foreign trained Health Workforce Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "P9FK7e2Ngsz",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Health workforce Started practicing within one year of graduation Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "qNRERx0Icjw",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Male Health workforce Started practicing within one year of graduation Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "SSzpjcForGt",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Female Health workforce Started practicing within one year of graduation Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "DwYaOZuilM8",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Newly active domestic trained Health Workforce Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "gvkPV8aqP39",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "Male newly active domestic trained Health Workforce Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "sF1LtVEqk6Y",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "I11",
+                            total: false,
+                            name:
+                                "Female newly active domestic trained Health Workforce Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "OI5vu4jG4Rf",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "J11",
+                            total: false,
+                            name:
+                                "Newly active foreign trained Health Workforce Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "h1S7GCkmvVn",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "K11",
+                            total: false,
+                            name:
+                                "Male newly active foreign trained Health Workforce Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "ftfTDf31OnN",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "L11",
+                            total: false,
+                            name:
+                                "Female newly active foreign trained Health Workforce Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "P9FK7e2Ngsz",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Health workforce Started practicing within one year of graduation Nursing Professional"
+                        },
+                        {
+                            deuid: "qNRERx0Icjw",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Male Health workforce Started practicing within one year of graduation Nursing Professional"
+                        },
+                        {
+                            deuid: "SSzpjcForGt",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Female Health workforce Started practicing within one year of graduation Nursing Professional"
+                        },
+                        {
+                            deuid: "DwYaOZuilM8",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "Newly active domestic trained Health Workforce Nursing Professional"
+                        },
+                        {
+                            deuid: "gvkPV8aqP39",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Male newly active domestic trained Health Workforce Nursing Professional"
+                        },
+                        {
+                            deuid: "sF1LtVEqk6Y",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "Female newly active domestic trained Health Workforce Nursing Professional"
+                        },
+                        {
+                            deuid: "OI5vu4jG4Rf",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "J12",
+                            total: false,
+                            name:
+                                "Newly active foreign trained Health Workforce Nursing Professional"
+                        },
+                        {
+                            deuid: "h1S7GCkmvVn",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "K12",
+                            total: false,
+                            name:
+                                "Male newly active foreign trained Health Workforce Nursing Professional"
+                        },
+                        {
+                            deuid: "ftfTDf31OnN",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "L12",
+                            total: false,
+                            name:
+                                "Female newly active foreign trained Health Workforce Nursing Professional"
+                        },
+                        {
+                            deuid: "P9FK7e2Ngsz",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Health workforce Started practicing within one year of graduation Midwifery Professional"
+                        },
+                        {
+                            deuid: "qNRERx0Icjw",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Male Health workforce Started practicing within one year of graduation Midwifery Professional"
+                        },
+                        {
+                            deuid: "SSzpjcForGt",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Female Health workforce Started practicing within one year of graduation Midwifery Professional"
+                        },
+                        {
+                            deuid: "DwYaOZuilM8",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Newly active domestic trained Health Workforce Midwifery Professional"
+                        },
+                        {
+                            deuid: "gvkPV8aqP39",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Male newly active domestic trained Health Workforce Midwifery Professional"
+                        },
+                        {
+                            deuid: "sF1LtVEqk6Y",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Female newly active domestic trained Health Workforce Midwifery Professional"
+                        },
+                        {
+                            deuid: "OI5vu4jG4Rf",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "J13",
+                            total: false,
+                            name:
+                                "Newly active foreign trained Health Workforce Midwifery Professional"
+                        },
+                        {
+                            deuid: "h1S7GCkmvVn",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "K13",
+                            total: false,
+                            name:
+                                "Male newly active foreign trained Health Workforce Midwifery Professional"
+                        },
+                        {
+                            deuid: "ftfTDf31OnN",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "L13",
+                            total: false,
+                            name:
+                                "Female newly active foreign trained Health Workforce Midwifery Professional"
+                        },
+                        {
+                            deuid: "P9FK7e2Ngsz",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Health workforce Started practicing within one year of graduation Dentist"
+                        },
+                        {
+                            deuid: "qNRERx0Icjw",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Male Health workforce Started practicing within one year of graduation Dentist"
+                        },
+                        {
+                            deuid: "SSzpjcForGt",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Female Health workforce Started practicing within one year of graduation Dentist"
+                        },
+                        {
+                            deuid: "DwYaOZuilM8",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "Newly active domestic trained Health Workforce Dentist"
+                        },
+                        {
+                            deuid: "gvkPV8aqP39",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "H14",
+                            total: false,
+                            name:
+                                "Male newly active domestic trained Health Workforce Dentist"
+                        },
+                        {
+                            deuid: "sF1LtVEqk6Y",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "I14",
+                            total: false,
+                            name:
+                                "Female newly active domestic trained Health Workforce Dentist"
+                        },
+                        {
+                            deuid: "OI5vu4jG4Rf",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "J14",
+                            total: false,
+                            name:
+                                "Newly active foreign trained Health Workforce Dentist"
+                        },
+                        {
+                            deuid: "h1S7GCkmvVn",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "K14",
+                            total: false,
+                            name:
+                                "Male newly active foreign trained Health Workforce Dentist"
+                        },
+                        {
+                            deuid: "ftfTDf31OnN",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "L14",
+                            total: false,
+                            name:
+                                "Female newly active foreign trained Health Workforce Dentist"
+                        },
+                        {
+                            deuid: "P9FK7e2Ngsz",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D15",
+                            total: false,
+                            name:
+                                "Health workforce Started practicing within one year of graduation Pharmacist"
+                        },
+                        {
+                            deuid: "qNRERx0Icjw",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Male Health workforce Started practicing within one year of graduation Pharmacist"
+                        },
+                        {
+                            deuid: "SSzpjcForGt",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Female Health workforce Started practicing within one year of graduation Pharmacist"
+                        },
+                        {
+                            deuid: "DwYaOZuilM8",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G15",
+                            total: false,
+                            name:
+                                "Newly active domestic trained Health Workforce Pharmacist"
+                        },
+                        {
+                            deuid: "gvkPV8aqP39",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "H15",
+                            total: false,
+                            name:
+                                "Male newly active domestic trained Health Workforce Pharmacist"
+                        },
+                        {
+                            deuid: "sF1LtVEqk6Y",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "I15",
+                            total: false,
+                            name:
+                                "Female newly active domestic trained Health Workforce Pharmacist"
+                        },
+                        {
+                            deuid: "OI5vu4jG4Rf",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "J15",
+                            total: false,
+                            name:
+                                "Newly active foreign trained Health Workforce Pharmacist"
+                        },
+                        {
+                            deuid: "h1S7GCkmvVn",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "K15",
+                            total: false,
+                            name:
+                                "Male newly active foreign trained Health Workforce Pharmacist"
+                        },
+                        {
+                            deuid: "ftfTDf31OnN",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "L15",
+                            total: false,
+                            name:
+                                "Female newly active foreign trained Health Workforce Pharmacist"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 2,
+                    sheet_name: "Exit from Labour Market",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "O2",
+                    year_cell: "J4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "sdNHn8qmokO",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D9",
+                            total: false,
+                            name:
+                                "Health workforce currently unemployed Medical Doctors"
+                        },
+                        {
+                            deuid: "Xr81a9iOAyC",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Male Health workforce currently unemployed Medical Doctors"
+                        },
+                        {
+                            deuid: "kcoQHDRTi4E",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F9",
+                            total: false,
+                            name:
+                                "Female Health workforce currently unemployed Medical Doctors"
+                        },
+                        {
+                            deuid: "aeGGK8bRvmr",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G9",
+                            total: false,
+                            name: "Vacancy rate for HWF Medical Doctors"
+                        },
+                        {
+                            deuid: "BOPZbzxOfSA",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "H9",
+                            total: false,
+                            name:
+                                "Health workforce who have voluntary exit from the force Medical Doctors"
+                        },
+                        {
+                            deuid: "qQBFc1FSZBd",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "I9",
+                            total: false,
+                            name:
+                                "Male Health workforce who have voluntary exit from the force Medical Doctors"
+                        },
+                        {
+                            deuid: "sw0lh63wqsA",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "J9",
+                            total: false,
+                            name:
+                                "Female Health workforce who have voluntary exit from the force Medical Doctors"
+                        },
+                        {
+                            deuid: "NNQYgAf2Cj8",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "K9",
+                            total: false,
+                            name:
+                                "Health workforce who have involuntary exit from the force Medical Doctors"
+                        },
+                        {
+                            deuid: "AZqsANkZRnD",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "L9",
+                            total: false,
+                            name:
+                                "Male Health workforce who have involuntary exit from the force Medical Doctors"
+                        },
+                        {
+                            deuid: "yazrkuSMGHD",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "M9",
+                            total: false,
+                            name:
+                                "Female Health workforce who have involuntary exit from the force Medical Doctors"
+                        },
+                        {
+                            deuid: "sdNHn8qmokO",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Health workforce currently unemployed Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "Xr81a9iOAyC",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Male Health workforce currently unemployed Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "kcoQHDRTi4E",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Female Health workforce currently unemployed Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "aeGGK8bRvmr",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G10",
+                            total: false,
+                            name:
+                                "Vacancy rate for HWF Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "BOPZbzxOfSA",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "H10",
+                            total: false,
+                            name:
+                                "Health workforce who have voluntary exit from the force Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "qQBFc1FSZBd",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "I10",
+                            total: false,
+                            name:
+                                "Male Health workforce who have voluntary exit from the force Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "sw0lh63wqsA",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "J10",
+                            total: false,
+                            name:
+                                "Female Health workforce who have voluntary exit from the force Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "NNQYgAf2Cj8",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "K10",
+                            total: false,
+                            name:
+                                "Health workforce who have involuntary exit from the force Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "AZqsANkZRnD",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "L10",
+                            total: false,
+                            name:
+                                "Male Health workforce who have involuntary exit from the force Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "yazrkuSMGHD",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "M10",
+                            total: false,
+                            name:
+                                "Female Health workforce who have involuntary exit from the force Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "sdNHn8qmokO",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Health workforce currently unemployed Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "Xr81a9iOAyC",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Male Health workforce currently unemployed Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "kcoQHDRTi4E",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Female Health workforce currently unemployed Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "aeGGK8bRvmr",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "Vacancy rate for HWF Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "BOPZbzxOfSA",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "Health workforce who have voluntary exit from the force Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "qQBFc1FSZBd",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "I11",
+                            total: false,
+                            name:
+                                "Male Health workforce who have voluntary exit from the force Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "sw0lh63wqsA",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "J11",
+                            total: false,
+                            name:
+                                "Female Health workforce who have voluntary exit from the force Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "NNQYgAf2Cj8",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "K11",
+                            total: false,
+                            name:
+                                "Health workforce who have involuntary exit from the force Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "AZqsANkZRnD",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "L11",
+                            total: false,
+                            name:
+                                "Male Health workforce who have involuntary exit from the force Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "yazrkuSMGHD",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "M11",
+                            total: false,
+                            name:
+                                "Female Health workforce who have involuntary exit from the force Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "sdNHn8qmokO",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Health workforce currently unemployed Nursing Professional"
+                        },
+                        {
+                            deuid: "Xr81a9iOAyC",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Male Health workforce currently unemployed Nursing Professional"
+                        },
+                        {
+                            deuid: "kcoQHDRTi4E",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Female Health workforce currently unemployed Nursing Professional"
+                        },
+                        {
+                            deuid: "aeGGK8bRvmr",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G12",
+                            total: false,
+                            name: "Vacancy rate for HWF Nursing Professional"
+                        },
+                        {
+                            deuid: "BOPZbzxOfSA",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "Health workforce who have voluntary exit from the force Nursing Professional"
+                        },
+                        {
+                            deuid: "qQBFc1FSZBd",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "Male Health workforce who have voluntary exit from the force Nursing Professional"
+                        },
+                        {
+                            deuid: "sw0lh63wqsA",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "J12",
+                            total: false,
+                            name:
+                                "Female Health workforce who have voluntary exit from the force Nursing Professional"
+                        },
+                        {
+                            deuid: "NNQYgAf2Cj8",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "K12",
+                            total: false,
+                            name:
+                                "Health workforce who have involuntary exit from the force Nursing Professional"
+                        },
+                        {
+                            deuid: "AZqsANkZRnD",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "L12",
+                            total: false,
+                            name:
+                                "Male Health workforce who have involuntary exit from the force Nursing Professional"
+                        },
+                        {
+                            deuid: "yazrkuSMGHD",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "M12",
+                            total: false,
+                            name:
+                                "Female Health workforce who have involuntary exit from the force Nursing Professional"
+                        },
+                        {
+                            deuid: "sdNHn8qmokO",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Health workforce currently unemployed Midwifery Professional"
+                        },
+                        {
+                            deuid: "Xr81a9iOAyC",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Male Health workforce currently unemployed Midwifery Professional"
+                        },
+                        {
+                            deuid: "kcoQHDRTi4E",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Female Health workforce currently unemployed Midwifery Professional"
+                        },
+                        {
+                            deuid: "aeGGK8bRvmr",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G13",
+                            total: false,
+                            name: "Vacancy rate for HWF Midwifery Professional"
+                        },
+                        {
+                            deuid: "BOPZbzxOfSA",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Health workforce who have voluntary exit from the force Midwifery Professional"
+                        },
+                        {
+                            deuid: "qQBFc1FSZBd",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Male Health workforce who have voluntary exit from the force Midwifery Professional"
+                        },
+                        {
+                            deuid: "sw0lh63wqsA",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "J13",
+                            total: false,
+                            name:
+                                "Female Health workforce who have voluntary exit from the force Midwifery Professional"
+                        },
+                        {
+                            deuid: "NNQYgAf2Cj8",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "K13",
+                            total: false,
+                            name:
+                                "Health workforce who have involuntary exit from the force Midwifery Professional"
+                        },
+                        {
+                            deuid: "AZqsANkZRnD",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "L13",
+                            total: false,
+                            name:
+                                "Male Health workforce who have involuntary exit from the force Midwifery Professional"
+                        },
+                        {
+                            deuid: "yazrkuSMGHD",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "M13",
+                            total: false,
+                            name:
+                                "Female Health workforce who have involuntary exit from the force Midwifery Professional"
+                        },
+                        {
+                            deuid: "sdNHn8qmokO",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Health workforce currently unemployed Dentist"
+                        },
+                        {
+                            deuid: "Xr81a9iOAyC",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Male Health workforce currently unemployed Dentist"
+                        },
+                        {
+                            deuid: "kcoQHDRTi4E",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Female Health workforce currently unemployed Dentist"
+                        },
+                        {
+                            deuid: "aeGGK8bRvmr",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G14",
+                            total: false,
+                            name: "Vacancy rate for HWF Dentist"
+                        },
+                        {
+                            deuid: "BOPZbzxOfSA",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "H14",
+                            total: false,
+                            name:
+                                "Health workforce who have voluntary exit from the force Dentist"
+                        },
+                        {
+                            deuid: "qQBFc1FSZBd",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "I14",
+                            total: false,
+                            name:
+                                "Male Health workforce who have voluntary exit from the force Dentist"
+                        },
+                        {
+                            deuid: "sw0lh63wqsA",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "J14",
+                            total: false,
+                            name:
+                                "Female Health workforce who have voluntary exit from the force Dentist"
+                        },
+                        {
+                            deuid: "NNQYgAf2Cj8",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "K14",
+                            total: false,
+                            name:
+                                "Health workforce who have involuntary exit from the force Dentist"
+                        },
+                        {
+                            deuid: "AZqsANkZRnD",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "L14",
+                            total: false,
+                            name:
+                                "Male Health workforce who have involuntary exit from the force Dentist"
+                        },
+                        {
+                            deuid: "yazrkuSMGHD",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "M14",
+                            total: false,
+                            name:
+                                "Female Health workforce who have involuntary exit from the force Dentist"
+                        },
+                        {
+                            deuid: "sdNHn8qmokO",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D15",
+                            total: false,
+                            name:
+                                "Health workforce currently unemployed Pharmacist"
+                        },
+                        {
+                            deuid: "Xr81a9iOAyC",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Male Health workforce currently unemployed Pharmacist"
+                        },
+                        {
+                            deuid: "kcoQHDRTi4E",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Female Health workforce currently unemployed Pharmacist"
+                        },
+                        {
+                            deuid: "aeGGK8bRvmr",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G15",
+                            total: false,
+                            name: "Vacancy rate for HWF Pharmacist"
+                        },
+                        {
+                            deuid: "BOPZbzxOfSA",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "H15",
+                            total: false,
+                            name:
+                                "Health workforce who have voluntary exit from the force Pharmacist"
+                        },
+                        {
+                            deuid: "qQBFc1FSZBd",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "I15",
+                            total: false,
+                            name:
+                                "Male Health workforce who have voluntary exit from the force Pharmacist"
+                        },
+                        {
+                            deuid: "sw0lh63wqsA",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "J15",
+                            total: false,
+                            name:
+                                "Female Health workforce who have voluntary exit from the force Pharmacist"
+                        },
+                        {
+                            deuid: "NNQYgAf2Cj8",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "K15",
+                            total: false,
+                            name:
+                                "Health workforce who have involuntary exit from the force Pharmacist"
+                        },
+                        {
+                            deuid: "AZqsANkZRnD",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "L15",
+                            total: false,
+                            name:
+                                "Male Health workforce who have involuntary exit from the force Pharmacist"
+                        },
+                        {
+                            deuid: "yazrkuSMGHD",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "M15",
+                            total: false,
+                            name:
+                                "Female Health workforce who have involuntary exit from the force Pharmacist"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Module 6 Template",
+            file: "NHWA_Module_6.xlsx",
+            sheets: [
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 1,
+                    sheet_name: "Characteristics",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "V2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "iM5NIZBqAUL",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D8",
+                            total: false,
+                            name:
+                                "Standard working hours as per the national law default"
+                        },
+                        {
+                            deuid: "GeY6o2BMvp1",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Standard Working Hours in a week Medical Doctors"
+                        },
+                        {
+                            deuid: "hBzWHe6kuvu",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in total Medical Doctors"
+                        },
+                        {
+                            deuid: "C8MvR5CNwpG",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a public owned facilities Medical Doctors"
+                        },
+                        {
+                            deuid: "wsmvhizfctg",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a Not-for-profit privately owned facilities Medical Doctors"
+                        },
+                        {
+                            deuid: "KlsBVkjtkkV",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a For-profit privately owned owned facilities Medical Doctors"
+                        },
+                        {
+                            deuid: "N6VNhZ2PCG7",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "Health workforce Self employed Medical Doctors"
+                        },
+                        {
+                            deuid: "GeY6o2BMvp1",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Standard Working Hours in a week General Medical Practitioner"
+                        },
+                        {
+                            deuid: "hBzWHe6kuvu",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in total General Medical Practitioner"
+                        },
+                        {
+                            deuid: "C8MvR5CNwpG",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a public owned facilities General Medical Practitioner"
+                        },
+                        {
+                            deuid: "wsmvhizfctg",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a Not-for-profit privately owned facilities General Medical Practitioner"
+                        },
+                        {
+                            deuid: "KlsBVkjtkkV",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "H14",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a For-profit privately owned owned facilities General Medical Practitioner"
+                        },
+                        {
+                            deuid: "N6VNhZ2PCG7",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "I14",
+                            total: false,
+                            name:
+                                "Health workforce Self employed General Medical Practitioner"
+                        },
+                        {
+                            deuid: "GeY6o2BMvp1",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D15",
+                            total: false,
+                            name:
+                                "Standard Working Hours in a week Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "hBzWHe6kuvu",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in total Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "C8MvR5CNwpG",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a public owned facilities Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "wsmvhizfctg",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G15",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a Not-for-profit privately owned facilities Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "KlsBVkjtkkV",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "H15",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a For-profit privately owned owned facilities Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "N6VNhZ2PCG7",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "I15",
+                            total: false,
+                            name:
+                                "Health workforce Self employed Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "GeY6o2BMvp1",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D16",
+                            total: false,
+                            name:
+                                "Standard Working Hours in a week Nursing Professional"
+                        },
+                        {
+                            deuid: "hBzWHe6kuvu",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E16",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in total Nursing Professional"
+                        },
+                        {
+                            deuid: "C8MvR5CNwpG",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F16",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a public owned facilities Nursing Professional"
+                        },
+                        {
+                            deuid: "wsmvhizfctg",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G16",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a Not-for-profit privately owned facilities Nursing Professional"
+                        },
+                        {
+                            deuid: "KlsBVkjtkkV",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "H16",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a For-profit privately owned owned facilities Nursing Professional"
+                        },
+                        {
+                            deuid: "N6VNhZ2PCG7",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "I16",
+                            total: false,
+                            name:
+                                "Health workforce Self employed Nursing Professional"
+                        },
+                        {
+                            deuid: "GeY6o2BMvp1",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D17",
+                            total: false,
+                            name:
+                                "Standard Working Hours in a week Midwifery Professional"
+                        },
+                        {
+                            deuid: "hBzWHe6kuvu",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E17",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in total Midwifery Professional"
+                        },
+                        {
+                            deuid: "C8MvR5CNwpG",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F17",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a public owned facilities Midwifery Professional"
+                        },
+                        {
+                            deuid: "wsmvhizfctg",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G17",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a Not-for-profit privately owned facilities Midwifery Professional"
+                        },
+                        {
+                            deuid: "KlsBVkjtkkV",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "H17",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a For-profit privately owned owned facilities Midwifery Professional"
+                        },
+                        {
+                            deuid: "N6VNhZ2PCG7",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "I17",
+                            total: false,
+                            name:
+                                "Health workforce Self employed Midwifery Professional"
+                        },
+                        {
+                            deuid: "GeY6o2BMvp1",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D18",
+                            total: false,
+                            name: "Standard Working Hours in a week Dentist"
+                        },
+                        {
+                            deuid: "hBzWHe6kuvu",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E18",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in total Dentist"
+                        },
+                        {
+                            deuid: "C8MvR5CNwpG",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F18",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a public owned facilities Dentist"
+                        },
+                        {
+                            deuid: "wsmvhizfctg",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G18",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a Not-for-profit privately owned facilities Dentist"
+                        },
+                        {
+                            deuid: "KlsBVkjtkkV",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "H18",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a For-profit privately owned owned facilities Dentist"
+                        },
+                        {
+                            deuid: "N6VNhZ2PCG7",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "I18",
+                            total: false,
+                            name: "Health workforce Self employed Dentist"
+                        },
+                        {
+                            deuid: "GeY6o2BMvp1",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D19",
+                            total: false,
+                            name: "Standard Working Hours in a week Pharmacist"
+                        },
+                        {
+                            deuid: "hBzWHe6kuvu",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E19",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in total Pharmacist"
+                        },
+                        {
+                            deuid: "C8MvR5CNwpG",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F19",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a public owned facilities Pharmacist"
+                        },
+                        {
+                            deuid: "wsmvhizfctg",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G19",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a Not-for-profit privately owned facilities Pharmacist"
+                        },
+                        {
+                            deuid: "KlsBVkjtkkV",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "H19",
+                            total: false,
+                            name:
+                                "Health workforce with Part Time Contract in a For-profit privately owned owned facilities Pharmacist"
+                        },
+                        {
+                            deuid: "N6VNhZ2PCG7",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "I19",
+                            total: false,
+                            name: "Health workforce Self employed Pharmacist"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 2,
+                    sheet_name: "Conditions",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "N2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "qqVKuhK0RgY",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D16",
+                            total: false,
+                            name: "Violent attacks on health workers default"
+                        },
+                        {
+                            deuid: "iS6Vzt6PPjr",
+                            cocuid: "OYOzRJlu3B5",
+                            cell_no: "E16",
+                            total: false,
+                            name:
+                                "Violent attacks on health workers by primary object of attack Facility"
+                        },
+                        {
+                            deuid: "iS6Vzt6PPjr",
+                            cocuid: "JfxMvAwKsR7",
+                            cell_no: "F16",
+                            total: false,
+                            name:
+                                "Violent attacks on health workers by primary object of attack Health-care provider"
+                        },
+                        {
+                            deuid: "iS6Vzt6PPjr",
+                            cocuid: "MfcVRlA41v6",
+                            cell_no: "G16",
+                            total: false,
+                            name:
+                                "Violent attacks on health workers by primary object of attack Transport"
+                        },
+                        {
+                            deuid: "iS6Vzt6PPjr",
+                            cocuid: "xeQGICllTPa",
+                            cell_no: "H16",
+                            total: false,
+                            name:
+                                "Violent attacks on health workers by primary object of attack Patient"
+                        },
+                        {
+                            deuid: "LUVRqQq2NLE",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P9",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws for prevention of attacks on health workers Yes"
+                        },
+                        {
+                            deuid: "LUVRqQq2NLE",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q9",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws for prevention of attacks on health workers Partial"
+                        },
+                        {
+                            deuid: "LUVRqQq2NLE",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R9",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws for prevention of attacks on health workers No"
+                        },
+                        {
+                            deuid: "Ii26DODuUbB",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "S10",
+                            total: false,
+                            name:
+                                "Existence of national/subnational policies for regulating compulsory service default"
+                        },
+                        {
+                            deuid: "cV7DhKFPk3R",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "S11",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws regulating dual practice default"
+                        },
+                        {
+                            deuid: "FXC8HIEHwHI",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Comment of Existence of national/sub-national policies/laws for prevention of attacks on health workers default"
+                        },
+                        {
+                            deuid: "d7hKlZbQARX",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Comment of Existence of national/subnational policies for regulating compulsory service default"
+                        },
+                        {
+                            deuid: "TiqoQCq1BL4",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Comment of Existence of national/sub-national policies/laws regulating dual practice default"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 3,
+                    sheet_name: "Regulation",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "N2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "LYjT01KiTTw",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P9",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for medical doctors Yes"
+                        },
+                        {
+                            deuid: "LYjT01KiTTw",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q9",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for medical doctors Partial"
+                        },
+                        {
+                            deuid: "LYjT01KiTTw",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R9",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for medical doctors No"
+                        },
+                        {
+                            deuid: "gGSJZCN2L8C",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P10",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for General Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "gGSJZCN2L8C",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q10",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for General Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "gGSJZCN2L8C",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R10",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for General Medical Practitioner No"
+                        },
+                        {
+                            deuid: "FDUFnJmPb2t",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P11",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Specialist Medical Practitioner Yes"
+                        },
+                        {
+                            deuid: "FDUFnJmPb2t",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q11",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Specialist Medical Practitioner Partial"
+                        },
+                        {
+                            deuid: "FDUFnJmPb2t",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R11",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Specialist Medical Practitioner No"
+                        },
+                        {
+                            deuid: "DVyhvgkJrXg",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P12",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Nursing Professional Yes"
+                        },
+                        {
+                            deuid: "DVyhvgkJrXg",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q12",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Nursing Professional Partial"
+                        },
+                        {
+                            deuid: "DVyhvgkJrXg",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R12",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Nursing Professional No"
+                        },
+                        {
+                            deuid: "Uyxr85SOJiI",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P13",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Midwifery Professional Yes"
+                        },
+                        {
+                            deuid: "Uyxr85SOJiI",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q13",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Midwifery Professional Partial"
+                        },
+                        {
+                            deuid: "Uyxr85SOJiI",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R13",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Midwifery Professional No"
+                        },
+                        {
+                            deuid: "I5m9Dl43XO2",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P14",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Dentist Yes"
+                        },
+                        {
+                            deuid: "I5m9Dl43XO2",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q14",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Dentist Partial"
+                        },
+                        {
+                            deuid: "I5m9Dl43XO2",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R14",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Dentist No"
+                        },
+                        {
+                            deuid: "gDinmRT6Pqb",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P15",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Pharmacist Yes"
+                        },
+                        {
+                            deuid: "gDinmRT6Pqb",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q15",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Pharmacist Partial"
+                        },
+                        {
+                            deuid: "gDinmRT6Pqb",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R15",
+                            total: false,
+                            name:
+                                "Existence of national law on regulating working hours and conditions for Pharmacist No"
+                        },
+                        {
+                            deuid: "lvs1RCQOOp4",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "P21",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws regulating social protection Yes"
+                        },
+                        {
+                            deuid: "lvs1RCQOOp4",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "Q21",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws regulating social protection Partial"
+                        },
+                        {
+                            deuid: "lvs1RCQOOp4",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "R21",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws regulating social protection No"
+                        },
+                        {
+                            deuid: "di91e0qZijs",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "O20",
+                            total: false,
+                            name:
+                                "Existence of national/sub-national policies/laws regulating minimum wages default"
+                        },
+                        {
+                            deuid: "p9tpHX1KEpx",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Comment of Existence of national law on regulating working hours and conditions - Medical Doctors default"
+                        },
+                        {
+                            deuid: "Vgrwxohqyex",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Comment of Existence of national law on regulating working hours and conditions - General Medical Practitioner default"
+                        },
+                        {
+                            deuid: "diMX6HJrY20",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Comment of Existence of national law on regulating working hours and conditions - Specialist Medical Practitioner default"
+                        },
+                        {
+                            deuid: "Z8z72QAYDaj",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Comment of Existence of national law on regulating working hours and conditions - Nursing Professional default"
+                        },
+                        {
+                            deuid: "MSX8eTjkneO",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Comment of Existence of national law on regulating working hours and conditions - Midwifery Professional default"
+                        },
+                        {
+                            deuid: "pp4mjoKsU50",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Comment of Existence of national law on regulating working hours and conditions - Dentist default"
+                        },
+                        {
+                            deuid: "OejaVtMvR4x",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Comment of Existence of national law on regulating working hours and conditions - Pharmacist default"
+                        },
+                        {
+                            deuid: "NI5EQM6hHmc",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E20",
+                            total: false,
+                            name:
+                                "Comment of Existence of national/sub-national policies/laws regulating minimum wages default"
+                        },
+                        {
+                            deuid: "OX7yvkLP2Uj",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E21",
+                            total: false,
+                            name:
+                                "Comment of Existence of national/sub-national policies/laws regulating social protection default"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Module 7 Template",
+            file: "NHWA_Module_7.xlsx",
+            sheets: [
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 1,
+                    sheet_name: "Expenditure",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "V2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "Wgfv9IaDiWM",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D8",
+                            total: false,
+                            name:
+                                "Financial income received from official development assistance and allocated to HWF default"
+                        },
+                        {
+                            deuid: "gNDFctqpNyv",
+                            cocuid: "IMqululFzhP",
+                            cell_no: "D12",
+                            total: false,
+                            name: "Expenditure on health workforce Public"
+                        },
+                        {
+                            deuid: "gNDFctqpNyv",
+                            cocuid: "N3nYJ6ScaYx",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Expenditure on health workforce Private not for profit"
+                        },
+                        {
+                            deuid: "gNDFctqpNyv",
+                            cocuid: "UKbfaRlqkpY",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Expenditure on health workforce Private for profit"
+                        },
+                        {
+                            deuid: "xWfKWoc4ggg",
+                            cocuid: "cFkpPfqFrJW",
+                            cell_no: "D16",
+                            total: false,
+                            name:
+                                "Public expenditure on health workforce Compensation"
+                        },
+                        {
+                            deuid: "xWfKWoc4ggg",
+                            cocuid: "TQ5H1Za7ZMR",
+                            cell_no: "E16",
+                            total: false,
+                            name:
+                                "Public expenditure on health workforce Training"
+                        },
+                        {
+                            deuid: "xWfKWoc4ggg",
+                            cocuid: "dVpd180cEmo",
+                            cell_no: "F16",
+                            total: false,
+                            name:
+                                "Public expenditure on health workforce Others"
+                        },
+                        {
+                            deuid: "l5RPrypr3Wg",
+                            cocuid: "LfoJLP7BbDk",
+                            cell_no: "D20",
+                            total: false,
+                            name:
+                                "Public expenditure on compensation of employees Wages and Salary"
+                        },
+                        {
+                            deuid: "l5RPrypr3Wg",
+                            cocuid: "hL8lKfXNzln",
+                            cell_no: "E20",
+                            total: false,
+                            name:
+                                "Public expenditure on compensation of employees Social contribution"
+                        },
+                        {
+                            deuid: "l5RPrypr3Wg",
+                            cocuid: "VWIQFya88eZ",
+                            cell_no: "F20",
+                            total: false,
+                            name:
+                                "Public expenditure on compensation of employees Others"
+                        },
+                        {
+                            deuid: "CvaGFNVhuQl",
+                            cocuid: "HQPWV8cT7li",
+                            cell_no: "D24",
+                            total: false,
+                            name:
+                                "Total expenditure on compensation of employees Government"
+                        },
+                        {
+                            deuid: "CvaGFNVhuQl",
+                            cocuid: "FiRcnmXF1Yg",
+                            cell_no: "E24",
+                            total: false,
+                            name:
+                                "Total expenditure on compensation of employees Out of Pocket"
+                        },
+                        {
+                            deuid: "CvaGFNVhuQl",
+                            cocuid: "QKhM7ublqzd",
+                            cell_no: "F24",
+                            total: false,
+                            name:
+                                "Total expenditure on compensation of employees Official Development Assistance"
+                        },
+                        {
+                            deuid: "CvaGFNVhuQl",
+                            cocuid: "txxKPnVUGvV",
+                            cell_no: "G24",
+                            total: false,
+                            name:
+                                "Total expenditure on compensation of employees Others"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 2,
+                    sheet_name: "Remuneration",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "N2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "FVANVRToxVF",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Medical Doctors"
+                        },
+                        {
+                            deuid: "BOsqct4iCpa",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Medical Doctors"
+                        },
+                        {
+                            deuid: "H6pdAoosHWN",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "F10",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Medical Doctors"
+                        },
+                        {
+                            deuid: "BCjjT4Xujzu",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "G10",
+                            total: false,
+                            name: "total median earnings HWF Medical Doctors"
+                        },
+                        {
+                            deuid: "oTcSBrUk1hs",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "H10",
+                            total: false,
+                            name: "median earnings of men HWF Medical Doctors"
+                        },
+                        {
+                            deuid: "kOWad32u5xr",
+                            cocuid: "aBpbcEgtzgw",
+                            cell_no: "I10",
+                            total: false,
+                            name:
+                                "median earnings of female HWF Medical Doctors"
+                        },
+                        {
+                            deuid: "FVANVRToxVF",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "BOsqct4iCpa",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "H6pdAoosHWN",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "F11",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "BCjjT4Xujzu",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "G11",
+                            total: false,
+                            name:
+                                "total median earnings HWF Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "oTcSBrUk1hs",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "H11",
+                            total: false,
+                            name:
+                                "median earnings of men HWF Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "kOWad32u5xr",
+                            cocuid: "LHbCtHlZr3Y",
+                            cell_no: "I11",
+                            total: false,
+                            name:
+                                "median earnings of female HWF Generalist Medical Practitioner"
+                        },
+                        {
+                            deuid: "FVANVRToxVF",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "BOsqct4iCpa",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "H6pdAoosHWN",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "F12",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "BCjjT4Xujzu",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "G12",
+                            total: false,
+                            name:
+                                "total median earnings HWF Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "oTcSBrUk1hs",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "H12",
+                            total: false,
+                            name:
+                                "median earnings of men HWF Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "kOWad32u5xr",
+                            cocuid: "VtVkbvygJnm",
+                            cell_no: "I12",
+                            total: false,
+                            name:
+                                "median earnings of female HWF Specialist Medical Practitioner"
+                        },
+                        {
+                            deuid: "FVANVRToxVF",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "D13",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Nursing Professional"
+                        },
+                        {
+                            deuid: "BOsqct4iCpa",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Nursing Professional"
+                        },
+                        {
+                            deuid: "H6pdAoosHWN",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "F13",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Nursing Professional"
+                        },
+                        {
+                            deuid: "BCjjT4Xujzu",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "G13",
+                            total: false,
+                            name:
+                                "total median earnings HWF Nursing Professional"
+                        },
+                        {
+                            deuid: "oTcSBrUk1hs",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "H13",
+                            total: false,
+                            name:
+                                "median earnings of men HWF Nursing Professional"
+                        },
+                        {
+                            deuid: "kOWad32u5xr",
+                            cocuid: "fGOgbIqsxDn",
+                            cell_no: "I13",
+                            total: false,
+                            name:
+                                "median earnings of female HWF Nursing Professional"
+                        },
+                        {
+                            deuid: "FVANVRToxVF",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "D14",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Midwifery Professional"
+                        },
+                        {
+                            deuid: "BOsqct4iCpa",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Midwifery Professional"
+                        },
+                        {
+                            deuid: "H6pdAoosHWN",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "F14",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Midwifery Professional"
+                        },
+                        {
+                            deuid: "BCjjT4Xujzu",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "G14",
+                            total: false,
+                            name:
+                                "total median earnings HWF Midwifery Professional"
+                        },
+                        {
+                            deuid: "oTcSBrUk1hs",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "H14",
+                            total: false,
+                            name:
+                                "median earnings of men HWF Midwifery Professional"
+                        },
+                        {
+                            deuid: "kOWad32u5xr",
+                            cocuid: "MPzyVWiSFF2",
+                            cell_no: "I14",
+                            total: false,
+                            name:
+                                "median earnings of female HWF Midwifery Professional"
+                        },
+                        {
+                            deuid: "FVANVRToxVF",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "D15",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Dentist"
+                        },
+                        {
+                            deuid: "BOsqct4iCpa",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Dentist"
+                        },
+                        {
+                            deuid: "H6pdAoosHWN",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "F15",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Dentist"
+                        },
+                        {
+                            deuid: "BCjjT4Xujzu",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "G15",
+                            total: false,
+                            name: "total median earnings HWF Dentist"
+                        },
+                        {
+                            deuid: "oTcSBrUk1hs",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "H15",
+                            total: false,
+                            name: "median earnings of men HWF Dentist"
+                        },
+                        {
+                            deuid: "kOWad32u5xr",
+                            cocuid: "ALBRKpJsddQ",
+                            cell_no: "I15",
+                            total: false,
+                            name: "median earnings of female HWF Dentist"
+                        },
+                        {
+                            deuid: "FVANVRToxVF",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "D16",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Public Facilities Pharmacist"
+                        },
+                        {
+                            deuid: "BOsqct4iCpa",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "E16",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private not for profit Facilities Pharmacist"
+                        },
+                        {
+                            deuid: "H6pdAoosHWN",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "F16",
+                            total: false,
+                            name:
+                                "Average of Entry-level wages and salaries excluding Social Contributions in Private Facilities Pharmacist"
+                        },
+                        {
+                            deuid: "BCjjT4Xujzu",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "G16",
+                            total: false,
+                            name: "total median earnings HWF Pharmacist"
+                        },
+                        {
+                            deuid: "oTcSBrUk1hs",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "H16",
+                            total: false,
+                            name: "median earnings of men HWF Pharmacist"
+                        },
+                        {
+                            deuid: "kOWad32u5xr",
+                            cocuid: "iWRW6jXAzvP",
+                            cell_no: "I16",
+                            total: false,
+                            name: "median earnings of female HWF Pharmacist"
+                        },
+                        {
+                            deuid: "M7R7LVsXlAN",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "N20",
+                            total: false,
+                            name:
+                                "Existence of national/subnational policies or standards on public sector wage ceiling default"
+                        },
+                        {
+                            deuid: "cXn60b9eotz",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E20",
+                            total: false,
+                            name:
+                                "Comment of Existence of national/subnational policies or standards on public sector wage ceiling  default"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Module 8-10 Template",
+            file: "NHWA_Module_8_10.xlsx",
+            sheets: [
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 1,
+                    sheet_name: "Cost per program",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "V2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "LW954y3FqL8",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D8",
+                            total: false,
+                            name: "Percentage of HWF at the hospitals default"
+                        },
+                        {
+                            deuid: "fxBC5D01Iem",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D9",
+                            total: false,
+                            name:
+                                "Percentage of HWF working in residential long-term care facilities default"
+                        },
+                        {
+                            deuid: "EWJZZN7T9IW",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D10",
+                            total: false,
+                            name:
+                                "Percentage of HWF working in ambulatory health care default"
+                        },
+                        {
+                            deuid: "zozZbvSo4Bz",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D11",
+                            total: false,
+                            name:
+                                "Number of specialist surgical workers default"
+                        },
+                        {
+                            deuid: "XEj0ILIlbWO",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "D12",
+                            total: false,
+                            name:
+                                "Number of family medicine practioners default"
+                        },
+                        {
+                            deuid: "tKr3k3lbnJJ",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "U13",
+                            total: false,
+                            name: "Existence of advanced nursing roles Yes"
+                        },
+                        {
+                            deuid: "tKr3k3lbnJJ",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "V13",
+                            total: false,
+                            name: "Existence of advanced nursing roles Partial"
+                        },
+                        {
+                            deuid: "tKr3k3lbnJJ",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "W13",
+                            total: false,
+                            name: "Existence of advanced nursing roles No"
+                        },
+                        {
+                            deuid: "jlJcFRt3mmg",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Comment of existence of advanced nursing roles default"
+                        },
+                        {
+                            deuid: "EVairjAiRv6",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "V23",
+                            total: false,
+                            name:
+                                "Availability of human resources to implement IHR default"
+                        },
+                        {
+                            deuid: "u6F6nBWeomT",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "W23",
+                            total: false,
+                            name:
+                                "Applied epidemiology training programme default"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 2,
+                    sheet_name: "M09 - Governance and policies",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "N2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "ROVoulCcT0j",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q9",
+                            total: false,
+                            name:
+                                "Existence of institutional mechanisms to coordinate an intersectoral health workforce agenda Yes"
+                        },
+                        {
+                            deuid: "ROVoulCcT0j",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R9",
+                            total: false,
+                            name:
+                                "Existence of institutional mechanisms to coordinate an intersectoral health workforce agenda Partial"
+                        },
+                        {
+                            deuid: "ROVoulCcT0j",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S9",
+                            total: false,
+                            name:
+                                "Existence of institutional mechanisms to coordinate an intersectoral health workforce agenda No"
+                        },
+                        {
+                            deuid: "yqQBUxeuga4",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q10",
+                            total: false,
+                            name:
+                                "Existence of a health workforce unit responsible for developing and monitoring policies and plans on health workforce Yes"
+                        },
+                        {
+                            deuid: "yqQBUxeuga4",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R10",
+                            total: false,
+                            name:
+                                "Existence of a health workforce unit responsible for developing and monitoring policies and plans on health workforce Partial"
+                        },
+                        {
+                            deuid: "yqQBUxeuga4",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S10",
+                            total: false,
+                            name:
+                                "Existence of a health workforce unit responsible for developing and monitoring policies and plans on health workforce No"
+                        },
+                        {
+                            deuid: "tdwemEgGckz",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q11",
+                            total: false,
+                            name:
+                                "Existence of mechanisms and models for health workforce planning Yes"
+                        },
+                        {
+                            deuid: "tdwemEgGckz",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R11",
+                            total: false,
+                            name:
+                                "Existence of mechanisms and models for health workforce planning Partial"
+                        },
+                        {
+                            deuid: "tdwemEgGckz",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S11",
+                            total: false,
+                            name:
+                                "Existence of mechanisms and models for health workforce planning No"
+                        },
+                        {
+                            deuid: "wDaqByzsz7p",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q12",
+                            total: false,
+                            name:
+                                "Existence of national education plans for the health workforce, aligned with the national health plan and the national health workforce strategy Yes"
+                        },
+                        {
+                            deuid: "wDaqByzsz7p",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R12",
+                            total: false,
+                            name:
+                                "Existence of national education plans for the health workforce, aligned with the national health plan and the national health workforce strategy Partial"
+                        },
+                        {
+                            deuid: "wDaqByzsz7p",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S12",
+                            total: false,
+                            name:
+                                "Existence of national education plans for the health workforce, aligned with the national health plan and the national health workforce strategy No"
+                        },
+                        {
+                            deuid: "HgQ76w0VONy",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q13",
+                            total: false,
+                            name:
+                                "Existence of institutional models for assessing and monitoring staffing needs for health services delivery Yes"
+                        },
+                        {
+                            deuid: "HgQ76w0VONy",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R13",
+                            total: false,
+                            name:
+                                "Existence of institutional models for assessing and monitoring staffing needs for health services delivery Partial"
+                        },
+                        {
+                            deuid: "HgQ76w0VONy",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S13",
+                            total: false,
+                            name:
+                                "Existence of institutional models for assessing and monitoring staffing needs for health services delivery No"
+                        },
+                        {
+                            deuid: "xtrKmZJKljq",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Comment of existence of institutional mechanisms to coordinate an intersectoral health workforce agenda default"
+                        },
+                        {
+                            deuid: "R6JXOAVTsay",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Comment of existence of a health workforce unit responsible for developing and monitoring policies and plans on health workforce default"
+                        },
+                        {
+                            deuid: "risbLwkLwW5",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Comment of existence of mechanisms and models for health workforce planning default"
+                        },
+                        {
+                            deuid: "oLpoOT6tO7g",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Comment of national education plans for the health workforce, aligned with the national health plan and the national health workforce strategy default"
+                        },
+                        {
+                            deuid: "RM1vy8bSPE8",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Comment of Existence of institutional models for assessing and monitoring staffing needs for health service delivery default"
+                        }
+                    ]
+                },
+                {
+                    sheet_type: "AGGREGATE_STATIC",
+                    sheet_no: 3,
+                    sheet_name: "M10 - Information Systems",
+                    orgUnitIdScheme: "UID",
+                    dataElementIdScheme: "UID",
+                    idScheme: "UID",
+                    oucode_cell: "N2",
+                    year_cell: "I4",
+                    last_data_column: "ZZ",
+                    agg_des: [
+                        {
+                            deuid: "f87mpByuPub",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q9",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on International Health Regulations Yes"
+                        },
+                        {
+                            deuid: "f87mpByuPub",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R9",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on International Health Regulations Partial"
+                        },
+                        {
+                            deuid: "f87mpByuPub",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S9",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on International Health Regulations No"
+                        },
+                        {
+                            deuid: "RHokurJAbjS",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q10",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on  the WHO Global Code of Practice on the International Recruitment of Health Personnel  Yes"
+                        },
+                        {
+                            deuid: "RHokurJAbjS",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R10",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on  the WHO Global Code of Practice on the International Recruitment of Health Personnel  Partial"
+                        },
+                        {
+                            deuid: "RHokurJAbjS",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S10",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on  the WHO Global Code of Practice on the International Recruitment of Health Personnel  No"
+                        },
+                        {
+                            deuid: "w8SWd1reRm8",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q11",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on Skilled Attendance at Birth requirements Yes"
+                        },
+                        {
+                            deuid: "w8SWd1reRm8",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R11",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on Skilled Attendance at Birth requirements Partial"
+                        },
+                        {
+                            deuid: "w8SWd1reRm8",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S11",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on Skilled Attendance at Birth requirements No"
+                        },
+                        {
+                            deuid: "IidAimBSgEf",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q12",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on outputs from education and training institutions Yes"
+                        },
+                        {
+                            deuid: "IidAimBSgEf",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R12",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on outputs from education and training institutions Partial"
+                        },
+                        {
+                            deuid: "IidAimBSgEf",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S12",
+                            total: false,
+                            name:
+                                "Existence of HRHIS for reporting on outputs from education and training institutions No"
+                        },
+                        {
+                            deuid: "q8CUMlpFLtJ",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q13",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track entrants to the labour market Yes"
+                        },
+                        {
+                            deuid: "q8CUMlpFLtJ",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R13",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track entrants to the labour market Partial"
+                        },
+                        {
+                            deuid: "q8CUMlpFLtJ",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S13",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track entrants to the labour market No"
+                        },
+                        {
+                            deuid: "hR7B1ITcCMe",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q14",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track the number of active stock per year Yes"
+                        },
+                        {
+                            deuid: "hR7B1ITcCMe",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R14",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track the number of active stock per year Partial"
+                        },
+                        {
+                            deuid: "hR7B1ITcCMe",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S14",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track the number of active stock per year No"
+                        },
+                        {
+                            deuid: "qNxAIa6jvmm",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q15",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track the number of exits per year Yes"
+                        },
+                        {
+                            deuid: "qNxAIa6jvmm",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R15",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track the number of exits per year Partial"
+                        },
+                        {
+                            deuid: "qNxAIa6jvmm",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S15",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to track the number of exits per year No"
+                        },
+                        {
+                            deuid: "FZYvE3Jdf8L",
+                            cocuid: "I93t0K7b1oN",
+                            cell_no: "Q16",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to produce geo-coded location of health facilities Yes"
+                        },
+                        {
+                            deuid: "FZYvE3Jdf8L",
+                            cocuid: "Xgr3PJxcWfJ",
+                            cell_no: "R16",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to produce geo-coded location of health facilities Partial"
+                        },
+                        {
+                            deuid: "FZYvE3Jdf8L",
+                            cocuid: "Y7EAGQA1bfv",
+                            cell_no: "S16",
+                            total: false,
+                            name:
+                                "Existence of HRHIS to produce geo-coded location of health facilities No"
+                        },
+                        {
+                            deuid: "jieOOtItEQg",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E9",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS for reporting on International Health Regulations default"
+                        },
+                        {
+                            deuid: "tASpRJWiyvN",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E10",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS for reporting on  the WHO Global Code of Practice on the International Recruitment of Health Personnel default"
+                        },
+                        {
+                            deuid: "aAaUMHvUPv1",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E11",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS for reporting on Skilled Attendance at Birth requirements default"
+                        },
+                        {
+                            deuid: "mwwpy9cyOGy",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E12",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS for reporting on outputs from education and training institutions default"
+                        },
+                        {
+                            deuid: "AK5r5VIXYOW",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E13",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS to track entrants to the labour market default"
+                        },
+                        {
+                            deuid: "QuUK6IgR9oZ",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E14",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS to track the number of active stock per year default"
+                        },
+                        {
+                            deuid: "bGA2GtwhrC9",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E15",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS to track the number of exits per year default"
+                        },
+                        {
+                            deuid: "cWUu9JeMtg7",
+                            cocuid: "Xr12mI7VPn3",
+                            cell_no: "E16",
+                            total: false,
+                            name:
+                                "Comment of Existence of HRHIS to produce geo-coded location of health facilities default"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };
