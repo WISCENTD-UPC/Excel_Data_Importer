@@ -68,7 +68,7 @@ const dataElementsSheet2 = [
 const dataElementsSheet3 = getDataElements(
   "#tab0",
   ["P", "Q", "R", "S"],
-  16,
+  8,
   "input.entrytrueonly"
 );
 
